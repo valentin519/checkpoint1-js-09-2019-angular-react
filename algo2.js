@@ -23,19 +23,19 @@ var minMax = (array) => {
     newArray = [];
     
   
-    for (let i = 0; i < array.length - 1; i+1) {
+    for (let i = 0; i < array.length ; i++) {
       
       if (array[i] > max) {
         max = array[i];
-        return max;
       }
       if (array[i] < min) {
         min = array[i];
-        return min;
       }
+      
     }
     newArray.push(min, max);
-    return  newArray;
+    return newArray
+    
     
   }
   const a = [1, -6, 0, 6]
