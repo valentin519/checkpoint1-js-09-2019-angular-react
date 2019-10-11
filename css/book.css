@@ -41,9 +41,6 @@ main {
     overflow: auto;
 }
 
-
-
-
 .desktop{
     display: flex;
 }
@@ -59,6 +56,46 @@ main {
 .empty-whisky{
     display: none;
 }
+
+form{
+    width: 95%;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+    margin: 0.2em;
+}
+
+input{
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em;
+}
+
+input[type=submit]{
+    background-color: white;
+}
+
+h2{
+    margin: auto;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
+
+hr{
+    margin: 0.3em;
+}
+
+.row-bribes{
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    line-height: 5%;
+    font-size: 22px;
+}
+
 
 @media screen and (max-width: 1200px){
     .inkpen{
@@ -79,6 +116,9 @@ main {
 @media screen and (min-width: 800px) and (max-width: 1000px){
     .pages{
         flex-basis: 100%;
+    }
+    .empty-whisky{
+        display: none;
     }
 }
 
