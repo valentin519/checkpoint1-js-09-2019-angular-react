@@ -12,15 +12,33 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+.desktop{
+    display: flex;
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.empty-whisky{
+    display: none;
+}
+.whisky{
+    height: 30%;
+    margin: -1.2em 0 0 1.5em;
+}
+
+.containInkPen{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2%;
 }
 
 .pages {
     display: flex;
     width: auto;
     flex-basis : 65%;
-    margin:1em;
+    margin:-1.3em 1em 1em 1em;
 }
 
 .page {
@@ -29,6 +47,68 @@ main {
     width: 50%;
     background-blend-mode: multiply;
 }
+
+.rightpage p{
+    margin: 0;
+    text-align: right;
+}
+
+.input{
+    width: 85%;
+}
+
+.select{
+    width: 88%;
+}
+
+.payment{
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.names, .price{
+    display: flex;
+    flex-direction: column;
+}
+.names{
+    width: 55%;
+}
+
+.price{
+    width: 45%;
+}
+
+.lineDown{
+    width: 44%;
+    margin: 1% 0;
+}
+
+.line{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select, .input, .button{
+    margin: 0 0 5% 4%;
+    border: 0px solid black;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+hr{
+    margin: 0 0 5% 0;
+}
+
+form{
+    font-size: 0.8em;;
+}
+
+.S p{
+    text-align: center;
+    font-family: initial;
+}
+
 
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
