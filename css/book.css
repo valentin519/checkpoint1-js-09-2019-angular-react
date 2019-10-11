@@ -19,12 +19,12 @@ main {
 .pages {
     display: flex;
     width: auto;
-    flex-basis : 65%;
+    flex-basis : 75%;
     margin:1em;
 }
 
 .page {
-    height:65vh;
+    height:auto;
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
@@ -39,4 +39,148 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+.page h3 {
+    text-align: center;
+    margin:0;
+}
+label{
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.page select, .page input{
+    width:80%
+}
+
+hr {
+    width: 100%;
+    border : 1px solid black;
+}
+
+.calcul{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows:  repeat(9, auto);
+    font-size: 0.7em;
+    margin:0;
+    text-align: right;
+}
+
+.line-result{
+    width: 80%;
+    margin-right :0;
+    border : 1px solid black;
+}
+.result{
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-template-rows:  1fr;
+    font-size: 0.7em;
+    margin:0;
+    text-align: right;
+}
+.calcul p{
+    margin:1px;
+}
+@media screen and (min-width : 1200px) {
+    .empty-whisky {
+        display :none;
+    } 
+    .whisky{
+        width: 20vw;
+        height: auto;
+    }
+    .inkpen{
+        height : 55vh;
+        align-self: flex-end;
+    }
+    .pages {
+        width : 80%
+    }
+    .desktop {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width : 1100px) and (max-width : 1199px) {
+    .whisky{
+        width: 20vw;
+        height: auto;
+    }
+    .inkpen{
+       display: none;
+    }
+    .empty-whisky {
+        display :none;
+    }
+    .desktop {
+        display: flex;
+        flex-direction: row;
+    }
+    .pages {
+        width : 80%
+    }
+}
+
+@media screen and (min-width : 1000px) and (max-width : 1099px) {
+    
+    .inkpen{
+       display: none;
+    }
+    .empty-whisky {
+        width: 20vw;
+        height: auto;
+    }
+    .whisky {
+        display :none;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+    }
+    .pages {
+        width : 80%
+    }
+}
+
+@media screen and (min-width : 800px) and (max-width : 999px) {  
+   
+    .whisky, .empty-whisky, .inkpen {
+        display :none;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+    }
+    .pages {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 799px) {
+    
+   
+    .whisky, .empty-whisky, .inkpen {
+        display :none;
+    }
+
+    /* .desktop {
+        display: flex;
+        flex-direction: column;
+    } */
+    .pages {
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .page {
+        margin:10px auto auto auto;
+        width: 80%;
+        height : 90vh;
+    }
 }

@@ -22,16 +22,61 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <div class="glass">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
+                    <form>
+                        <div>
+                            <label for = "Name">Name</label>
+                            <br>
+                            <input id = "Name" type="text" name = "Name">
+                        </div>
+                        <div>
+                            <label for = "Payment">Payment</label>
+                            <br>
+                            <select id = "Payment" type="text" name="Payment">
+                                <option value="payment1"> </option>
+                                <option value="payment2"> </option>
+                            </select>
+                        </div>
+                    </form>
+                    <button type = submit value = Pay!> Pay!</button>
                     <!-- TODO : Form -->
                 </div>
 
                 <div class="page rightpage">
+                    <h3>S</h3>
+                    <hr>
+                    <div class="calcul">
+                        <p>Sam Burns</p>
+                        <p>100€</p>
+                        <p>Samuel Yans</p>
+                        <p>52563€</p>
+                        <p>Simon Pogg</p>
+                        <p>52€</p>
+                        <p>Sophia Maria</p>
+                        <p>452€</p>
+                        <p>Stacie Hunberg</p>
+                        <p>568€</p>
+                        <p>Steve Grant</p>
+                        <p>1000€</p>
+                        <p>Steve Porcher</p>
+                        <p>7865€</p>
+                        <p>Sylvester Stallan</p>
+                        <p>77897</p>
+                        <p>Szen Tren</p>
+                        <p>562€</p>                      
+                    </div>
+                    <hr class="line-result">
+                    <div class = "result">
+                        <p>Total</p>
+                        <p>141059€</p>
+                    </div>
                     <!-- TODO : Display bribes and total paiement -->
                 </div>
             </div>
