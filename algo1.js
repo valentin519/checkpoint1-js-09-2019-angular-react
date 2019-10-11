@@ -17,3 +17,16 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+let line = [];
+let count = 1;
+let salle = [];
+while (count<27){
+  for (let i=count; i < 101; i++){
+    line[i] = count+'-'+i
+  }
+  count +=1
+  Array.prototype.push.apply(salle, line)
+}
+
+console.log(salle[400])
