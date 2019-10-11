@@ -34,7 +34,7 @@ ul.error:empty {
 }
 .navbar {
     background-color: var(--dark);
-    padding: 15px;
+    padding: 10px;
     color: var(--light);
     font-family: 'Monoton', cursive;
     display: flex;
@@ -68,5 +68,10 @@ code {
 }
 
 h3 {
-    margin-top:3em;
+    text-align: center;
+    margin: auto;
+    margin-top: -30px;
+    font-size: 20px;
 }
+
+
