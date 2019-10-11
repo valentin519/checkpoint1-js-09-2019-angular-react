@@ -45,6 +45,37 @@ main {
     overflow: auto;
 }
 
+.rightpage ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.rightpage h4{
+    margin : 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    align-self: center;
+}
+form input{
+    margin: auto;
+    align-self: right;
+    margin-left: 0;
+
+}
+.form--name, .form--payment{
+    display: flex;
+    flex-direction: column
+}
+
+.form--flex{
+    display: flex;
+    flex-direction: column
+}
 @media (min-width : 1200px){
     .desk--clean{
         display: flex;
@@ -110,11 +141,14 @@ main {
 }
 
 @media (max-width: 800px){
+
    .pages{
        display: flex;
-       flex-direction: column;
+       flex-direction: column-reverse;
    }
    .page{
        width: auto;
+       margin-bottom: 3rem;
    }
+
 }
