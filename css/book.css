@@ -21,6 +21,9 @@ main {
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
+.inkpen {
+    align-self: flex-end;
+}
 
 .pages {
     display: flex;
@@ -47,50 +50,50 @@ main {
     overflow: auto;
 }
 
-.name_page {
-    display: inline-flex;
-}
-
-.rightpage h3, .rightpage hr {
-    margin: 0;
-    padding: 0;
+.rightpage h3 {
+    margin-top: -5px;
+    padding: 10px;
     text-align: center;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    border-bottom: 1px solid #999;
 }
 
-.rightpage li {
-    margin: 0;
-    padding: 0;
+table, form {
+    font-size: 3.5vh;
+}
+
+table {
+    margin: 0 auto;
     text-align: right;
-    line-height: 1.1em;
-    font-size: 0.8em;
-    width: 6em;
-    list-style: none;
+    width: 100%;
+}
+.sum {
+    border-top: 1px solid #999;
 }
 
-.rightpage ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
 form {
-    text-align: left;
-    margin: 0;
-    width: 100%;
-}
-form input {
+    margin: 0 auto;
     width: 90%;
 }
+form input {
+    width: 100%;
+}
 form p, button, input {
-    padding: 10px;
-    margin: 10px;
+    border-radius: 5px;
 }
 form input, form button {
-    padding: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #fff;
     border: 1px solid #fff;
     transition-duration: 250ms;
 }
+
 button:hover, form input:hover {
-    border: 1px solid #999;
+    background-color: #ddd;
+    border: 1px solid #aaa;
     transition-duration: 250ms;
 }
 
@@ -109,7 +112,7 @@ button:hover, form input:hover {
         display: none;
     }
 }
-@media (min-width: 1100px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1200px) { /* entre 1100 et 1200px */
     .empty-whisky {
         display: none;
     }
@@ -130,6 +133,11 @@ button:hover, form input:hover {
         justify-content: center;
     }
 }
+@media (min-width: 800px) and (max-width: 1000px) { /* entre 800 et 1000px */
+    table {
+        font-size: 0.65em;
+    }
+}
 @media (max-width: 800px)  { /* en dessous de 800px */
     .pages {
         display: inline-flex;
@@ -137,5 +145,10 @@ button:hover, form input:hover {
     }
     .rightpage, .leftpage {
         width: 100%;
+    }
+}
+@media (max-width: 400px) { /* en dessous de 400px */
+    table {
+        font-size: 0.5em;
     }
 }
