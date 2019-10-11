@@ -5,6 +5,7 @@ Dans la salle les sièges sont répartis de la manière suivantes :
   - Chaque colonne contient 100 sièges, numérotés de "1" à "100"
 
 Au final la liste devra ressembler à : 
+
 1-1 
 1-2
 1-3
@@ -17,3 +18,19 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+function tab() {
+
+  let tab = [];
+
+  for (let i = 1; i < 26; i++) {
+
+    
+    
+  }
+
+  return tab[i];
+
+}
+
+

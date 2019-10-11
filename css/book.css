@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
 
+.row{
+    display: flex;
+}
+
+.flex1{
+    flex:1;
+}
+
 body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
@@ -16,11 +24,45 @@ main {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.whisky{
+    height: 200px;
+}
+
+.inkpen{
+    height: 350px;
+    margin-top: 120px;
+}
+
+.justify{
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    border: 1px solid black;
+}
+.name{
+    font-size: 25px;
+}
+.btn-bord{
+    border:1px solid rgb(122, 115, 115);
+}
+.bouton{
+    height: 60px;
+}
+
+.tab-column{
+   font-size: 28px;
+}
 .pages {
     display: flex;
     width: auto;
     flex-basis : 65%;
     margin:1em;
+    margin-top: -20px;
 }
 
 .page {
@@ -39,4 +81,117 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .none{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px) and (max-width: 1199px){
+
+    .inkpen{
+        display: none;
+    }
+
+    .none{
+        display: none;
+    }
+
+    .leftpage{
+        height: 100%;
+        
+    }
+
+    .rightpage{
+        height: 100%;
+        
+    }
+    .pages{
+        margin-left: 80px;
+        margin-top: -50px;
+    }
+
+    .whisky {
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px){
+    .whisky{
+        display: none;
+    }
+
+    .none{
+        height: 230px;
+        margin-left: 20px;
+        margin-top: -25px;
+        
+    }
+
+    .inkpen{
+        display: none;
+    }
+
+    .leftpage{
+        width: 230px;
+        
+    }
+
+    .rightpage{
+        width: 230px;
+       
+    }
+
+  
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+
+.none{
+    display: none;
+}
+
+.inkpen{
+    display: none;
+}
+
+.whisky{
+    display: none;
+}
+
+.desktop{
+    display: inline;
+}
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px){
+
+    .none{
+        display: none;
+    }
+    
+    .inkpen{
+        display: none;
+    }
+    
+    .whisky{
+        display: none;
+    }
+    
+    .desktop{
+        display: inline;
+    }
+
+    .pages{
+        display: block;
+    }
+
+
 }
