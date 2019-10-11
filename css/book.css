@@ -54,7 +54,23 @@ main {
     );
   border-radius: 40% 24px 24px 40%/8px 8px 8px 8px;
   overflow: auto;
+  display: flex;
 }
-p {
+
+.bothcolumns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: end;
+}
+.column1 p {
   margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.tittlepage {
+  text-align: center;
 }
