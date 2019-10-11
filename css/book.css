@@ -40,3 +40,119 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.pages h1 {
+    font-weight: 200;
+}
+
+table {
+    text-align: right;
+    width: 100%;
+}
+
+th {
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.total-table {
+    border-top: 1px solid black;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+}
+.button {
+    width: 30%;
+    margin-top: 30px;
+}
+
+@media screen and (min-width:1200px) {
+    img.empty-whisky {
+        display:none;
+    }
+    .desktop {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start ;
+        justify-content: space-around;
+    }
+    .inkpen-div{
+        display: flex;
+        align-self: center;
+    }
+}
+
+
+@media screen and (min-width:1100px) and (max-width:1200px) {
+    img.inkpen, img.empty-whisky {
+        display:none;
+    }
+
+    .desktop {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start ;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1100px) {
+    .inkpen, .whisky {
+        display:none;
+    }
+
+    .desktop {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start ;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (min-width:800px) and (max-width:1000px) {
+    img.inkpen, img.empty-whisky, img.whisky  {
+        display:none;
+    }
+    .desktop {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start ;
+        justify-content: center;
+    }
+
+    .pages{
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    img.inkpen,img.empty-whisky, img.whisky  {
+        display:none;
+    }
+    .desktop {
+        display: flex;
+        justify-content: space-around;
+    }
+    .pages{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center ;
+        justify-content: space-around;
+        flex-basis: 100%;
+    }
+    .page{
+        width: 100%;
+    }
+    .leftpage{
+        height: 35vh;
+    }
+    .rightpage{
+        height: 65vh;
+    }
+}
