@@ -17,3 +17,18 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+let nbrColumn = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
+
+const columns = (nbrColumn) => {
+  return nbrColumn.map((column) => {
+    let result = [];
+    let nbrSiege = 0;
+    while (nbrSiege < 100){
+      nbrSiege ++;
+      result.push(`${column} - ${nbrSiege}`);
+    }
+    return result;
+  })
+}
+
+console.log(columns(nbrColumn));
