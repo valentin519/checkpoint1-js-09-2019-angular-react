@@ -19,8 +19,8 @@
 
 const minMax = (array) => {
 
-    let min = 0;
-    let max = 0;
+    let min = array[0];
+    let max = array[0];
 
     const resultArray = [];
   
