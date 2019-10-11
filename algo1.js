@@ -25,7 +25,7 @@ const seatList = () => {
       arr.push(`${col}-${seat}`);
     }
   }
-  return console.log(arr);
+  return arr;
 }
 
 seatList();
