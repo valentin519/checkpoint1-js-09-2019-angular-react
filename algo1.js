@@ -17,3 +17,51 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+/* const tab = () => { 
+
+  const tab1 = [];
+ 
+
+  for (let i = 0; i < 27; i++) {
+
+       const row = [];
+
+      for (let j = 1; j < 101; j++) {
+
+          row.push(j);
+
+      }
+
+      tab.push(row);
+
+  }
+  
+  return tab;
+
+}
+
+console.log(tab()); */
+
+/* function centsToEuros(cents) {
+  return cents / 100;
+}
+
+const pricesInCents = [2999, 1899, 3789, 4199];
+const pricesInEuros = pricesInCents.map(centsToEuros);
+
+console.log('input array:', pricesInCents);
+console.log('output array:', pricesInEuros); */
+
+
+const tab1 =[];
+for (let i= 0; i <27; i++)
+tab1.push(i);
+
+const tab2 = [];
+for (let j=0; j <101; j++)
+tab2.push(j);
+
+const tab3 = tab1.map(sit => tab1&&tab2);
+
+console.log(tab3)
