@@ -17,3 +17,19 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+let plan = [];
+
+function drawPlan() {
+    for (let j = 0; j < 26; j++) {
+      plan[j] = []
+        for (let i = 0; i < 100; i++) {
+          plan[j][i] = (j+1) + ' - ' + (i + 1);
+            
+        }
+
+    }
+    return plan;
+}
+
+console.log(drawPlan());
