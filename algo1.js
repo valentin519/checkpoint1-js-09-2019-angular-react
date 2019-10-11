@@ -20,9 +20,9 @@ Au final la liste devra ressembler à :
 let array=[]
 const theaterSit = (column , row) =>{
   for (let i=0; i<column; i++){
-    for (let j=0; j< row; j++){
+    for (let j=0; j< row; j++)
       array.push(`${i+1}-${j+1}`)
-    }
+    
   }
   return array
 }

@@ -23,12 +23,10 @@ const minMax = array => {
   array2[0] = array[0];
   array2[1] = array[0];
   for (let i = 1; i < array.length; i++) {
-    if (array[i] <  array2[0]){
+    if (array[i] <  array2[0])
       array2[0] = array[i];
-      console.log( array2[0] )}
-    else if (array[i] >  array2[1]){ 
+    else if (array[i] >  array2[1])
       array2[1] = array[i];
-      console.log( array2[1])}
     }
   return array2;
   }
