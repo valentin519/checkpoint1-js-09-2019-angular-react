@@ -17,3 +17,16 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+//boucle qui part de la rangée 1 siège 1 et qui parcourt toutes les colonnes jusque 26
+/*const theatre =[]*/
+
+for (let rangee=1; rangee<= 26; rangee++) {
+  console.log (rangee) 
+     for (let siege=1; siege<= 100; siege++) {
+         console.log (siege)
+         }
+ 
+  }
+
+ 
+ 
