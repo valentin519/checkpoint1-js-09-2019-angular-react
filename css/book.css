@@ -38,12 +38,38 @@ main {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
+.leftpage > form p{
+    margin: 0;
+}
+.leftpage > form input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 4px 4px 10px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.leftpage > form input[type=submit] {
+    width : 70px ;
+
+}
 
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+.rightpage > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.rightpage  p {
+    margin: 0
+}
+
+
 
 @media screen and (min-width: 1200px) {
     .whisky {
