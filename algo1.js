@@ -17,3 +17,16 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+function nbSeat() {
+  let grid = [];
+for(let i=1; i<=26; i++){
+  let row = [];
+  let currentSeat = i;
+  for(let j=1; j<=100; j++){
+    row.push(currentSeat + "-" + j);
+  }
+  grid.push(row);
+}
+return grid;
+}
+console.log(nbSeat())

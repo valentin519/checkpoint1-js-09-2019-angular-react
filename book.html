@@ -21,21 +21,78 @@
 
     <main class="container">
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+        <section class="desktop row dsk-12">
+            <img src="image/whisky.png" alt="a whisky glass" class="whisky row dsk-2" />
+            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky row dsk-0" />
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
+            <div class="pages  dsk-7">
+                <div class="page leftpage ">
+                    <p>Add a bribe</p>
                     <!-- TODO : Form -->
+                    <div class="form">
+                    <label for="text">Name :</label>
+                    <input type="text" name="name" class="Name-Form dsk-10">
+                    <label for="text">Payment :</label>
+                    <input type="number" class="payment dsk-10" name="payment"
+                            min="10" max="10000">
+                    </div>
+                    <div>
+                    <button type="submit" class="dsk-2">Pay !</button>
+                    </div>
                 </div>
 
-                <div class="page rightpage">
+                <div class="page rightpage row">
                     <!-- TODO : Display bribes and total paiement -->
+                    <p class="S dsk-12">S</p>
+                    <hr class="hr dsk-11">
+                    <table class="dsk-12">
+                        <tr>
+                            <td>Sam Burns</td>
+                            <td>100€</td>
+                        </tr>
+                        <tr>
+                            <td>Samuel Yans</td>
+                            <td>52563€</td>
+                        </tr>
+                        <tr>
+                            <td>Simon Pogg</td>
+                            <td>52€</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia Maria</td>
+                            <td>452€</td>
+                        </tr>
+                        <tr>
+                            <td>Stacie Hunberg</td>
+                            <td>568€</td>
+                        </tr>
+                        <tr>
+                            <td>Steve Grant</td>
+                            <td>1000€</td>
+                        </tr>
+                        <tr>
+                            <td>Steve Porcher</td>
+                            <td>7865€</td>
+                        </tr>
+                        <tr>
+                            <td>Sylvester Stallon</td>
+                            <td>77897€</td>
+                        </tr>
+                        <tr>
+                            <td>Szen Tren</td>
+                            <td>562€</td>
+                        </tr>
+                        </table>
+                        <hr class="dsk-11 hr total">
+                        <table class="dsk-12">
+                        <tr>
+                            <td class="dsk-6">Total</td>
+                            <td class="dsk-6">141059€</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            <img src="image/inkpen.png" alt="an ink pen" class="inkpen row dsk-2" />
         </section>
     </main>
 </body>
