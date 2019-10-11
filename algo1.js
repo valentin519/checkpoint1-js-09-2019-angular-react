@@ -17,3 +17,20 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+const ligne = [1,2]
+const column = [1, 2]
+let i;
+let j;
+
+function chessBoard(){
+
+for ( i = 0; i < 26 ; i++) {
+   return ligne[i];
+}
+
+for (j = 0; j < 100 ; j++) {
+  return column[j] ;
+}
+
+}
+console.log (`${column[i]}-${ligne[j]}`)
