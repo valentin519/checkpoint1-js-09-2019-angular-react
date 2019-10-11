@@ -28,12 +28,24 @@
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form action="" method="get" class="form-example">
+                        <div class="form-example">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div>
+                            <label for="paid">Payment</label>
+                            <input type="number" name="paid" id="paid" required>
+                        </div>
+                        <div>
+                            <button id="bibeSent" type="submit" value="Pay" onclick="writeItDown()">
+                        </div>
+                    </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
-                </div>
+                    <div class="bookNames"></div>
+                    <div class="bookPaid"></div> 
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
