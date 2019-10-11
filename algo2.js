@@ -17,6 +17,8 @@
 * Résultat : [7, 85]
 */
 
+
+
 // petit générateur de test aléatoire
 let entrée = []
 for (let i = 0; i < 100 ; i++) {
