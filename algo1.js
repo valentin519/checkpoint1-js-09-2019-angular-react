@@ -1,4 +1,4 @@
-/*
+z/*
 Un employé de théatre voudrait afficher la liste de tous les sièges présents dans sa salle principale.
 Dans la salle les sièges sont répartis de la manière suivantes : 
   - Il y a 26 colonnes de sièges, numérotés de "1" à "26"
