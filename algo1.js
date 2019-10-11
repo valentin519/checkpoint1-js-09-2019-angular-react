@@ -17,3 +17,8 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+const nbCol = 26;
+const nbSeat = 100;
+function arrayNbSeat(nombre){
+
+}
