@@ -33,10 +33,299 @@ main {
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    max-width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .desktop {
+        display: flex;
+        font-size: 3vh;
+    }
+    
+    .inkpen {
+        margin-block-start: auto;
+    }
+    
+    .whisky {
+        margin-block-end: auto;
+    }
+    
+    .empty-whisky {
+        display: none;
+    }
+    
+    .submit {
+        padding: 5px; 
+        font-size: 1.5vh;
+        background-color: white;
+        margin-top: 8px;  
+    }
+    
+    .submit, .name, .payment {
+        margin-left: 15px;
+    }
+    
+    /* right page */
+    
+    .nameList, .sumList {
+        list-style: none;
+    }
+    
+    .hrTotal, .hrOfSum{
+        margin: 0px;
+        background-color: black;
+    }
+    
+    .sum{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .rightPageFlex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+
+    .desktop {
+        display: flex;
+        font-size: 3vh;
+    }
+    
+    .inkpen {
+        display: none;
+    }
+    
+    .whisky {
+        margin-block-end: auto;
+    }
+    
+    .empty-whisky {
+        display: none;
+    }
+    
+    .submit {
+        padding: 5px; 
+        font-size: 1.5vh;
+        background-color: white;
+        margin-top: 8px;  
+    }
+    
+    .submit, .name, .payment {
+        margin-left: 15px;
+    }
+    
+    /* right page */
+    
+    .nameList, .sumList {
+        list-style: none;
+    }
+    
+    .hrTotal, .hrOfSum{
+        margin: 0px;
+        background-color: black;
+    }
+    
+    .sum{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .rightPageFlex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+
+    .desktop {
+        display: flex;
+        font-size: 3vh;
+    }
+    
+    .inkpen {
+        display: none;
+    }
+    
+    .whisky {
+        display: none;
+    }
+    
+    .empty-whisky {
+        margin-block-end: auto;
+    }
+    
+    .submit {
+        padding: 5px; 
+        font-size: 1.5vh;
+        background-color: white;
+        margin-top: 8px;  
+    }
+    
+    .submit, .name, .payment {
+        margin-left: 15px;
+    }
+    
+    /* right page */
+    
+    .nameList, .sumList {
+        list-style: none;
+    }
+    
+    .hrTotal, .hrOfSum{
+        margin: 0px;
+        background-color: black;
+    }
+    
+    .sum{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .rightPageFlex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+    .desktop {
+        display: flex;
+        font-size: 3vh;
+        justify-content: center;
+    }
+    
+    .inkpen {
+        display: none;
+    }
+    
+    .whisky {
+        display: none;
+    }
+    
+    .empty-whisky {
+        display: none;
+    }
+    
+    .submit {
+        padding: 5px; 
+        font-size: 1.5vh;
+        background-color: white;
+        margin-top: 8px;  
+    }
+    
+    .submit, .name, .payment {
+        margin-left: 15px;
+    }
+    
+    /* right page */
+    
+    .nameList, .sumList {
+        list-style: none;
+    }
+    
+    .hrTotal, .hrOfSum{
+        margin: 0px;
+        background-color: black;
+    }
+    
+    .sum{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .rightPageFlex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+
+    .desktop {
+        display: flex;
+        font-size: 3vh;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .pages {
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    
+    .inkpen {
+        display: none;
+    }
+    
+    .whisky {
+        display: none;
+    }
+    
+    .empty-whisky {
+        display: none;
+    }
+    
+    .submit {
+        padding: 5px; 
+        font-size: 1.5vh;
+        background-color: white;
+        margin-top: 8px;  
+    }
+    
+    .submit, .name, .payment {
+        margin-left: 15px;
+    }
+    
+    /* right page */
+    
+    .nameList, .sumList {
+        list-style: none;
+    }
+    
+    .hrTotal, .hrOfSum{
+        margin: 0px;
+        background-color: black;
+    }
+    
+    .sum{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .rightPageFlex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: right;
+    }
 }
