@@ -1,32 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
-
+@media screen and (min-width: 1200px) {
 body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 main {
-    padding-top: 4em;
+    padding-top: 2.5em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
+.desktop {
+    display : flex;
+    align-items : flex-start;
+}
 
-.whisky, .empty-whisky, .inkpen, .page {
+.whisky{
+    margin-left:1.2em;
     filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+.inkpen{
+    margin-top : 7em;
+    filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.empty-whisky {
+    filter: drop-shadow(15px 15px 5px var(--shadow));
+    display : none;
 }
 
 .pages {
     display: flex;
-    width: auto;
+    width: 60%;
     flex-basis : 65%;
-    margin:1em;
 }
 
 .page {
+    filter: drop-shadow(15px 15px 5px var(--shadow));
     height:65vh;
     padding: 3vw;
-    width: 50%;
+    width: 38%;
     background-blend-mode: multiply;
 }
 
@@ -39,4 +53,47 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.rightpage h1{
+    font-family: 'Cinzel', serif;
+    font-size : 4vh;
+    margin : 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title_break{
+    margin : 0;
+    padding: 0;
+}
+
+.debtors {
+    list-style-type: none;
+    font-size: 3vh;
+    margin-left : 2em;
+}
+
+.debtors_name{
+    display : flex;
+    justify-content: space-between;
+    margin : 0.3em;
+}
+.total_break{
+    margin : 0;
+    margin-left : 50%;
+    padding: 0;
+    width : 50%;
+}
+.payment, .name {
+    display :flex;
+    flex-direction : column;
+    margin-top: 1em;
+}
+.name_title, .payment_title {
+    font-size : 3vh;
+}
+.payment_field, .name_field {
+    width: 90%;
+}
 }
