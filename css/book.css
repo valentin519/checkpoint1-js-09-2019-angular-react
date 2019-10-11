@@ -41,8 +41,16 @@ main {
     overflow: auto;
 } */
 
-.rightpage tbody{
+.rightpage table{
     text-align: right;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.rightpage{
+    display: flex;
+    justify-content: center;
 }
 
 
