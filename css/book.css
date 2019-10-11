@@ -30,6 +30,10 @@ main {
     background-blend-mode: multiply;
 }
 
+.page h3 {
+    margin-top: 0;
+}
+
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
@@ -39,6 +43,8 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    text-align: center;
+
 }
 
 .desktop {
@@ -47,7 +53,7 @@ main {
 
 .inkpen {
     display:flex;
-    align-items: flex-end;
+    align-self: flex-end
 }
 
 .empty-whisky {
@@ -71,9 +77,35 @@ main {
 
 @media screen and (max-width: 800px) {
     .pages {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%
+
     }
     .empty-whisky {
         display: none;
     }
+    .page {
+        width: 90%;
+        margin-top: 20px
+    }
+    
 }
+
+.whisky, .empty-whisky {
+    height: 50%;
+    width: 25%
+}
+
+.inkpen {
+    height: 50%;   
+}
+
+/* .contact {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, auto);
+    
+} */
