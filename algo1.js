@@ -8,12 +8,33 @@ Au final la liste devra ressembler à :
 1-1 
 1-2
 1-3
-.
-.
-.
+...
 26-98
 26-99
 26-100
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+function display() {
+  arr = [];
+  row = 1;
+  column = 1;
+
+  for (let i = 0; i <= 2600; i++) {
+    arr[i] = row +'-'+ column;
+    column++
+
+    if (column > 100) {
+      row++;
+      column = 1;
+    }
+    if (row > 26){
+      break
+    }
+  }
+  return arr
+}
+
+
+// J'ai fini cet exercice à 11h, c'était assez compliqué
