@@ -17,3 +17,31 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+
+
+let salle = []
+
+function Calcul () {
+  for (let i=1 ; i < 26 ; i++){
+    salle.push()
+    console.log(salle)
+    let final = i
+  }
+
+  for (let j=1 ; j < 101 ;j++){
+    final.push(j)
+    console.log(final)
+  }
+}
+
+// L'idée est de faire deux boucles imbriquées l'un dans l'autre et de push les valeurs dans un tableau.
+// En gros :
+// declarer le premier tableau 
+// fonction  =>
+// Premiere boucle donnant les colonnes donc (i<26)
+//    push.tableau
+//    Deuxieme boucle comptant les sièges
+//      push sièges dans tableau
+
+//console.log(tableau)

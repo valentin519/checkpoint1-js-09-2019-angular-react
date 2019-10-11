@@ -40,3 +40,79 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.name 
+{
+    width: 80%;
+    height: 20px;
+}
+
+.payment
+{
+    width: 80%;
+    height: 20px;
+}
+.pInkpen 
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.desktop
+{
+    display: flex;
+}
+
+.desktop .whisky {
+    display: flex;
+    width: 20%;
+    height: 40% ;
+    
+}
+
+.desktop .pInkpen .inkpen {
+    display: flex;
+    width: 40;
+    height: 60%;
+    vertical-align: sub;
+}
+
+.inkpen{
+    padding-top: 70%;
+}
+
+.pages {
+    padding-bottom: 10%;
+}
+
+ul 
+{
+    list-style-type:none;
+    display: flex;
+    display: inline;
+}
+ul li 
+{
+    display: flex;
+    font-size: 0,1rem;
+}
+
+.rightpage{
+    display:flex;
+    justify-content:space-between;
+}
+
+.right {
+    font-size: 30px;
+}
+.left {
+    font-size: 30px;
+}
+
+
+.rightpage p {
+    text-align: center;
+}
+
+h3{
+    
+}
