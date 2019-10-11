@@ -17,3 +17,20 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+function countRows() {
+  const seatMap = [];
+  for (let j = 1; j < 27; j++) {
+      
+      for (let i = 1; i < 101; i++) {
+          const row = [];
+          row.push(`${j} - ${i}`);
+
+      seatMap.push(row);
+      }
+  
+  }
+return seatMap;
+  }
+
+console.log(countRows())
