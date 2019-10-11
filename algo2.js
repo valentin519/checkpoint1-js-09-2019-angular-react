@@ -17,18 +17,29 @@
 * Résultat : [7, 85]
 */
 
-var minMax = () => (array) => {
-    const min = 0;
-    const max = array[0];
+
+let array = [4, 6, 35, -65, -9, 0, 67];
+
+let newArray = [];
+
+
+let minMax = ((array) => {
+    let min = 0;
+    let max = 0;
   
-    for (let i = 1; i = array.length - 1; i+1) {
-      if (array(i) < min) {
-        min = array;
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] < min) {
+        min = array[i];
       }
-      if (array[i] = max) {
+      else if (array[i] > max) {
         max = array[i];
       }
-      return array;
     }
-    array.push(min, max);
-  }
+      newArray.push(min, max);
+});
+
+minMax(array);
+
+console.log(newArray);
+
+  
