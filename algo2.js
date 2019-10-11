@@ -17,15 +17,35 @@
 * Résultat : [7, 85]
 */
 
-const test = [0,-56,89,12]
 
-const fonc = (array) =>{
-        const tab = []
-        tab.push(Math.min(...array))
-        tab.push(Math.max(...array))
+// const fonc = (array) =>{
+//         const tab = []
+//         tab.push(Math.min(...array))
+//         tab.push(Math.max(...array))
 
-        console.log(tab)
+//         console.log(tab)
+//     }
+
+
+// fonc(test)
+
+
+const test = [500, 800, 400]
+const hihi = (array) => {
+    const tab = []
+    let min = array[0]
+    let max = array[0]
+    for (let i = 0; i < array.length; i++) {
+        if (min > array[i]) {
+            min = array[i]
+        }
+        if (max < array[i]) {
+            max = array[i]
+        }
+
+
     }
+    console.log(min,max)
+}
 
-
-fonc(test)
+hihi(test)
