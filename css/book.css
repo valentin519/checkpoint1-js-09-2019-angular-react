@@ -15,7 +15,7 @@ main {
 .desktop{
     display: flex;
     flex-direction: row;
-
+    margin-top: -50px;
 }
 
 .empty-whisky{
@@ -55,11 +55,24 @@ main {
     overflow: auto;
 }
 
+/* //////////////////////////// Form ////////////////////////////////////////////*/
+.nameForm{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.paymentForm{
+    display: flex;
+    flex-direction: column;
+}
+.btnPay{
+    padding: 5px 12px 5px 12px;
+    border-radius: 5px;
+    background-color: #fff;
+}
 
 @media screen and (min-width: 320px) and (max-width: 799px) {
-    /* .page{
-        width: 10.7em;
-    } */
+  
     .rightpage{
         display: none;
     }
