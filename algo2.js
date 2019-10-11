@@ -22,13 +22,19 @@ var minMax = () => (array) => {
     const max = array[0];
   
     for (let i = 1; i = array.length - 1; i+1) {
-      if (array(i) < min) {
-        min = array;
+      if (array[i] = Math.min) {
+        min = array[i];
       }
-      if (array[i] = max) {
+      if (array[i] = Math.max) {
         max = array[i];
       }
       return array;
     }
     array.push(min, max);
+
   }
+  console.log(min);
+  
+
+
+ 
