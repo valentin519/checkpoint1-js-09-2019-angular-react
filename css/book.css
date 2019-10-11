@@ -8,12 +8,25 @@ body {
 
 main {
     padding-top: 4em;
-    font-size: 26pt;
+    font-size: 20pt;
     font-family: 'Bilbo Swash Caps', cursive;
+}
+.desktop {
+    display: flex;
 }
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+.empty-whisky {
+    display: none;
+}
+
+.whisky {
+    align-self: flex-start;
+}
+.inkpen {
+    align-self: flex-end;
 }
 
 .pages {
@@ -39,4 +52,87 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+table {
+    width: 100%;
+}
+th {
+   border-bottom: 1px solid black;
+}
+td {
+    text-align: right; 
+}
+.form {
+    display: block;
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    main {
+        font-size: 18pt;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .inkpen {
+        display: none;
+    }
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {
+        display: inline;
+        align-self: flex-start;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    main {
+        font-size: 26pt;
+    }
+    .inkpen {
+        display: none;
+    }
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {
+        display: none;
+    }
+    .pages {
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    main {
+        font-size: 26pt;
+    }
+    .inkpen {
+        display: none;
+    }
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {
+        display: none;
+    }
+    .pages {
+        flex-direction: column-reverse;
+        flex-basis: 100%;
+        margin: 0;
+    }
+    .page {
+       width: 90%;
+    }
+    .leftpage {
+        margin-left: 0.5em;
+    }
+    .rightpage {
+        margin-right: 1em;
+    }
+    table {
+        padding-right: 25px;
+    }
 }
