@@ -40,3 +40,132 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+.form input {
+    margin: 0.2em 0;
+    padding: 0.2em 0;
+}
+#payButton {
+    max-width: 5em;
+}
+caption {
+    border-bottom: solid black 1px;
+}
+table {
+    text-align: right;
+}
+.totalSum {
+    border-top:solid black 1px;
+}
+
+@media screen and (min-width: 1200px) {
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .empty-whisky {
+        display:none;
+    }
+    .whisky {
+        align-self: flex-start;
+    }
+    .pages {
+        align-self: flex-start;
+    }
+    .inkpen {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px) {
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .empty-whisky {
+        display:none;
+    }    
+    .whisky {
+        align-self: flex-start;
+    }
+    .pages {
+        align-self: flex-start;
+    }
+    .inkpen {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1099px) {
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }  
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {       
+        align-self: flex-start;
+    }      
+    .pages {
+        align-self: flex-start;
+    }
+    .inkpen {
+        display: none;
+    }  
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }  
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {       
+        display: none;
+    }      
+    .pages {
+        justify-content: center;
+        flex-basis: 100%;
+    }
+    .inkpen {
+        display: none;
+    }  
+}
+@media screen and (max-width: 800px) {
+    .desktop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }  
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {       
+        display: none;
+    }
+    .pages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+    .leftpage, .rightpage {
+        width: 95%;
+    }
+    .inkpen {
+        display: none;
+    }  
+}
+

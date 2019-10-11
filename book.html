@@ -20,22 +20,76 @@
     </header>
 
     <main class="container">
-
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                </div>
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                <div class="pages">
+                    <div class="page leftpage">
+                        Add a bribe
+                        <!-- TODO : Form -->
+                        <form class="form">
+                            <label for="nameInput">Name</label>
+                            <input type="text" id="nameInput" name="nameInput"></input>
+                            <label for="payment">Payment</label>
+                            <input type="number" id="payment" name="payment" value="0">
+                            <input type="button" id="payButton" value="pay!">                        </form>
+                    </div>
+
+                    <div class="page rightpage">
+                        <!-- TODO : Display bribes and total paiement -->
+                        <table>
+                            <caption>S</caption>
+                            <thead></thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sam Burns</td>
+                                    <td>100 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Samuel Yans</td>
+                                    <td>52623 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Simon Pogg</td>
+                                    <td>52 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Sophia Maria</td>
+                                    <td>452 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Stacie Hunberg</td>
+                                    <td>568 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Steve Grant</td>
+                                    <td>1000 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Steve Porcher</td>
+                                    <td>7865 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Sylvester Stallon</td>
+                                    <td>77797 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Szen Tren</td>
+                                    <td>562 $</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td class="totalSum">141059 $</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+                
         </section>
     </main>
 </body>
