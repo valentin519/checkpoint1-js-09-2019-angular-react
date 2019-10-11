@@ -18,11 +18,4 @@ Au final la liste devra ressembler à :
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
 
-const sieges = () => {
-  const sum = 0;
-
-  for (let i = 0; i <= 100; i++){
-
-  }
-
-}
+rien
