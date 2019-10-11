@@ -17,3 +17,22 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+// Function get seats list
+const listOfSeats = () => {
+  let seatsList = [];
+
+  // For every one column iterate through all the seats
+  for (let columnIdx = 1; columnIdx <= 26 ; columnIdx++) {
+    for (let seatIdx = 1; seatIdx <= 100; seatIdx++) {
+      seatsList.push(`${columnIdx}-${seatIdx}`);//=> Template literals to embed the expressions
+    }
+  }
+  return seatsList;
+};
+
+console.log(listOfSeats());
+
+
+
+
