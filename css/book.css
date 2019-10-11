@@ -12,14 +12,31 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+.desktop {
+    display: flex;
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.whisky {
+    height: 50%;
+}
+
+.empty-whisky {
+    display: none;
+}
+
+.inkpen {
+    height: 50%;
+}
+
+
 .pages {
     display: flex;
-    width: auto;
-    flex-basis : 65%;
+    width: 50%;
+    flex-basis : 50%;
     margin:1em;
 }
 
@@ -28,6 +45,15 @@ main {
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
+}
+
+.form {
+    font-size: 16pt;
+    padding: 1vw;
+}
+
+.fields {
+    width: 100%;
 }
 
 .leftpage {
@@ -40,3 +66,80 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.liste {
+    display: flex;
+    justify-content: space-around;
+    font-size: 22pt;
+    height: 50px;
+}
+
+p {
+    text-align: right;
+    width: 200px;
+}
+
+h1 {
+    font-size: 24pt;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid black; 
+}
+
+
+@media screen and (max-width: 1199px) {
+    .pages {
+        width: 100vw;
+    }
+    
+    .inkpen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1099px) {
+    .pages {
+        width: 100vw;
+    }
+
+    .inkpen {
+        display: none;
+    }
+
+    .empty-whisky {
+        display: block;
+        height: 50%;
+    }
+
+    .whisky {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .empty-whisky {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+
+    .pages {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .pages {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width: 100vw;
+    }
+    
+    .page {
+        height:65vh;
+        padding: 3vw;
+        width: 100vw;
+        margin: 2vw;
+        background-blend-mode: multiply;
+    }
