@@ -41,34 +41,67 @@ main {
     overflow: auto;
 }
 
-@media screen and (min-width: 1200px) {
-    .desktop {
-        display: flex;
+@media screen and (max-width: 800px) {
+    .whisky {
+        display: none;
     }
 
-    .whisky {
-        width: 200px;
-        height: 200px;
+    .empty_whisky {
+        display: none;
     }
 
     .inkpen {
-        width: 300px;
-        height: 300px;
-        margin-top: 200px;
+        display: none;
     }
 
     .page {
-        height:40vh;
+        height:60vh;
         padding: 3vw;
-        width: 50%;
+        width: 95%;
         background-blend-mode: multiply;
     }
 
     .pages {
         display: flex;
+        flex-direction: column;
         width: auto;
         flex-basis : 100%;
-        margin:1em;
+        margin-left: auto;
+    }
+
+    .clients-and-liquidation {
+        display: flex;
+        justify-content: right;
+    }
+
+    .clients , .liquidation{
+        list-style: none;
+    }
+
+    .clients, p{
+        font-size: 30px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .liquidation, p{
+        font-size: 30px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .index-name {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    } 
+
+    .hr-liquidation {
+        width: 100%;
+    }
+
+    .hr-total {
+        width: 0%;
     }
 
     .payment {
@@ -95,8 +128,41 @@ main {
         width: 90%;
     }
 
+    li {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+    .pages {
+        display: flex;
+        width: auto;
+        flex-basis : 100%;
+        margin-left: auto;
+    }
+
+    .whisky {
+        display: none;
+    }
+
+    .empty_whisky {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .inkpen {
+        display: none;
+    }
+
     .clients-and-liquidation {
         display: flex;
+        justify-content: right;
     }
 
     .clients , .liquidation{
@@ -104,13 +170,13 @@ main {
     }
 
     .clients, p{
-        font-size: 23px;
+        font-size: 30px;
         margin: 0;
         text-align: right;
     }
 
     .liquidation, p{
-        font-size: 23px;
+        font-size: 30px;
         margin: 0;
         text-align: right;
     }
@@ -128,7 +194,120 @@ main {
     .hr-total {
         width: 0%;
     }
+
+    .payment {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment, p {
+        font-size: 20px;
+    }
+
+    .enter-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .button-pay {
+        margin-top: 15px;
+        width: 50px;
+    }
+
+    .input-info {
+        width: 90%;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
 }
+
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .whisky {
+        display: none;
+    }
+
+    .empty_whisky {
+        width: 200px;
+        height: 200px;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .inkpen {
+        display: none;
+    }
+
+    .clients-and-liquidation {
+        display: flex;
+        justify-content: right;
+    }
+
+    .clients , .liquidation{
+        list-style: none;
+    }
+
+    .clients, p{
+        font-size: 20px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .liquidation, p{
+        font-size: 20px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .index-name {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    } 
+
+    .hr-liquidation {
+        width: 100%;
+    }
+
+    .hr-total {
+        width: 0%;
+    }
+
+    .payment {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment, p {
+        font-size: 20px;
+    }
+
+    .enter-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .button-pay {
+        margin-top: 15px;
+        width: 50px;
+    }
+
+    .input-info {
+        width: 90%;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+}
+
+
 
 @media screen and (min-width: 1100px) and (max-width: 1200px) {
     .inkpen {
@@ -153,6 +332,7 @@ main {
 
     .clients-and-liquidation {
         display: flex;
+        justify-content: right;
     }
 
     .clients , .liquidation{
@@ -212,4 +392,103 @@ main {
     li {
         margin-bottom: 15px;
     }
+
+    .empty_whisky {
+        display: none;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    .desktop {
+        display: flex;
+    }
+
+    .whisky {
+        width: 200px;
+        height: 200px;
+    }
+
+    .inkpen {
+        width: 300px;
+        height: 300px;
+        margin-top: 200px;
+    }
+
+    .page {
+        height:40vh;
+        padding: 3vw;
+        width: 50%;
+        background-blend-mode: multiply;
+    }
+
+    .pages {
+        display: flex;
+        width: auto;
+        flex-basis : 100%;
+        margin:1em;
+    }
+
+    .payment {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment, p {
+        font-size: 20px;
+    }
+
+    .enter-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .button-pay {
+        margin-top: 15px;
+        width: 50px;
+    }
+
+    .input-info {
+        width: 90%;
+    }
+
+    .clients-and-liquidation {
+        display: flex;
+        justify-content: right;
+    }
+
+    .clients , .liquidation{
+        list-style: none;
+    }
+
+    .clients, p{
+        font-size: 23px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .liquidation, p{
+        font-size: 23px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .index-name {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    } 
+
+    .hr-liquidation {
+        width: 100%;
+    }
+
+    .hr-total {
+        width: 0%;
+    }
+
+    .empty_whisky {
+        display: none;
+    }
+}
+
