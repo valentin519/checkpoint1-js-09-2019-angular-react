@@ -1,43 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/book.css" />
+    <link rel="stylesheet" media="screen" href="css/book.css" type="text/css" />
     <title>Checkpoint Javascript 1</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav class="navbar">
-            <img src="image/logo.png" class="logo" alt="logo-wcs" />
-            <a href="index.html">Instructions</a>
-            <a href="book.html">Secret book</a>
-        </nav>
+      <nav class="navbar">
+        <img src="image/logo.png" class="logo" alt="logo-wcs" />
+        <a href="index.html">Instructions</a>
+        <a href="book.html">Secret book</a>
+      </nav>
     </header>
 
     <main class="container">
+      <section class="desktop">
+        <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+        <img
+          src="image/empty_whisky.png"
+          alt="an empty whisky glass"
+          class="empty-whisky"
+        />
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+        <div class="pages">
+          <div class="page leftpage">
+            Add a bribe
+            <!-- TODO : Form -->
+            <p>Name</p>
+            <input type="text" />
+            <p>Payment</p>
+            <select name="Payment" id="select"></select>
+            <button>Pay!</button>
+          </div>
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                </div>
+          <div class="page rightpage">
+            <!-- TODO : Display bribes and total paiement -->
 
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
-                </div>
-            </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-        </section>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sam Burns</td>
+                  <td>100€</td>
+                </tr>
+                <tr>
+                  <td>samuel Yans</td>
+                  <td>5256€</td>
+                </tr>
+                <tr>
+                  <td>Simon Pogg</td>
+                  <td>52€</td>
+                </tr>
+                <tr>
+                  <td>sophia Maria</td>
+                  <td>452€</td>
+                </tr>
+                <tr>
+                  <td>Stacie Hunberg</td>
+                  <td>568€</td>
+                </tr>
+                <tr>
+                  <td>Steve Grant</td>
+                  <td>1000€</td>
+                </tr>
+                <tr>
+                  <td>Steve Porcher</td>
+                  <td>7865€</td>
+                </tr>
+                <tr>
+                  <td>Sylvester Stallan</td>
+                  <td>77987€</td>
+                </tr>
+                <tr>
+                  <td>Szen Tren</td>
+                  <td>562€</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td> Total </td>
+                      <td>141059€</td>
+                  </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+        <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

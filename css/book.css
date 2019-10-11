@@ -40,3 +40,112 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+input {
+    width: 80%;
+}
+
+select {
+    width: 80%;
+}
+
+.table {
+    width: 100%;
+}
+
+.table, td {
+    text-align: right;    
+}
+
+.whisky{
+    height: 100%;
+}
+
+.empty-whisky {
+    height: 100%;
+}
+
+th {
+    border-bottom: 1px solid black;
+  }
+
+  tr {
+    border-top: 1px solid black;
+}
+  
+
+@media screen and (min-width: 1200px) and (max-width: 3000px) {
+    .empty-whisky {
+        display: none;    
+    }
+    .desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1199px){
+    .desktop {
+        display: flex;
+        justify-content: space-between;        
+    }
+    .inkpen {
+        display: none;
+    }
+    .empty-whisky {
+        display: none;    
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px){
+    .desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .whisky {
+        display: none;
+    }
+
+    .inkpen {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px){
+    .whisky {
+        display: none;
+    }
+
+    .inkpen {
+        display: none;
+    }
+
+    .empty-whisky {
+        display: none;    
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 799px){
+    .pages {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .whisky {
+        display: none;
+    }
+
+    .inkpen {
+        display: none;
+    }
+
+    .empty-whisky {
+        display: none;    
+    }
+
+    .pagerightpage {
+        margin-top: 10px;
+    }
+}
+
