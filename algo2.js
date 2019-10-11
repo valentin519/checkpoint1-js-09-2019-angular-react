@@ -30,7 +30,7 @@ var minMax = (array) => {
     };
   };
   result.push(min, max);
-  return result;;
+  return result;
 };
 
 console.log(minMax([56, 7, 63, 9, 7, 12, 85]));
