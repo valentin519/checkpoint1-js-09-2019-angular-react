@@ -17,3 +17,18 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+let colID = 26
+let rowID = 100
+
+function seatsList (colID, rowID) {
+  let seatIndex = []
+  for (let i = 1 ; i < colID + 1 ; i++) {
+    for (let j = 1 ; j < rowID + 1 ; j++) {
+      seatIndex.push(`${i} - ${j}`)      
+    }
+  }  
+  return seatIndex
+}
+
+seatsList(colID, rowID)
