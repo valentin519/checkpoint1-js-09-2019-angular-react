@@ -20,10 +20,10 @@ Au final la liste devra ressembler à :
 
 function tableau(){
   let array=[]
+  return array.push( element =>{
     for (let i=0; i<27; i++){
       for (let j=0; j<101; j++){
-        array.push(i,j)
       }
-    }
-  return array
+    }}
+  )
   }
