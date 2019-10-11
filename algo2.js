@@ -23,10 +23,6 @@ var minMax = (array) => {
   let max = array[array.length-1];
   let newArray =[];
   
-  newArray[0]=min
-  newArray[1]=max
-  // console.log(min,max)
-
   for (i = 1; i < array.length-1 ; i++) {
 
     if ( array[i] < min) {
@@ -37,24 +33,12 @@ var minMax = (array) => {
       max = array[i];
     }
 
-    // newArray=[min,max]
-    // return min , max;
   }
   newArray[0]=min
   newArray[1]=max
   return newArray
-  // newArray.push(min,max);
   
   }
-
-  //le probleme est que je ne retourne que la variable initiale min et max !!!
-  //il semble comparer i et pas la valeur de array[i]
-
-// let min = '0'
-// let max = '100'
-// let u =[]
-// let z = u.push('min','max')
-// console.log (u)
 
   let tab = [56, 7, -63, 9, 7, 12, 85, 10,0,25];
  
