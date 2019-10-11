@@ -40,3 +40,20 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media only screen and (min-width:1200px){
+
+    .div-whisky {
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+        display: flex;
+        float: left;
+        
+    }
+
+    .inkpen {
+        display: flex;
+        float: right;
+    }
+
+}
+  /* incapbale de ressortir quoi que ce soit je me sens totalement perdu l'impression de tout avoir oublié
