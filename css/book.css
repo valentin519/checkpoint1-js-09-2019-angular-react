@@ -70,6 +70,31 @@ main {
         min-width: 90%;
         margin-left: 10%;
     }
+
+    .rightpage {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .rightpage h2 {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .rightpage hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .bribe-formatting {
+        display: flex;
+    }
+
+    .bribe-names, .bribe-amount {
+        text-align: right;
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1199px) {
