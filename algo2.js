@@ -16,19 +16,21 @@
 * Tableau d'entrée : [56, 7, 63, 9, 7, 12, 85]
 * Résultat : [7, 85]
 */
-
-var minMax = () => (array) => {
-    const min = 0;
+var minMax = (array) => {
+    const min = array[0];
     const max = array[0];
+    let arrayFinal = []
   
-    for (let i = 1; i = array.length - 1; i+1) {
-      if (array(i) < min) {
-        min = array;
+    for (let i = 1; i = array.length ; i + 1) {
+      if (array[i] < min) {
+        min = array[i];
       }
-      if (array[i] = max) {
+      else (array[i] > max) {
         max = array[i];
       }
-      return array;
+      return (min, max);
     }
-    array.push(min, max);
+    arrayFinal.push(min, max);
   }
+  console.log(arrayFinal);
+  
