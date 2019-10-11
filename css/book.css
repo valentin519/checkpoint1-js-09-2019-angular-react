@@ -82,6 +82,7 @@ form input {
 
 .bribes ul {
     list-style: none;
+    width: 50%;
 }
 
 .bribes li {
