@@ -102,4 +102,7 @@ input{
         display: flex;
         flex-direction: column;
     }
+    .rightpage{
+        order: -1;
+    }
 }
