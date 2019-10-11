@@ -1,0 +1,33 @@
+.letterList {
+    position: absolute;
+    width: 100%;
+    top: 2.3em;
+    z-index: 1;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.letterList button {
+    font-family: 'Lucida Typewriter';
+    color: gray;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: .7em;
+    padding: 15px;
+}
+
+.letterList button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .letterList {
+        flex-direction: column;
+        right: 0;
+        width: auto;
+    }
+}
