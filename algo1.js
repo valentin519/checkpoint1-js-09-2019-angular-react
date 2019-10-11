@@ -15,5 +15,22 @@ Au final la liste devra ressembler à :
 26-99
 26-100
 
+
+
+
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+
+
+function List(){
+  let tab = [];
+  
+  for (let i = 1; i < 27; i++){
+    for(let j = 1; j < 101; j++){
+      tab.push(`${i}-${j}`);
+    }
+  }
+  return tab;
+}
+
