@@ -22,20 +22,61 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <div class="desk">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                </div>
+                <div class="pages">
+                    <div class="page leftpage">
+                        <p>Add a bribe</p>
+                        <form>
+                            <p>Name</p>
+                            <input type="text" id="name">
+                            <p>Payement</p>
+                            <input type="number" id="number">
+                            <button>Pay !</button>
+                        </form>
 
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                    </div>
+
+                    <div class="page rightpage column">
+                        <!-- TODO : Display bribes and total paiement -->
+                        <div class="name">
+                            <ul>
+                                <li>Sam Burns</li>
+                                <li>Samuel Yans</li>
+                                <li>Simon Pogg</li>
+                                <li>Nicolas Legrand</li>
+                                <li>Stacie Hunberg</li>
+                                <li>Xavier Georget</li>
+                                <li>Szen Tren</li>
+                                <li>Maxime Cornuau</li>
+                                <li>Sophia Maria</li>
+                                <div class="space"></div>
+                                <li>Total</li>
+
+                            </ul>
+                        </div>
+                        <div class="paiement">
+                            <ul>
+                                <li>8465$</li>
+                                <li>4412$</li>
+                                <li>3646$</li>
+                                <li>14654$</li>
+                                <li>1654$</li>
+                                <li>46514$</li>
+                                <li>9566$</li>
+                                <li>8156$</li>
+                                <li>16847$</li>
+                                <hr>                     
+                                <li>113914$</li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
     </main>
 </body>
