@@ -32,7 +32,12 @@ for (let j=1; j<101; j++) {
   seats.push(j);
 }
 
-console.log(j);
+console.log(seats);
+
+/*L'étape suivante serait d'insérer le tableau seats en fonction de chaque index de column*/
+
+const salle = [];
+
 
 
 
