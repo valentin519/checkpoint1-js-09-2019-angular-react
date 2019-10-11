@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    padding-top: 4em;
+    padding-top: 3em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
@@ -16,17 +16,27 @@ main {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.whisky, .empty-whisky {
+    height: 253px;
+    width: 300px;
+}
+
+.inkpen {
+    height: 489px;
+    width: 269px;
+}
+
 .pages {
     display: flex;
     width: auto;
-    flex-basis : 65%;
+    flex-basis : 100%;
     margin:1em;
 }
 
 .page {
     height:65vh;
     padding: 3vw;
-    width: 50%;
+    width: 95%;
     background-blend-mode: multiply;
 }
 
@@ -35,8 +45,91 @@ main {
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
 
+.leftForm {
+    display:flex;
+    flex-direction: column;
+}
+
+#formButton {
+    width : fit-content;
+}
+
 .rightpage {
+    text-align: center;
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .empty-whisky{
+        display: none;
+    }
+
+    .desktop{
+        display:flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+/* containter cree pour aligner le stylo en bas de page */
+
+    .inkPenContainer {
+        display:flex;
+        height: 590px;
+    }
+
+    .inkpen {
+        display:flex;
+        align-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px) {
+    .empty-whisky, .inkpen {
+        display: none;
+    }
+
+    .desktop{
+        display:flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1099px) {
+    .whisky, .inkpen {
+        display: none;
+    }
+
+    .desktop{
+        display:flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+    .empty-whisky, .whisky, .inkpen {
+        display: none;
+    }
+
+    .desktop{
+        display:flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 799px) {
+    .empty-whisky, .whisky, .inkpen {
+        display: none;
+    }
+
+    .pages{
+        display:flex;
+        flex-flow: column-reverse;
+        justify-content: center;
+    }
 }
