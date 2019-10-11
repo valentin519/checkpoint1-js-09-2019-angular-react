@@ -1,43 +1,85 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
-    <title>Checkpoint Javascript 1</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/book.css">
+        <title>Checkpoint Javascript 1</title>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <nav class="navbar">
-            <img src="image/logo.png" class="logo" alt="logo-wcs" />
-            <a href="index.html">Instructions</a>
-            <a href="book.html">Secret book</a>
-        </nav>
-    </header>
+        <header>
+            <nav class="navbar">
+                <img src="image/logo.png" class="logo" alt="logo-wcs" />
+                <a href="index.html">Instructions</a>
+                <a href="book.html">Secret book</a>
+            </nav>
+        </header>
 
-    <main class="container">
+        <main class="container">
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                </div>
-
+            <section class="desktop">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+   <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+ 
+                <div class="pages">
+                    <div class="page leftpage">
+                        <div class=row>
+                            <p class="title">Add a bribe
+                            </p>
+                        </div>
+                        <div class="row">
+                            <form action="" method="get" class="form-example">
+                                <div class="form-exampl">
+                                    <label for="name"> Name </label>
+                                    <input type="text" name="name" id="name" required>
+                                </div>
+                                <div class="form-example">
+                                    <label for="number">Payment </label>
+                                    <input type="number" name="number" id="number" required>
+                                </div>
+                                <div class="form-example">
+                                    <input type="submit" value="Pay">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+             
                 <div class="page rightpage">
+
+                        <div class="rowright" style="text-align: center;">
+                               <p class="title" >Bribes of the week</p> </div>
+                    <div class="rowright">
+                        <div class="colname">Robert Patoulachi</div>
+                        <div class="colpayment">40$</div>
+                    </div>
+                    <div class="rowright">
+                        <div class="colname">Donald Trump</div>
+                        <div class="colpayment">401$</div>
+                    </div>
+                    <div class="rowright">
+                        <div class="colname">Mary Poppins</div>
+                        <div class="colpayment">140$</div>
+                    </div>
+                    <div class="rowright">
+                        <div class="colname">B. Chirac</div>
+                        <div class="colpayment">70$</div>
+                    </div>
+                    <div class="rowright">
+                        <div class="colname">Captain Hook</div>
+                        <div class="colpayment">99$</div>
+                    </div>
+
+
                     <!-- TODO : Display bribes and total paiement -->
                 </div>
-            </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-        </section>
-    </main>
-</body>
+                </div>
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </section>
+        </main>
+    </body>
 
 </html>
