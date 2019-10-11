@@ -17,3 +17,19 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+const siege = () => {
+  const _siege = [];
+
+  for (let rowIndex = 0; rowIndex < 27; rowIndex++) {
+      const row = [];
+
+      for (let colIndex = 0; colIndex < 100; colIndex++) {
+          row.push(`${row}-${colIndex + 1}`);
+      }
+  
+      _siege.push(row);
+  }
+  return _siege;
+};
+module.exports = siege;
