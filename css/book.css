@@ -43,13 +43,13 @@ main {
 .pages {
     display: flex;
     width: auto;
-    flex-basis : 65%;
+    flex-basis : 90%;
     margin:1em;
 
 }
 
 .page {
-    height:65vh;
+    height:40vh;
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
@@ -71,6 +71,7 @@ main {
     .inkpen{
         display: none;
     }
+}
 @media screen and (max-width: 1000px)
 {
     .empty-whisky{
@@ -79,6 +80,7 @@ main {
     .whisky{
         display: none;
     }
+}
 
 @media screen and (max-width: 800px)
 {
@@ -86,7 +88,23 @@ main {
         display:none ;
     }
 
+}
 
 
 @media screen and (max-width: 320px)
 {
+    .pages{
+        flex-direction: column;
+        position: relative;
+        left: 5%;
+    }
+    .page{
+        width: 90%;
+    }
+    
+    .navbar a {
+        font-size: 13px;
+
+    
+    }
+}
