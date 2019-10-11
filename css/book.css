@@ -39,6 +39,37 @@ main {
     margin:1em;
 }
 
+.payment{
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+h2{
+  margin: 0px;
+  font-size: unset;
+}
+
+label{
+    font-size: large;
+}
+
+.form{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    height: 1.5em;
+}
+
+button{
+    background-color: white;
+    border-radius: 10%;
+    border: 0px;
+    margin-top: 1em;
+}
 .page {
     height:65vh;
     padding: 3vw;
@@ -55,6 +86,42 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    cursor:pointer;
+    display:block;
+    width:8px;
+    color: #333;
+    text-align:center;
+    position:relative;
+}    
+input[type=number]:hover::-webkit-inner-spin-button { 
+    background: #eee url('http://i.stack.imgur.com/YYySO.png') no-repeat 50% 50%;  
+    width: 14px;
+    height: 14px;
+    padding: 4px;
+    position: relative;
+    right: 4px;
+    border-radius: 28px;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    border-bottom: 2px solid grey;
+    font-size: medium;
+}
+td{
+    font-size: smaller;
+    text-align: right;
+}
+
+.total{
+    border-top: 2px solid grey;;
 }
 
 @media screen  and (max-width: 1200px) {
@@ -94,6 +161,10 @@ main {
 
  .page {
      width: 98%;
+ }
+
+ header{
+     font-size: 12pt;
  }
 
 }
