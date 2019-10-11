@@ -40,3 +40,84 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media screen and (min-width: 1200px) {
+  .desktop {
+    display:flex;
+    align-items: flex-start;
+  }
+
+  .inkpen {
+    align-self: center;
+  }
+
+  .empty-whisky {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  .desktop {
+    display:flex;
+    align-items: flex-start;
+  }
+
+  .inkpen {
+    display: none;
+  }
+
+  .empty-whisky {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .desktop {
+    display:flex;
+    align-items: flex-start;
+  }
+
+  .inkpen {
+    display: none;
+  }
+
+  .whisky {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .inkpen {
+    display: none;
+  }
+
+  .whisky {
+    display: none;
+  }
+
+  .empty-whisky {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pages {
+    flex-wrap: wrap;
+  }
+
+  .page {
+    width: 100%
+  }
+  
+  .inkpen {
+    display: none;
+  }
+
+  .whisky {
+    display: none;
+  }
+
+  .empty-whisky {
+    display: none;
+  }
+}
