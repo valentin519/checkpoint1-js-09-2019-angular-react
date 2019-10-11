@@ -36,5 +36,3 @@ function display() {
   return arr
 }
 
-
-// J'ai fini cet exercice à 11h, c'était assez compliqué
