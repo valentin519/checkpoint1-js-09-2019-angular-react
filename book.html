@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/book.css">
     <title>Checkpoint Javascript 1</title>
@@ -22,20 +24,61 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <div>
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            </div>
+            <div>
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
+                    <form action="#">
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name">
+                        <label for="Pay">Payement</label>
+                        <select name="Pay" id="Pay"></select>
+                        <button class='Pay'>Pay</button>
+                    </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    S
+                    <hr>
+                    <section class="table">
+                        <div class="names">
+                            Sam Burns<br>
+                            Samuel Yans<br>
+                            Simon Pogg<br>
+                            Stacie Hunberg<br>
+                            Steve Grant<br>
+                            Steve Porcher<br>
+                            Sylvester Stallan<br>
+                            Szen Tren<br>
+                            Total
+                        </div>
+                        <div class="prices">
+                            100<br>
+                            52563<br>
+                            52<br>
+                            452<br>
+                            568<br>
+                            1000<br>
+                            7856<br>
+                            <div class="priceLine">
+                                562<br>
+                            </div>
+                            141058<br>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            <div>
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
         </section>
     </main>
 </body>
