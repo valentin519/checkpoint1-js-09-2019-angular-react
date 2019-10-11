@@ -17,3 +17,14 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+function numSeets(){                  // déclaration de la fonction numéros de seet
+  let arraySeets = [];                // déclaration d'un tableau vide de seets
+
+  for(let i=1; i<=26 ; i++) {         // première boucle des 26 columns
+    for (let j=1 ; j<=100 ; j++) {    // deuxième boucle des 100 seets pour chaque columns
+      arraySeets.push(i + "-" + j);   // implémentation à chaque tour de boucle du numéro i de column et du numéro j de seet concaténé
+    }
+  }
+  return arraySeets;                  // retour du tableau de seets
+};
+console.log(numSeets());              // affichage du tableau de seets
