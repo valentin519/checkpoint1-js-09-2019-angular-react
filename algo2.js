@@ -17,18 +17,30 @@
 * Résultat : [7, 85]
 */
 
-var minMax = () => (array) => {
-    const min = 0;
-    const max = array[0];
-  
-    for (let i = 1; i = array.length - 1; i+1) {
-      if (array(i) < min) {
-        min = array;
-      }
-      if (array[i] = max) {
-        max = array[i];
-      }
-      return array;
+
+const minMax = (array) => {
+  //Initialisation des var qui contiendra les resultats avec le premier item du tableau car si on init à 0 et que le min est supérieur à 0 on ne le trouve pas.
+  let min = array[0];
+  let max = array[0];
+  let newArray = [];
+
+  //Parcours du tableau avec les conditions pour trouver les min et max
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
     }
-    array.push(min, max);
+    if (array[i] > max) {
+      max = array[i];
+    }
   }
+  
+  //Une fois le tableau entier parcourus on ajoute nos résultats dans le tableau à retourner.
+  newArray.push(min, max);
+  return newArray;
+};
+
+minMax(testArray);
+
+ /* Sinon en plus simple : 
+  let min = Math.min(...testArray);
+  let max = Math.max(...testArray); */
