@@ -98,7 +98,7 @@ main {
 }
 }
 
-@media screen and (max-width: 1200px) {
+@media all and (max-width: 1200px) and (min-width: 1100px) {
     body {
         background-image: url('../image/background.jpeg');
         background-repeat: no-repeat;
@@ -171,6 +171,309 @@ main {
         padding :0;
         list-style-type: none;
         font-size: 4vh;
+    }
+    
+    .debtors_name{
+        display : flex;
+        justify-content: space-between;
+        margin : 0.3em;
+    }
+    .total_break{
+        margin : 0;
+        margin-left : 50%;
+        padding: 0;
+        width : 50%;
+    }
+    .payment, .name {
+        display :flex;
+        flex-direction : column;
+        margin-top: 1em;
+    }
+    .name_title, .payment_title {
+        font-size : 3vh;
+    }
+    .payment_field, .name_field {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 1100px) and (min-width: 1000px) {
+    body {
+        background-image: url('../image/background.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    main {
+        padding-top: 2.5em;
+        font-size: 26pt;
+        font-family: 'Bilbo Swash Caps', cursive;
+    }
+    .desktop {
+        display : flex;
+        align-items : flex-start;
+    }
+    
+    .whisky{
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+        display : none;
+    }
+    .inkpen{
+        display : none;
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+    }
+    
+    .empty-whisky {
+        margin-left:1.2em;
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+    }
+    
+    .pages {
+        display: flex;
+        width: 60%;
+        flex-basis : 65%;
+    }
+    
+    .page {
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+        height:80vh;
+        padding: 3vw;
+        width: 60%;
+        background-blend-mode: multiply;
+    }
+    
+    .leftpage {
+        background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+        border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    }
+    
+    .rightpage {
+        background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+        border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+        overflow: auto;
+    }
+    
+    .rightpage h1{
+        font-family: 'Cinzel', serif;
+        font-size : 4vh;
+        margin : 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .title_break{
+        margin : 0;
+        padding: 0;
+    }
+    
+    .debtors {
+        padding :0;
+        list-style-type: none;
+        font-size: 4vh;
+    }
+    
+    .debtors_name{
+        display : flex;
+        justify-content: space-between;
+        margin : 0.3em;
+    }
+    .total_break{
+        margin : 0;
+        margin-left : 50%;
+        padding: 0;
+        width : 50%;
+    }
+    .payment, .name {
+        display :flex;
+        flex-direction : column;
+        margin-top: 1em;
+    }
+    .name_title, .payment_title {
+        font-size : 3vh;
+    }
+    .payment_field, .name_field {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 800px) {
+    body {
+        background-image: url('../image/background.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    main {
+        padding-top: 2.5em;
+        font-size: 26pt;
+        font-family: 'Bilbo Swash Caps', cursive;
+    }
+    .desktop {
+        display : flex;
+        align-items : flex-start;
+    }
+    
+    .whisky{
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+        display : none;
+    }
+    .inkpen{
+        display : none;
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+    }
+    
+    .empty-whisky {
+       display : none;
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+    }
+    
+    .pages {
+        display: flex;
+        width: 60%;
+        flex-basis : 95%;
+        margin-left : 2.5%;
+    }
+    
+    .page {
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+        height:60vh;
+        padding: 3vw;
+        width: 90%;
+        background-blend-mode: multiply;
+    }
+    
+    .leftpage {
+        background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+        border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    }
+    
+    .rightpage {
+        background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+        border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+        overflow: auto;
+    }
+    
+    .rightpage h1{
+        font-family: 'Cinzel', serif;
+        font-size : 4vh;
+        margin : 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .title_break{
+        margin : 0;
+        padding: 0;
+    }
+    
+    .debtors {
+        padding :0;
+        list-style-type: none;
+        font-size: 3vh;
+        margin-left:1em;
+    }
+    
+    .debtors_name{
+        display : flex;
+        justify-content: space-between;
+        margin : 0.3em;
+    }
+    .total_break{
+        margin : 0;
+        margin-left : 50%;
+        padding: 0;
+        width : 50%;
+    }
+    .payment, .name {
+        display :flex;
+        flex-direction : column;
+        margin-top: 1em;
+    }
+    .name_title, .payment_title {
+        font-size : 3vh;
+    }
+    .payment_field, .name_field {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 800px) and (min-width: 320px) {
+    body {
+        background-image: url('../image/background.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    main {
+        padding-top: 2.5em;
+        font-size: 26pt;
+        font-family: 'Bilbo Swash Caps', cursive;
+    }
+    .desktop {
+        display : flex;
+        align-items : flex-start;
+    }
+    
+    .whisky{
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+        display : none;
+    }
+    .inkpen{
+        display : none;
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+    }
+    
+    .empty-whisky {
+       display : none;
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+    }
+    
+    .pages {
+        margin-top : 1em;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        flex-basis : 95%;
+        margin-left : 2.5%;
+    }
+    
+    .page {
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+        height:60vh;
+        padding: 3vw;
+        width: 90%;
+        background-blend-mode: multiply;
+    }
+    
+    .leftpage {
+        background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+        border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    }
+    
+    .rightpage {
+        background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+        border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+        overflow: auto;
+    }
+    
+    .rightpage h1{
+        font-family: 'Cinzel', serif;
+        font-size : 4vh;
+        margin : 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .title_break{
+        margin : 0;
+        padding: 0;
+    }
+    
+    .debtors {
+        padding :0;
+        list-style-type: none;
+        font-size: 3vh;
+        margin-left:1em;
     }
     
     .debtors_name{
