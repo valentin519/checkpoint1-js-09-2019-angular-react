@@ -142,3 +142,12 @@ form{
         display: block;
     }
 }
+
+@media screen and (max-width: 999px){
+    .empty-whisky{
+        display: none;
+    }
+    .pages{
+        flex-basis: 100%;
+    }
+}
