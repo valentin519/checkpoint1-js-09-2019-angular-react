@@ -12,6 +12,7 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
@@ -39,4 +40,195 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+table
+{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+input{
+    margin-left: 10px;
+    width: 90%;
+    height: 30px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.payButton
+{
+    width: 40px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+table
+{
+    width: 100%;
+    text-align: right;
+}
+
+.summary
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+hr
+{
+    margin: 0;
+}
+
+.navbar2
+{
+    color: #4d4d4d;
+    padding: 0;
+    z-index: 3;
+    position:fixed;
+    margin-top: 80px;
+    height: 30px;
+    width: 100%;
+}
+
+.listAlphabet
+{
+    font-weight: 100;
+    margin-left: 0;
+    width: 100%;
+
+}
+
+.navbar2 ul
+{
+    padding: 0;
+    margin: auto;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: #bfbfbf;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .desktop
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .empty-whisky
+    {
+        display: none;
+    }
+
+    .inkpen
+    {
+        align-self: flex-end;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+
+    .desktop
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .inkpen, .empty-whisky
+    {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+
+    .desktop
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .whisky, .inkpen
+    {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+
+    .desktop
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .whisky, .empty-whisky, .inkpen
+    {
+        display: none;
+    }
+
+    .pages
+    {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .desktop
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .whisky, .empty-whisky, .inkpen
+    {
+        display: none;
+    }
+
+    .pages
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .leftpage, .rightpage
+    {
+        width: 100%;
+    }
+
+    .navbar2 ul
+{
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 40px;
+    align-items: center;
+    float: right;
+    color: #4d4d4d;
+}
+
 }
