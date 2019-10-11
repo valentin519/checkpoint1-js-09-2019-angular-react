@@ -23,12 +23,24 @@
 
         <section class="desktop">
             <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+          
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form class = payment method="post" action="traitement.php">
+                        <div class=enter-info>
+                            <label>Name</label>
+                            <input class = input-info type="text" name="pseudo" />
+                        </div>
+                        <div class= enter-info>
+                            <label>Payment</label>
+                            <input class = input-info type="number" />
+                        </div>
+                        <input class= button-pay type="submit" value="Pay!" />
+                     </form>
+                   
+                   
                 </div>
 
                 <div class="page rightpage">
