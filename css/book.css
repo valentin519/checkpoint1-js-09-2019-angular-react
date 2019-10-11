@@ -26,7 +26,7 @@ main {
 .page {
     height:65vh;
     padding: 3vw;
-    width: 50%;
+    width: 35%;
     background-blend-mode: multiply;
 }
 
@@ -40,3 +40,107 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.whisky {
+    height: 100%;
+}
+
+.inkpen {
+    height: 100%;
+    align-self: flex-end;
+}
+
+.desktop {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.input, .selector {
+    width: 100%;
+}
+
+.namesPrices {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.names, .prices {
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    height: 70%;
+}
+
+.name, .price {
+    margin: 5px;
+    text-align: end;
+    font-size: 0.6em;
+}
+
+.lettre {
+    margin: 0;
+    text-align: center;
+}
+
+.lineTop {
+    border: 1px solid black;
+    margin: 0;  
+}
+
+.borderTop {
+    border-top: 1px solid black;
+}
+
+
+@media screen and (min-width: 1201px) {
+    .empty-whisky {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
+    .empty-whisky {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .empty-whisky {
+        height: 100%;
+        display: block;
+    }
+    
+    .whisky {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .empty-whisky {
+        display: none;
+    }
+
+    .desktop {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pages {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        height: 200vw;
+    }
+
+    .page {
+        width: 100%;
+        height: 200vw;
+    }
+}
+
