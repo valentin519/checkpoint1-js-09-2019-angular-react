@@ -8,7 +8,7 @@ body {
 
 main {
   padding-top: 4em;
-  font-size: 26pt;
+  font-size: 16pt;
   font-family: "Bilbo Swash Caps", cursive;
 }
 
@@ -27,7 +27,7 @@ main {
 }
 
 .page {
-  height: 65vh;
+  min-height: 65vh;
   padding: 3vw;
   width: 50%;
   background-blend-mode: multiply;
@@ -106,4 +106,30 @@ main {
   .page {
     width: 50%;
   }
+}
+
+input {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+.total {
+  border-top: solid 1px black;
+}
+h2 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  text-align: end;
+  margin-bottom: 20px;
+}
+h3 {
+  font-weight: normal;
+}
+
+.pay {
+  margin-left: 5%;
 }
