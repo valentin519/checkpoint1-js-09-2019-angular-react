@@ -56,6 +56,16 @@ main {
     overflow: auto;
 }
 
+ul{
+    font-size: 2vw;
+}
+
+input{
+    width: 90%;
+    height: 30px;
+    border-radius: 8px;
+}
+
 @media only screen and (max-width: 1200px) and (min-width: 1100px) {
     .inkpen,
     .whisky {
