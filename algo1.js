@@ -17,3 +17,22 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+const listOfSeats = () => {
+  // Création d'un tableau vide qui sera rempli de la liste des sièges.
+  let arrayOfSeats = [];
+  // Les constantes pour le nombre de colonne et de sièges par colonne.
+  const numOfCol = 26;
+  const numOfRow = 100;
+  //Boucle qui loop à travers le nombre de col puis le nombre de sièges par colonne.
+  for (i = 1; i <= numOfCol; i++) {
+    for (j = 1; j <= numOfRow; j++) {
+      let toPush = i + '-' + j;
+      //Ajout de chaque siège au tableau
+      arrayOfSeats.push(toPush);
+    }
+  }
+  return arrayOfSeats;
+};
+
+listOfSeats();
