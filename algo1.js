@@ -26,4 +26,5 @@ const chairsArray = []
   }
 return chairsArray
 }
+console.log(chairs())
  

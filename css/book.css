@@ -125,16 +125,21 @@ button {
         display: none;
         
     }
+    .pages{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .whisky{
         display:none;
     }
     .desktop{
         display:block;
     }
-    .desktop{
-        display: block;
+    .rightpage{
+        order:1;
+        min-height: 500px;
     }
-    .pages{
-        display: block;
+    .leftpage{
+        order: 2;
     }
 }    
