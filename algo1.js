@@ -24,11 +24,13 @@ const createListPlaces = (nbCol,nbChairCol) => {
   let listPlaces = [];
   let placeNumber = "";
   for (let i = 1; i <= nbCol; i++) {
+    let placesCol = [];
     for (let j = 1; j <= nbChairCol; j++)
     {
       placeNumber = i + "-" + j;
-      listPlaces.push(placeNumber);
+      placesCol.push(placeNumber)
     }
+    listPlaces.push(placesCol);
   }
   console.log(listPlaces);
   return listPlaces;
