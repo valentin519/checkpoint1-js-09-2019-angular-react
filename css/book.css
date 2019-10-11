@@ -40,3 +40,52 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+
+.desktop {
+    display: flex;
+    flex-direction: row;
+}
+    
+.empty-whisky {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .empty-whisky {
+        display: inline;
+    }
+    .whisky {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .empty-whisky {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .pages {
+        flex-direction: column;
+        flex-basis: 95%;
+        margin: 0;
+    }
+    .page {
+        height: 100vh;
+        width: auto;
+    }
+    .desktop {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}

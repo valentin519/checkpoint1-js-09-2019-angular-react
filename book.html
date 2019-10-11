@@ -22,19 +22,74 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
+            <div>
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            </div>
+            <div>
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
+                    <form action="add_to_book">
+                        <label for="name">Name : </label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <label for="payment">Payment : </label>
+                        <input type="number" name="payment" id="payment" placeholder="Payment">
+                        <input type="submit" value="Pay !">
+                    </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                    <span>S</span>
+                    <hr>
+                    <ul>
+                        <li>
+                            <span>Sam Burns</span>
+                            <span>100 €</span>
+                        </li>
+                        <li>
+                            <span>Samuel Yans</span>
+                            <span>52563 €</span>
+                        </li>
+                        <li>
+                            <span>Simon Pogg</span>
+                            <span>52 €</span>
+                        </li>
+                        <li>
+                            <span>Sophia Maria</span>
+                            <span>452 €</span>
+                        </li>
+                        <li>
+                            <span>Stacie Hunberg</span>
+                            <span>568 €</span>
+                        </li>
+                        <li>
+                            <span>Steve Grant</span>
+                            <span>1000 €</span>
+                        </li>
+                        <li>
+                            <span>Steve Porcher</span>
+                            <span>7865 €</span>
+                        </li>
+                        <li>
+                            <span>Sylvester Stallan</span>
+                            <span>77897 €</span>
+                        </li>
+                        <li>
+                            <span>Szen Tren</span>
+                            <span>562 €</span>
+                        </li>
+                        <hr>
+                        <li>
+                            <span>Total</span>
+                            <span>141059 €</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
     </main>
