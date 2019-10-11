@@ -35,7 +35,7 @@
 
 const minMax = (array) => {
   newArray = [];
-  let min = 0;
+  let min = array[0];
   let max = array[0];
 
   for (let i = 0 ; i < array.length ; i++) {
@@ -48,8 +48,9 @@ const minMax = (array) => {
   };
   
   newArray.push(min,max);
-  console.log(newArray);  
+  return console.log(newArray);  
 }
 
 // minMax([4, 6, 35, -65, -9, 0, 67]);
 // minMax([-30, 5, 43, 108, -5, -7, 89]);
+// minMax([56, 7, 63, 9, 7, 12, 85]);
