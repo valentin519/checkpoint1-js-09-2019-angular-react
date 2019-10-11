@@ -17,3 +17,33 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+const column = []
+const sit = []
+const result = []
+
+for (i = 1; i <= 26; i++){
+  column.push(i)
+  }
+
+  for (i = 1; i <= 100; i++){
+  sit.push(i)
+  }
+
+
+function calcSitColumn(){
+
+  for (i = 0; i < column.length ; i ++){
+      let columnIndex = column[i]
+    for (j = 0; j < sit.length ; j ++){
+      let sitIndex = sit[j]
+      result.push(`${column[i]} - ${sit[j]}` )
+    }
+    
+  }
+  return result
+}
+
+
+console.log(calcSitColumn())
+
