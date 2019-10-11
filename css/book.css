@@ -128,3 +128,14 @@ form button{
         flex-basis: 100%;
     }
 }
+
+
+/* screen < 800*/
+@media screen and (max-width: 800px) {
+    .pages{
+        flex-direction: column-reverse;
+    }
+    .page{
+        width:100%
+    }
+}
