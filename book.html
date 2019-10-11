@@ -9,33 +9,86 @@
     <title>Checkpoint Javascript 1</title>
 </head>
 
-<body>
+<body class=" ">
 
     <header>
         <nav class="navbar">
+            <div>
             <img src="image/logo.png" class="logo" alt="logo-wcs" />
             <a href="index.html">Instructions</a>
             <a href="book.html">Secret book</a>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container ">
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
-            <div class="pages">
+        <section class="desktop flex1 row">
+            <div class="verre">
+            <img class="none1" src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            
+            <img class="none" src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
+            <div class="pages  ">
                 <div class="page leftpage">
                     Add a bribe
+                 <div >
+                     <p class="marg">Name </p>
+                    <input type="search"  name="q"/>
+                 </div>
+                 <div>
+                        <p class="marg">Payment </p>
+                        <input type="search"  name="q"/>
+                 </div>
+                 <div>
+                     <button>Pay !</button>
+                 </div>
                     <!-- TODO : Form -->
                 </div>
 
-                <div class="page rightpage">
+                <div class="page rightpage row">
+                        <div class="S">
+                                S
+                            </div>
+                            <div class="bordure">
+                            </div>
+                    <div class="marg">
+                       <ul class="align1">
+                         <li class="marg">Sam Burns</li>
+                         <li class="marg">Samuel Yans</li>
+                        <li class="marg">Simon Pogg</li>
+                        <li class="marg">Sophia Maria</li>
+                        <li class="marg">Stacie Hunberg</li>
+                        <li class="marg">Steve Grant</li>
+                      <li class="marg">Steve Porcher</li>
+                    <li class="marg">Sylvester Stallan</li>
+                     <li class="marg">Szen Tren</li>
+                      <li class="marg">Total   </li>
+                   </ul> 
+                    </div>
+
+                <div>
+                   <ul class="align1">
+                        
+                         <li class="marg">100 €</li>
+                         <li class="marg">52563€</li>
+                        <li class="marg">52 €</li>
+                        <li class="marg">452 €</li>
+                        <li class="marg">568 €</li>
+                        <li class="marg">1000 €</li>
+                      <li class="marg">7865 €</li>
+                    <li class="marg">77897 €</li>
+                     <li class="marg">562 €</li>
+                      <li class="marg">141059 €</li>
+                   </ul> 
+                   </div>
+                </div>
+                                                                                    
                     <!-- TODO : Display bribes and total paiement -->
                 </div>
             </div>
+            <div class="stylo">
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+             </div>
         </section>
     </main>
 </body>
