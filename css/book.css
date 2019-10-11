@@ -16,6 +16,10 @@ main {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.empty-whisky{
+    display:none;
+}
+
 .pages {
     display: flex;
     width: auto;
@@ -41,354 +45,146 @@ main {
     overflow: auto;
 }
 
-@media screen and (min-width: 1200px) {
-    
-    .desktop{
-     display: flex;
-    }
 
-    .whisky{
-        width: 300px; 
-        height: 300px; 
-    }
+/* ↓↓↓↓↓↓↓↓↓↓↓↓ CHANGEMENTS ↓↓↓↓↓↓↓↓↓↓↓↓ */
 
-    .inkpen{
-        width: 225px ;
-        height: 500px;
-        margin-top: 130px;
-    }
+.desktop{
+    display: flex;
+}
 
 
-    .empty-whisky{
-        display: none;
-    }
+.whisky{
+    width: 300px; 
+    height: 300px; 
+}
 
-    form{
-        width: 100%;
-    }
 
-    form p {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-    }
+.inkpen{
+    width: 225px ;
+    height: 500px;
+    margin-top: 130px;
+}
 
-    form p label, form p input{
-        width: 90%;
-    }
-    form p input{
-        margin-left: 10px;
-        border-radius: 5px;
-    }
+form{
+    width: 100%;
+}
 
-    #paySub{
-        width: inherit;
-        background: rgb(248, 248, 248);
-        margin-top: 10px;
-        border-radius: 5px;
-        height: 25px;
-    }
+form p {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
 
-    /*  ------- RIGHT PAGE -------- */
 
-    .rightpage{
-        font-size:16px;
-    }
 
-    .rightpage p{
-        margin: 0px;
-        text-align: center;
-    }
+form p label, form p input{
+    width: 90%;
+}
+form p input{
+    margin-left: 10px;
+    border-radius: 5px;
+}
 
-    .paymentlist{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.5em;
-        justify-content: flex-end;
-    }
-    
-    .paymentlist div ul{
-        list-style-type: none;
-        text-align: end;
-        padding: 0;
-    }
+#paySub{
+    width: inherit;
+    background: rgb(248, 248, 248);
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 25px;
+}
 
-    .namelist{
-        margin-right: 10%;
-    }
+/*  ------- RIGHT PAGE -------- */
 
-    #total{
-        width: 80%;
-        margin-right: 0%;
-    }
+.rightpage{
+    font-size:16px;
+}
 
+.rightpage p{
+    margin: 0px;
+    text-align: center;
+}
+
+.paymentlist{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    justify-content: flex-end;
+}
+
+.paymentlist div ul{
+    list-style-type: none;
+    text-align: end;
+    padding: 0;
+}
+
+.namelist{
+    margin-right: 10%;
+}
+
+#total{
+    width: 80%;
+    margin-right: 0%;
 }
 
 @media screen and (min-width:1100px) and (max-width: 1199px) {
     
-    .desktop{
-     display: flex;
-    }
-
-    .whisky{
-        width: 300px; 
-        height: 300px; 
-    }
-
     .inkpen{
-        width: 225px ;
-        height: 500px;
-        margin-top: 130px;
         display: none;
-    }
-
-
-    .empty-whisky{
-        display: none;
-    }
-
-    form{
-        width: 100%;
-    }
-
-    form p {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-    }
-
-    form p label, form p input{
-        width: 90%;
-    }
-    form p input{
-        margin-left: 10px;
-        border-radius: 5px;
-    }
-
-    #paySub{
-        width: inherit;
-        background: rgb(248, 248, 248);
-        margin-top: 10px;
-        border-radius: 5px;
-        height: 25px;
-    }
-
-    /*  ------- RIGHT PAGE -------- */
-
-    .rightpage{
-        font-size:16px;
-    }
-
-    .rightpage p{
-        margin: 0px;
-        text-align: center;
-    }
-
-    .paymentlist{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.5em;
-        justify-content: flex-end;
     }
     
-    .paymentlist div ul{
-        list-style-type: none;
-        text-align: end;
-        padding: 0;
-    }
-
-    .namelist{
-        margin-right: 10%;
-    }
-
-    #total{
-        width: 80%;
-        margin-right: 0%;
-    }
-
 }
 
 @media screen and (min-width:1000px) and (max-width: 1099px) {
     
-    .desktop{
-     display: flex;
-    }
-
     .whisky{
-        width: 300px; 
-        height: 300px; 
         display: none;
     }
 
     .inkpen{
-        width: 225px ;
-        height: 500px;
-        margin-top: 130px;
         display: none;
     }
 
-
     .empty-whisky{
-        width: 300px; 
+        width: 300px;
         height: 300px;
+        display: inherit;
     }
-
-    form{
-        width: 100%;
-    }
-
-    form p {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-    }
-
-    form p label, form p input{
-        width: 90%;
-    }
-    form p input{
-        margin-left: 10px;
-        border-radius: 5px;
-    }
-
-    #paySub{
-        width: inherit;
-        background: rgb(248, 248, 248);
-        margin-top: 10px;
-        border-radius: 5px;
-        height: 25px;
-    }
-
-    /*  ------- RIGHT PAGE -------- */
-
-    .rightpage{
-        font-size:16px;
-    }
-
-    .rightpage p{
-        margin: 0px;
-        text-align: center;
-    }
-
-    .paymentlist{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.5em;
-        justify-content: flex-end;
-    }
-    
-    .paymentlist div ul{
-        list-style-type: none;
-        text-align: end;
-        padding: 0;
-    }
-
-    .namelist{
-        margin-right: 10%;
-    }
-
-    #total{
-        width: 80%;
-        margin-right: 0%;
-    }
-
 }
-
 @media screen and (min-width:800px) and (max-width: 999px) {
-    
-    .desktop{
-     display: flex;
-     justify-content: center;
-    }
 
+     /* JE CROIS QUE "../image/whisky.png" ETAIT LE VERRE DE TROP */
+    body{
+        background: url("https://media.giphy.com/media/gx54W1mSpeYMg/giphy.gif");
+    }
+    
     .whisky{
-        width: 300px; 
-        height: 300px; 
         display: none;
     }
 
     .inkpen{
-        width: 225px ;
-        height: 500px;
-        margin-top: 130px;
         display: none;
     }
-
 
     .empty-whisky{
-        width: 300px; 
-        height: 300px;
         display: none;
     }
 
-    form{
-        width: 100%;
-    }
-
-    form p {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-    }
-
-    form p label, form p input{
-        width: 90%;
-    }
-    form p input{
-        margin-left: 10px;
-        border-radius: 5px;
-    }
-
-    #paySub{
+    .pages{
         width: inherit;
-        background: rgb(248, 248, 248);
-        margin-top: 10px;
-        border-radius: 5px;
-        height: 25px;
+        flex-basis: inherit;
     }
-
-    /*  ------- RIGHT PAGE -------- */
-
-    .rightpage{
-        font-size:16px;
-    }
-
-    .rightpage p{
-        margin: 0px;
-        text-align: center;
-    }
-
-    .paymentlist{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.5em;
-        justify-content: flex-end;
-    }
-    
-    .paymentlist div ul{
-        list-style-type: none;
-        text-align: end;
-        padding: 0;
-    }
-
-    .namelist{
-        margin-right: 10%;
-    }
-
-    #total{
-        width: 80%;
-        margin-right: 0%;
-    }
-
 }
 
 @media screen and (min-width:320px) and (max-width: 799px) {
-    
-    .desktop{
-     display: flex;
-     justify-content: center;
+
+    /* L'ALCOOL, CE N'EST PAS PARCE QUIL Y A COOL DEDANS QUE CA LEST */
+    body{
+        background-image: url("https://media.giphy.com/media/VJScpfdeSNwuPdCL0W/200.gif");
     }
 
+    .desktop{
+        justify-content: center;
+    }
     .pages{
         display:flex;
         flex-flow: wrap column;
@@ -396,85 +192,20 @@ main {
 
     .page{
         width: 100%;
+        flex-basis: auto;
     }
 
     .whisky{
-        width: 300px; 
-        height: 300px; 
         display: none;
     }
 
     .inkpen{
-        width: 225px ;
-        height: 500px;
-        margin-top: 130px;
         display: none;
     }
 
 
     .empty-whisky{
-        width: 300px; 
-        height: 300px;
         display: none;
-    }
-
-    form{
-        width: 100%;
-    }
-
-    form p {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-    }
-
-    form p label, form p input{
-        width: 90%;
-    }
-    form p input{
-        margin-left: 10px;
-        border-radius: 5px;
-    }
-
-    #paySub{
-        width: inherit;
-        background: rgb(248, 248, 248);
-        margin-top: 10px;
-        border-radius: 5px;
-        height: 25px;
-    }
-
-    /*  ------- RIGHT PAGE -------- */
-
-    .rightpage{
-        font-size:16px;
-    }
-
-    .rightpage p{
-        margin: 0px;
-        text-align: center;
-    }
-
-    .paymentlist{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.5em;
-        justify-content: flex-end;
-    }
-    
-    .paymentlist div ul{
-        list-style-type: none;
-        text-align: end;
-        padding: 0;
-    }
-
-    .namelist{
-        margin-right: 10%;
-    }
-
-    #total{
-        width: 80%;
-        margin-right: 0%;
     }
 
 }
