@@ -103,22 +103,20 @@
     .inkpen{
         align-self: flex-end;
     }
+
     
-      
+    
 }
 
 
 
 
 @media screen and (max-width: 1000px){
- 
-    
- 
     
     .inkpen{
         display: none;
     }    
-   
+    
     .empty-whisky{
         display: none;
     }    
@@ -128,9 +126,8 @@
     }    
     
     .pages{
-        align-self: center;
+        flex-basis: 95%;
     }
-    
 }
 
 
