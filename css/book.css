@@ -47,7 +47,60 @@ main {
     display: none;
 }
 
+.sOnTopOfTab{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-style: 
+}
 
+hr{
+    margin-top: 0; 
+    background-color: black;
+    height: 2px;
+    border: none;
+}
+
+.table{
+    margin-left: auto;
+    text-align: end;
+    border-collapse: collapse;
+}
+
+thead{
+    margin-bottom: 1em;
+}
+
+thead th,
+thead td{
+    border-bottom: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+tfoot .totalPrice{
+    border-top: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+fieldset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0.7em;
+}
+
+fieldset input{
+    margin-left: 5%;
+}
+
+fieldset input:not(.button){
+    width: 90%;
+    height: 25px;
+    border: none;
+    border-radius: 2px;
+}
 
 @media only screen and (min-width: 1200px) {
     .desktop{
