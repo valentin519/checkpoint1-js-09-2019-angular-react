@@ -15,7 +15,6 @@ main {
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
-
 .pages {
     display: flex;
     width: auto;
@@ -39,4 +38,94 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+table{
+    width: 100%;
+}
+
+table, tr, td{
+    text-align: right;
+    font-size: 28px;
+}
+
+tr{
+    padding: 10px;
+}
+
+.test{
+    border-top: 1px solid black;
+}
+
+.rightpage p {
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+
+@media screen and (min-width: 1200px){
+    .desktop{
+        display: flex;
+    }
+    .empty-whisky{
+        display: none;
+    }
+    .whisky{
+        height: 50%;
+    }
+    .inkpen{
+        height: 50%;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width: 1200px){
+    .desktop{
+        display: flex;
+    }
+    .inkpen{
+        display: none;
+    }
+    .empty-whisky{
+        display: none;
+    }
+    .whisky{
+        height: 50%;
+    }
+}
+
+
+@media screen and (min-width:1000px) and (max-width: 1100px){
+    .whisky{
+        display: none;
+    }
+    .desktop{
+        display: flex;
+    }
+    .empty-whisky{
+        height: 50%;
+    }
+    .inkpen{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .whisky, .empty-whisky{
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width: 1000px){
+    .empty-whisky, .whisky{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px){
+    .pages{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
