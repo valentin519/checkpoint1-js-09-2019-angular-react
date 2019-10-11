@@ -17,3 +17,18 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+function numChair(){
+  let list = [];
+  for(let i = 0;i <26;i++){
+    let column = [];
+    for(let j = 0;j <100;j++){
+  
+      column[j] = (i+1) + '-' + (j+1) ; 
+    
+    }
+    list[i]= column;
+  }
+  return list; 
+}
+
+console.log(numChair());
