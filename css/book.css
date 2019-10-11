@@ -44,7 +44,9 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
-
+.rightpage ul{
+    margin-bottom: 0;
+}
 .rightpage ul li {
     list-style: none;
     display: flex;
