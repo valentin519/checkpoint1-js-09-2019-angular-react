@@ -2,42 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
-    <title>Checkpoint Javascript 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/book.css">
+  <title>Checkpoint Javascript 1</title>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar">
-            <img src="image/logo.png" class="logo" alt="logo-wcs" />
-            <a href="index.html">Instructions</a>
-            <a href="book.html">Secret book</a>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <img src="image/logo.png" class="logo" alt="logo-wcs" />
+      <a href="index.html">Instructions</a>
+      <a href="book.html">Secret book</a>
+    </nav>
+  </header>
 
-    <main class="container">
+  <main class="container">
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+    <section class="desktop">
+      <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+      <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                </div>
-
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
-                </div>
+      <div class="pages">
+        <div class="page leftpage">
+          Add a bribe
+          <!-- TODO : Form -->
+          <form>
+            <div class="nameForm">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-        </section>
-    </main>
+            <div class="paymentForm">
+              <label for="payment">Payment</label>
+              <input type="number" name="payment" id="payment" value="0">
+            </div>
+            <div class="buttonForm">
+              <input type="button" value="Pay !" id="pay">
+            </div>
+          </form>
+        </div>
+
+        <div class="page rightpage">
+          <!-- TODO : Display bribes and total paiement -->
+          <div id="title">
+            <h5>S</h5>
+            <hr color="black" size="1"/>
+          </div>
+          <div id="bribes">
+            
+          </div>
+          <div id="total">
+
+          </div>
+        </div>
+      </div>
+      <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
