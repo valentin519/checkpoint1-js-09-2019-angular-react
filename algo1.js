@@ -32,3 +32,4 @@ Au final la liste devra ressembler à :
 
   countSeats();
 
+  
