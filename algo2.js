@@ -17,17 +17,17 @@
 * Résultat : [7, 85]
 */
 
-const minMax = (array) => {
-    let min = array[0];
-    let max = array[0];
+const minMax = (poulet) => {
+    let min = poulet[0];
+    let max = poulet[0];
     let tab = [];
     
-    for (let i = 1; i < array.length; i++) {
-      if (array[i] < min) {
-        min = array[i];
+    for (let i = 1; i < poulet.length; i++) {
+      if (poulet[i] < min) {
+        min = poulet[i];
       }
-      if (array[i] > max) {
-        max = array[i];
+      if (poulet[i] > max) {
+        max = poulet[i];
       }
     }
       tab.push(min, max);

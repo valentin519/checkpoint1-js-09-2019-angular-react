@@ -20,7 +20,7 @@ Au final la liste devra ressembler à :
 const results = () => {
   const column = [];
   for (let i = 1; i <= 26; i++) {
-    for (let j = 0; j <= 100; j++) {
+    for (let j = 1; j <= 100; j++) {
       column.push(`${i} - ${j}`) 
   }
 }
