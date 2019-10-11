@@ -40,3 +40,60 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+/* Form style : */
+form {
+    margin: 0;
+}
+
+form label {
+    font-size: 70%;
+}
+
+form input {
+    margin-left: 5%;
+    border: none;
+}
+
+/* Bribes style : */
+
+.pageS {
+    font-size: 50%;
+    text-align: center;
+}
+
+.bribes {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.bribes ul {
+    list-style: none;
+}
+
+.bribes li {
+    font-size: 50%;
+    text-align: right;
+}
+.totalPrice {
+    border-top: 1px solid black;
+}
+
+/* Screen size > 1200px */
+@media screen and (min-width: 1200px) {
+
+    /* Removing the empty glass */
+    .empty-whisky {
+        display: none;
+    }
+
+    /* Clearing the desk */
+    .desktop {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+}
+
+/* Screen size between 1000px & 1100px */
