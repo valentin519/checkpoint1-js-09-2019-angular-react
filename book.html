@@ -28,7 +28,22 @@
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form action="/ma-page-de-traitement" method="post">
+                        <div class="formulaire">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                        <div class="formulaire">
+                            <label for="select-payment">Payment</label>
+                            <select name="payment" id="payment-select">
+                                <option value=""></option>
+                                <option value="Visa">Visa</option>
+                                <option value="AE">American Express</option>
+                                <option value="Paypal">Paypal</option>
+                            </select>
+                        </div>
+                        <button>Pay !</button>
+                    </form>
                 </div>
 
                 <div class="page rightpage">
