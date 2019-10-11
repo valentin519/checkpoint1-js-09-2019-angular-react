@@ -11,6 +11,9 @@ main {
   font-size: 26pt;
   font-family: "Bilbo Swash Caps", cursive;
 }
+.barre{
+    text-decoration: line-through;
+}
 
 .whisky,
 .empty-whisky,
