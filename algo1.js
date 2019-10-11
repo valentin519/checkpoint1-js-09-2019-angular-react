@@ -17,3 +17,14 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+const nbColonnes = 26;
+const nbSiegesCol = 100;
+
+
+for (let i = 1; i <= nbSiegesCol; i++){
+ return i
+  
+}
+
+// avec plus de temps j'aurais réalisé une deuxième boucle (imbriquée ou non, je n'ai pas eu le temps d'y réfléchir) pour pusher le tout dans un tableau
