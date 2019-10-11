@@ -69,3 +69,12 @@ const renderBribeList = () => {
     bribePage.appendChild(div);
 }
 renderBribeList()
+
+bribePage.querySelectorAll('div').forEach(div=>div.addEventListener('click',(e)=>{
+ 
+    if (e.currentTarget.style.textDecoration === 'line-through'){
+    e.currentTarget.style.textDecoration = 'unset'
+    }else{
+    e.currentTarget.style.textDecoration = 'line-through'
+    }
+} ))
