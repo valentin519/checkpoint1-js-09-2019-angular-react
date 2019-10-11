@@ -17,7 +17,7 @@
 * Résultat : [7, 85]
 */
 
-var minMax = () => (array) => {
+const minMax = () => (array) => {
     const min = 0;
     const max = array[0];
   
