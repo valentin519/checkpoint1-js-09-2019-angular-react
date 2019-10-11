@@ -31,4 +31,4 @@ const columns = (nbrColumn) => {
   })
 }
 
-console.log(columns(nbrColumn));
+console.log(columns(nbrColumn)) ;

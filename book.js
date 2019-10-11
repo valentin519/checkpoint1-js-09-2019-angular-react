@@ -4,5 +4,5 @@ let payment = document.getElementById('payment').value;
 let right = document.getElementById('right');
 
 pay.addEventListener('click', ()=>{
-    right.innerHTML = `${name} ${payment}€`;
+    right.innerHTML = `${name} ${payment}$`;
 });

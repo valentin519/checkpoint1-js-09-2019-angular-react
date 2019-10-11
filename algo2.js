@@ -17,8 +17,6 @@
 * Résultat : [7, 85]
 */
 
-let array = [56, 7, 63, 9, 7, 12, 85];
-
 const minMax = (array) => {
   let min = array[0];
   let max = 0;
