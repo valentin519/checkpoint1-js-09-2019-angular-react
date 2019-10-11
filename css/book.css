@@ -15,6 +15,15 @@ main {
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
+.empty-whisky{
+    display: none;
+}
+.whisky {
+         width: 180px;
+         height: 170px;
+         margin-left: 30px;
+     }
+
 
 .pages {
     display: flex;
@@ -42,5 +51,182 @@ main {
 }
 
 @media all and (max-width: 1200px){
+
+    body {
+        background-size: 1200px;
+        
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pages {
+        display: flex;
+        width: 600px;
+        flex-basis: 65%;
+        margin-top: -60px;
+    }
+    .whisky{
+        width: 180px;
+        height: 170px;
+        margin-left: 30px;
+    }
+
+    
+
+    .page {
+        height: 40vh;
+        height:55vh;
+    }
+
+    .leftpage {
+        background: url('../image/paper.png'), linear-gradient(270deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
+        border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    }
+
+    .rightpage {
+        background: url('../image/paper.png'), linear-gradient(90deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
+        border-radius: 40% 24px 24px 40%/8px 8px 8px 8px;
+        overflow: auto;
+    }
+
+    .inkpen{
+        width: 320px;
+        height: 320px;
+        margin-top: 220px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+
+    body {
+        background-size: 1200px;
+        
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pages {
+        display: flex;
+        width: 600px;
+        flex-basis: 65%;
+        margin-top: -60px;
+    }
+  
+    .whisky {
+        width: 180px;
+        height: 170px;
+        margin-left: 30px;
+    }
+    
+
+    .page {
+        height: 40vh;
+        height:55vh;
+    }
+
+    .leftpage {
+        background: url('../image/paper.png'), linear-gradient(270deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
+        border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    }
+
+    .rightpage {
+        background: url('../image/paper.png'), linear-gradient(90deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
+        border-radius: 40% 24px 24px 40%/8px 8px 8px 8px;
+        overflow: auto;
+    }
+
+    .inkpen{
+       display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .empty-whisky {
+       display:flex;
+        width: 180px;
+        height: 170px;
+        margin-left: 30px;
+
+    }
+
+    .whisky{
+        display: none;
+    }
+
+    .inkpen{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .empty-whisky {
+        display: none;
+        width: 180px;
+        height: 170px;
+        margin-left: 30px;
+
+    }
+
+    .whisky {
+        display: none;
+    }
+
+    .inkpen {
+        display: none;
+    }
+
+     
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .empty-whisky {
+        display: none;
+        width: 180px;
+        height: 170px;
+        margin-left: 30px;
+
+    }
+
+    .whisky {
+        display: none;
+    }
+
+    .inkpen {
+        display: none;
+    }
+    .pages {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        flex-basis: 65%;
+        margin-top: -60px;
+    }
 
 }
