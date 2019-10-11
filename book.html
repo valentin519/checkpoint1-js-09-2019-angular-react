@@ -1,43 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/book.css" />
+		<title>Checkpoint Javascript 1</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
-    <title>Checkpoint Javascript 1</title>
-</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<img src="image/logo.png" class="logo" alt="logo-wcs" />
+				<a href="index.html">Instructions</a>
+				<a href="book.html">Secret book</a>
+			</nav>
+		</header>
 
-<body>
+		<main class="container">
+			<section class="desktop">
+				<img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+				<img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
-    <header>
-        <nav class="navbar">
-            <img src="image/logo.png" class="logo" alt="logo-wcs" />
-            <a href="index.html">Instructions</a>
-            <a href="book.html">Secret book</a>
-        </nav>
-    </header>
+				<div class="pages">
+					<div class="page leftpage">
+						Add a bribe<br /><br />
+						<form>
+							<label>Name : <br /><input type="input"/></label><br /><br />
+							<label>Payment : <br /><input type="number"/></label>
+							<button>Pay</button>
+						</form>
+					</div>
 
-    <main class="container">
+					<div class="page rightpage">
+						<!-- TODO : Display bribes and total paiement -->
+						<center>S</center>
+						<hr />
+						<ul>
+							<li><span class="leftList">Sam Burns</span><span class="rightList">100€</span></li>
+							<li><span class="leftList">Sam Burns</span><span class="rightList">100€</span></li>
+							<li><span class="leftList">Sam Burns</span><span class="rightList">100€</span></li>
+							<li><span class="leftList">Sam Burns</span><span class="rightList">100€</span></li>
+							<li><span class="leftList">Sam Burns</span><span class="rightList">100€</span></li>
+							<li><span class="leftList">Sam Burns</span><span class="rightList">100€</span></li>
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                </div>
-
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
-                </div>
-            </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-        </section>
-    </main>
-</body>
-
+							<li>
+								<span class="leftList">Total</span
+								><span class="rightList"
+									><hr />
+									600€</span
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+			</section>
+		</main>
+	</body>
 </html>
