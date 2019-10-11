@@ -45,12 +45,43 @@ main {
 }
 
 /* My modifications */
+
+.bribeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bribeForm input {
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+}
+
+.rightpage h4 {
+    text-align: center;
+    margin: 0;
+}
+
+.pageTable {
+    display: flex;
+    justify-content: center;
+}
+
+.separation {
+    background-color: black;
+    height: 1px;
+    width: 100%;
+
+}
+
 @media screen and (min-width: 1201px) {
     .desktop {
         display: flex;
         justify-content: space-around;
         align-items: flex-start
-
     }
 
     .inkpen {
@@ -70,7 +101,8 @@ main {
         align-items: flex-start
     }
 
-    .inkpen, .empty-whisky {
+    .inkpen,
+    .empty-whisky {
         display: none;
     }
 }
@@ -82,26 +114,31 @@ main {
         align-items: flex-start
     }
 
-    .inkpen, .whisky {
+    .inkpen,
+    .whisky {
         display: none;
     }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1000px) {
-    
 
-    .inkpen, .whisky, .empty-whisky {
+
+    .inkpen,
+    .whisky,
+    .empty-whisky {
         display: none;
     }
 }
 
 @media screen and (max-width: 800px) {
     .pages {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
-    .inkpen, .whisky, .empty-whisky {
+    .inkpen,
+    .whisky,
+    .empty-whisky {
         display: none;
     }
 }
