@@ -17,3 +17,22 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+// Faire un tableau comprenant toutes les colonnes nécessaires.
+
+function numSiege () {
+  let tabCol = [];
+
+  for (let i = 0; i < 26; i++){
+    let line = new Array(100);
+  
+    for (let j = 0; j < 100; j++) {
+      line[j] = (i+1) + " - " + (j+1);
+      tabCol[i] = line;
+    }
+    
+  }
+  return tabCol
+  }
+
+  console.log(numSiege())
