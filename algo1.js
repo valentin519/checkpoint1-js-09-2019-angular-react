@@ -31,4 +31,5 @@ const salle = () => {
     }
     return salle;
 }
+console.log(salle)
 
