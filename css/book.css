@@ -5,6 +5,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.desktop {
+    display: flex;
+}
 
 main {
     padding-top: 4em;
@@ -18,7 +21,6 @@ main {
 
 .pages {
     display: flex;
-    width: auto;
     flex-basis : 65%;
     margin:1em;
 }
@@ -40,3 +42,49 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+
+@media screen and (min-width: 1200px) {
+    .empty-whisky {
+      display:none;
+    }
+  }
+  @media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .empty-whisky,
+    .inkpen {
+        display:none;
+    }
+  }
+  @media screen and (min-width: 800px) and (max-width: 1000px) {
+    .empty-whisky,
+    .inkpen,
+    .whisky {
+        display:none;
+    }
+    .pages {
+        flex-basis: 92%;
+    }
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .empty-whisky {
+        display:block;
+      }
+      .inkpen,
+      .whisky {
+        display:none;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .empty-whisky,
+    .inkpen,
+    .whisky {
+        display:none;
+    }
+    .pages {
+        flex-basis: 92%;
+        flex-direction: column;
+        }
+    .page {
+        width: 93%;
+    }
+  }
