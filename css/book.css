@@ -40,3 +40,52 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media screen and (min-width: 1200px){
+    .desktop{
+        display: flex;
+    }
+    .empty{
+        display: none;
+    }
+}
+@media screen and (max-width: 1199px) and (min-width: 1100px){
+    .desktop{
+        display: flex;
+        flex-direction: row;
+    }
+    .pen, .empty{
+        display:none;
+    }
+}
+    
+@media screen and (max-width: 1099px) and (min-width: 1000px){
+    .desktop{
+        display: flex;
+    }
+    .pen, .whisky{
+        display: none;
+    }
+}
+@media screen and (max-width: 999px) and (min-width: 800px){
+    
+    .pen, .empty, .whisky{
+        display: none;
+    }
+    .pages{
+        width: 95%;
+    }
+}
+ @media screen and (max-width: 799px){
+    .pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .pen, .empty, .whisky{
+        display: none;
+    }
+    .page{
+        margin-top: 5px;
+        width: 95%;
+    }
+ }
