@@ -29,4 +29,4 @@ function siege() {
   return col
 }
 
-console.log(siege())
+siege()

@@ -31,4 +31,30 @@ var minMax = () => (array) => {
       return array;
     }
     array.push(min, max);
+  };
+
+
+
+  var minMax = (array) => {
+    let min = 1000000;
+    let max = -10000000;
+    newArray = [];
+    
+  
+    for (let i = 0; i < array.length ; i++) {
+      
+      if (array[i] > max) {
+        max = array[i];
+      }
+      if (array[i] < min) {
+        min = array[i];
+      }
+      
+    }
+    newArray.push(min, max);
+    return newArray
+    
+    
   }
+  const num = [-30, 5, 43, 108, -5, -7, 89]
+  console.log(minMax(num));
