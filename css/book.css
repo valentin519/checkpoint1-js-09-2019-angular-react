@@ -40,3 +40,11 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.desktop {
+    display: flex;
+}
+
+.whiskyvide {
+    display: none;
+}
