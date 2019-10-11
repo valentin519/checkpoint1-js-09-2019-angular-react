@@ -41,6 +41,19 @@ main {
     overflow: auto;
 }
 
+/* Desktop Style */
+
+/* Clearing the desk */
+.desktop {
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: auto;
+}
+/* Removing the empty glass */
+.empty-whisky {
+    display: none;
+}
+
 /* Form style : */
 form {
     margin: 0;
@@ -72,28 +85,46 @@ form input {
 }
 
 .bribes li {
-    font-size: 50%;
+    font-size: 48%;
     text-align: right;
 }
 .totalPrice {
     border-top: 1px solid black;
 }
 
-/* Screen size > 1200px */
-@media screen and (min-width: 1200px) {
 
-    /* Removing the empty glass */
+/* Screen size between 1100px & 1200px */
+@media screen and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .empty-whisky {
         display: none;
     }
-
-    /* Clearing the desk */
     .desktop {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        display: block;
     }
-
 }
 
-/* Screen size between 1000px & 1100px */
+@media screen and (max-width: 800px) {
+    .pages {
+        display: block;
+    }
+    .pages .leftpage {
+        width: auto;
+    }
+    .pages .rightpage {
+        width: auto;
+    }
+}
