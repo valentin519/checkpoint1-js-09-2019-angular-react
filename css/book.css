@@ -121,3 +121,36 @@ main {
         margin: 0 auto;
     }
 }
+
+
+/* First page*/
+
+.firstPage{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.name-first-page{
+    margin: 0;
+}
+
+.payment-first-page{
+    margin: 0 0 10px 0;
+}
+
+.input-payment{
+    margin-bottom: 10px;
+}
+
+button{
+    width: 20%;
+    background-color: white;
+}
+
+button:hover{
+    background-color: ;
+}
+
+
+
