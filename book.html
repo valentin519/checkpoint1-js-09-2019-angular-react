@@ -22,20 +22,66 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
+            <div class = "glass">
+                <img class="fullGlass" src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img class="emptyGlass" src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
             <div class="pages">
                 <div class="page leftpage">
-                    Add a bribe
+                    <p class="leftTitle">Add a bribe</p>
                     <!-- TODO : Form -->
+                    <p>
+                        <form class="payment" action="">
+                            <p><label for="name">Name</label>
+                                <br/>
+                                <input type="text" name="name" id="name">
+                                <br/>
+                                <label for="pay">Payment</label>
+                                <br/>
+                                <input type="number">
+                            </p>
+                        </form>
+                        <button>Pay!</button>
+                    </p>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    <p class="index">S</p>
+                    <hr/>
+                    <div class="list">
+                        <div class="buyers">
+                            <p>Sam Burns</p>
+                            <p>Samuel Yans</p>
+                            <p>Simon Pogg</p>
+                            <p>Sophia Maria</p>
+                            <p>Stacie Hunberg</p>
+                            <p>Steve Grant</p>
+                            <p>Steve Porcher</p>
+                            <p>Sylvester Stallon</p>
+                            <p>Szen Tren</p>
+                            <br>
+                            <p class="total">Total</p>
+                        </div>
+                        <div class="amount">
+                            <p>100€</p>
+                            <p>52563€</p>
+                            <p>52€</p>
+                            <p>452€</p>
+                            <p>568€</p>
+                            <p>1000€</p>
+                            <p>7865€</p>
+                            <p>77897€</p>
+                            <p>562€</p>
+                            <hr class="separTt"/>
+                            <p class="ttAmount">141059€</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            <div class="pen">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
         </section>
     </main>
 </body>

@@ -40,3 +40,136 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.desktop {
+    display: flex;
+}
+
+.glass img {
+    position: relative;
+    left: 50px;
+    bottom: 50px;
+}
+.emptyGlass {
+    display: none;
+}
+.pages {
+    position: relative;
+    bottom: 90px;
+}
+
+.pen img {
+    position: relative;
+    top: 200px;
+}
+
+.leftTitle {
+    position: relative;
+    bottom: 40px;
+    font-weight: bold;
+    color: rgb(94, 94, 94);
+    font-size: 2.2rem;
+}
+
+.payment input {
+    width: 90%;
+    height: 30px;
+    border: 0px;
+    border-radius: 5px;
+    position: relative;
+    left: 15px;
+}
+
+.payment p {
+    font-size: 1.8rem;
+    color: rgb(94, 94, 94);
+    font-weight: bold;
+}
+
+
+
+button {
+    border: 0px;
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 15px;
+    font-size: 1rem;    
+    color: rgb(94, 94, 94);
+    font-weight: bold;    
+}
+
+.index {
+    font-family: serif;
+    margin-left: 50%;
+    color: rgb(94, 94, 94);
+}
+
+hr {
+    border: 1px solid  rgb(126, 125, 125);
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    position: relative;
+    left: 50px;
+    font-size: 1.8rem;
+    margin-right: 15px;
+}
+
+.list p {
+    margin: 5px;
+}
+
+.total{
+    position: relative;
+    bottom: 20px;
+}
+.separTt {
+    width: 160%;
+    position: relative;
+    right: 85px;
+}
+@media all and (max-width: 1200px) {
+    .pen {
+        display: none;
+    }
+    .list p {
+        font-size: 1.6rem;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .fullGlass {
+        display: none;
+    }
+
+    .emptyGlass {
+        display: block;
+    }
+
+    .list {
+        margin-right: 15px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .fullGlass {
+        display: none;
+    }
+
+    .emptyGlass {
+        display:none;
+    }
+
+    .pages {
+        position: relative;
+        left: 200px;
+    }
+}
+@media all and (max-width: 800px) {
+
+}
