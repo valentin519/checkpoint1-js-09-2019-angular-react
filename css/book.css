@@ -14,6 +14,7 @@ main {
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+    height: 100%;
 }
 
 .pages {
@@ -39,4 +40,79 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    font-size: 20px;
+}
+
+h3 {
+   text-align: center;
+   margin-top: 0;
+}
+
+.empty-whisky {
+    display: none;
+}
+
+.desktop { 
+    display: flex; 
+}
+
+.inkpen {
+    display: none;
+}
+
+.bar {
+    border: solid 1px;
+}
+
+form {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px){
+
+    .inkpen {
+        display: block;
+        width: 15%;
+        margin-top: 170px;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .empty-whisky {
+        display: block;
+    }
+    .whisky {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .pages {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .whisky {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .pages {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .whisky {
+        display: none;
+    }
+
+    .rightpage {
+        font-size: 16px;
+    }
 }
