@@ -17,3 +17,16 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+/* loop 1 la rangée26 loop2 lign100  */
+function result(){
+  
+for(i=1;i<=26;i++){
+    for (j=1;j<=100;j++){
+      console.log(i+" - " +j)
+
+    }
+}
+}
+
+result()
