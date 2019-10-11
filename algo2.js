@@ -22,7 +22,7 @@ const minMax = (poulet) => {
     let max = poulet[0];
     let tab = [];
     
-    for (let i = 1; i < poulet.length; i++) {
+    for (let i = 0; i < poulet.length; i++) {
       if (poulet[i] < min) {
         min = poulet[i];
       }
