@@ -19,7 +19,7 @@ Au final la liste devra ressembler à :
 */
 const seats = () => {
   const seat = [];
-  for(let i = 1; i < 26; i++){
+  for(let i = 1; i <= 26; i++){
     const column = i 
     const row = []
 

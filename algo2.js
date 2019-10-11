@@ -32,3 +32,4 @@ var minMax = () => (array) => {
     }
     array.push(min, max);
   }
+  console.log(minMax())
