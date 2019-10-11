@@ -3,7 +3,17 @@
 body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    padding-left: auto;
+}
+
+.bottles{
+    display: flex;
+    justify-content : space-between;
+}
+
+.whisky{
+    width: 90%;
 }
 
 main {
@@ -14,20 +24,30 @@ main {
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+    
+}
+
+.inkpen {
+    padding-left : 1000px;
+    padding-bottom : 1000px;
 }
 
 .pages {
     display: flex;
-    width: auto;
+    width: 60%;
     flex-basis : 65%;
-    margin:1em;
+    margin-bottom:10px;
+    padding-left : 300px;
+    padding-right : 100px;
+    padding-bottom : 10px;
 }
 
 .page {
     height:65vh;
-    padding: 3vw;
-    width: 50%;
+    padding: 30px;
+    width: 60%;
     background-blend-mode: multiply;
+    
 }
 
 .leftpage {
