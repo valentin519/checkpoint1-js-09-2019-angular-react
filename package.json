@@ -1,0 +1,19 @@
+{
+  "name": "checkpoint1-js-09-2019-angular-react",
+  "version": "1.0.0",
+  "description": "Your 1st checkpoint !",
+  "main": "algo1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildCodeSchool/checkpoint1-js-09-2019-angular-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildCodeSchool/checkpoint1-js-09-2019-angular-react/issues"
+  },
+  "homepage": "https://github.com/WildCodeSchool/checkpoint1-js-09-2019-angular-react#readme"
+}
