@@ -17,3 +17,12 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+function liste (){
+  const tab = [1];
+    if(let i=1, i<27, i++ ) {
+      
+    }
+    console.log(tag);
+}
+return liste;
+fonction(liste)
