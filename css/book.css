@@ -40,3 +40,84 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+/* DEBUT EXO*/
+
+.desktop{
+    display: flex;
+    flex-direction: row;
+}
+
+.empty-whisky{
+    display: none;
+}
+
+.whisky{
+    height: 200px;
+}
+
+.empty-whisky{
+    height: 200px;
+}
+
+@media screen and (min-width: 1100px) and (max-width:1200px){
+    .inkpen{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1100px){
+    .whisky{
+        display: none;
+    }
+    .empty-whisky{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px){
+    .whisky{
+        display: none;
+    }
+    .empty-whisky{
+        display: none;
+    }
+
+    .inkpen{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:800px){
+    .whisky{
+        display: none;
+    }
+    .empty-whisky{
+        display: none;
+    }
+
+    .inkpen{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
