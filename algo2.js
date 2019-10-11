@@ -25,10 +25,11 @@ var minMax = () => (array) => {
       if (array(i) < min) {
         min = array;
       }
-      if (array[i] = max) {
+      if (array[i] > max) {
         max = array[i];
       }
-      return array;
+    
     }
     array.push(min, max);
+    return array;
   }
