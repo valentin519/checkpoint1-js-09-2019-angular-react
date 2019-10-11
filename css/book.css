@@ -7,27 +7,62 @@ body {
 }
 
 main {
-    padding-top: 4em;
-    font-size: 26pt;
+    padding-top: 1em;
+    padding-left: 5em;
+    font-size: 19pt;
     font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.desktop
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.sky {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 5%;
+    margin-left: 0px;
+    padding-right: 50%;
+}
+
+.pen {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 0px; 
+    margin-bottom: 2em;
+    padding-left:5em;
+    padding-bottom: 5em;
+    margin-top: 45%;;
+}
+
+
 .pages {
     display: flex;
-    width: auto;
-    flex-basis : 65%;
+    align-self: center;
+    width: 80%;
+    flex-basis : 50%;
     margin:1em;
+    
+    
+    
+
 }
 
 .page {
     height:65vh;
     padding: 3vw;
-    width: 50%;
     background-blend-mode: multiply;
+   
+
 }
 
 .leftpage {
