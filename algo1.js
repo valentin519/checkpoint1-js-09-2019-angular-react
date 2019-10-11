@@ -22,10 +22,10 @@ const theatreSiege = () => {
   let totalSiege = [];
   for (i = 0; i < 26; i++) {
     for (j = 0; j < 100; j++) {
-      totalSiege.push(`${i}-${j}`);
+      totalSiege.push((i + 1) + '-' + ( j + 1));
     }
   }
   return totalSiege;
 }
 
-console.log(theatreSiege());
+theatreSiege();
