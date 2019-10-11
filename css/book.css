@@ -91,6 +91,11 @@ main {
   justify-content: space-between;
 }
 
+#bribeValues, #bribeNames{
+  width: 50%;
+  text-align: end;
+}
+
 #total {
   text-align: end;
 }

@@ -11,7 +11,7 @@ let payments = [];
 
 // Ajout de l'event listener pour le clique sur le bouton Pay !
 button.addEventListener('click', () => {
-  
+
   // Paramétrage des variables avec les valeurs récupérées dans le form
   name = document.getElementById('name').value;
   value = document.getElementById('payment').value;
@@ -24,14 +24,14 @@ button.addEventListener('click', () => {
     return `
       <p>${payment[0]}</p>
     `
-  });
+  }).join('');
 
   //map dans le tableau pour afficher chaque paiement associé au nom
   let bribeValuesHtml = payments.map((payment) => {
     return `
       <p>${payment[1]} €</p>
     `
-  });
+  }).join('');
 
   // Calcul du total des paiements
   sum += parseInt(value, 10);
