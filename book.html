@@ -22,17 +22,68 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <div class="whisky-div">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
 
             <div class="pages">
                 <div class="page leftpage">
-                    Add a bribe
                     <!-- TODO : Form -->
+                    <h4>Al Capone accounts</h4>
+                    <form>
+                        <div class="name-div">
+                            <label for="name">Name</label>
+                            <br><input type="text" name="name" id="name">
+                        </div>
+                        <div class="choice-div">
+                            <label for="choice">Payment</label>
+                            <select name="payment" id="choice">
+                                <option value="first" selected>Cash</option>
+                                <option value="second">Bitcoin</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Send" id="send">
+                    </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    <section class="debts-table">
+                        <h4>Debts</h4>
+                        <table>
+                            <tbody class="tbody">
+                                <tr class="tr">
+                                    <th> Person </th>
+                                    <td> Jude Law</td>
+                                    <td> Angelina Jolie</td>
+                                    <td> Brad Pitt</td>
+                                    <td> Jude Law</td>
+                                    <td> Angelina Jolie</td>
+                                    <td> Brad Pitt</td>
+                                </tr>
+                                <tr class="tr">
+                                    <th>Debt</th>
+                                    <td> 30$</td>
+                                    <td> 500$</td>
+                                    <td> 9$</td>
+                                    <td> 30$</td>
+                                    <td> 500$</td>
+                                    <td> 9$</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class = "tfoot">
+                                <tr class="tr">
+                                    <td>TOTAL</td>
+                                </tr>
+                                <tr class = "tr">
+                                    <td>$$$</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </section>
+
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />

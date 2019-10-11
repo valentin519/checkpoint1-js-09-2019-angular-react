@@ -40,3 +40,86 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+/*clean desktop CSS */
+
+.desktop {
+    display: flex;
+}
+
+.empty-whisky {
+    display: none;
+}
+
+/*form */
+
+label {
+    font-size: 0.8em;
+}
+
+input {
+    width: 80%;
+}
+
+#choice {
+ width : 80%;
+ background: white;
+}
+
+#send {
+    background: white;
+    width: 30%;
+}
+
+h4 {
+    margin: 0.2em;
+    font-size: 1em;
+}
+/*table*/
+
+.tbody {
+    display: flex;
+}
+
+.tfoot {
+    display: flex;
+}
+
+.tr {
+    display : flex;
+    flex-direction: column;
+    font-size: 0.6em; 
+    padding: 0 1em; 
+    align-items: flex-end;
+}
+
+
+ /* Desktop Styles */
+@media only screen and (max-width : 1200px) {
+    .inkpen {
+        display: none;
+}
+}
+
+@media only screen and (max-width : 1100px) {
+
+    .empty-whisky {
+        display : inline;
+    }
+    
+    .whisky {
+        display: none;
+    }
+
+@media only screen and (max-width : 1000px) {
+
+    .whisky-div {
+        display: none;
+    }
+
+@media only screen and (max-width : 800px) {
+    .pages {
+        display : flex;
+        flex-direction: column;
+    }
+    
+}
