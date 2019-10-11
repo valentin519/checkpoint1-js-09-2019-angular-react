@@ -31,11 +31,15 @@ const minMax = (array) => {
       }
       
     }
-      
+    
+     /*  tentive avec un filter mais pas réussi à ne garder que 2 solutions 
     return array.filter((enter) => {
       return enter === max || enter === min;
-    })
-    
+    }).filter((num) => {
+      ????
+    })    */
+   
+    return array = [min, max]
   }
   tab = [56, 7, 63, 9, 7, 12, 85]
 console.log(minMax(tab));
