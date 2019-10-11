@@ -19,9 +19,10 @@ Au final la liste devra ressembler à :
 */
 function liste (){
   const tab = [];
-    for(let i = 1; i < 27; i++ ) {
-      return tab;
+  for (let i = 1; i < 27 ; i++ ){
+    tab = tab[i] + i;
+    for(let j = 1; j < 101; j++ ) {
+      return tab [i-j];
     }
+  }
 } 
-return liste;
-fonction(liste)
