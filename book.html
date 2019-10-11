@@ -28,14 +28,46 @@
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                <div class="label">
+                    <label for="name">Name</label><br>
                 </div>
+                <div class="name">
+                    <input type="text" id="name" name="name" require minlength="3" maxlength="20"size="80">
+                </div>
+                        
+                    
+                
+                    <!-- TODO : Form -->
+                <div class='form-label'>
+                        <label for="name">Payment</label><br>
+                </div>
+                <div class='form-input'>
+                        <form>
+                            <select class= 'formselect'name="nom" size="1">
+                            <option></option>
+                            <option>Carte Bancaire</option>
+                            <option>Paypal</option>
+                            </select>
+                        </form>
+                </div>
+                <div class='sendButton'>
+                        <input type="submit" value="Pay !">
+                 </div>
+                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    <div class= "intro-droite">
+                    <h2>S</h2>
+                </div>
+                    <hr>
+                    
+
                 </div>
             </div>
+            <div class = inkpen>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
         </section>
     </main>
 </body>

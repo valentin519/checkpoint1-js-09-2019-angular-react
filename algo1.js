@@ -16,4 +16,18 @@ Au final la liste devra ressembler à :
 26-100
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
+
 */
+function theatre (){
+  const array=[];
+  for(let i =1 ; i <= 26; i++){
+    const colonne = [];
+    for(let j=1 ; j<= 100;i++){
+    const siege =[];
+      colonne.push(siege);
+        array.push(colonne);
+    }
+  }
+  return array;
+}
+theatre();
