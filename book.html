@@ -21,21 +21,54 @@
 
     <main class="container">
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+        <section class="row">
+            <img src="image/whisky.png" alt="a whisky glass" class="whisky sm-0 md-0 tab-0 dsk-offset-1 dsk-3 lg-2"  />
+            <img src="image/empty_whisky.png" alt="an empty whisky glass" 
+            class="empty-whisky sm-0 md-0 tab-offset-1 tab-3 dsk-0 lg-0" />
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
+
+            <div class="row sm-12 md-12 tab-7 dsk-7 lg-8">
+                <div class="page leftpage sm-12 md-6 tab-6 dsk-6 lg-6 row ">
+
+                    <h2 class="bribes-title sm-12 md-12 tab-12 dsk-12 lg-12">Add a bribe</h2>
+
+                    <form method="POST" action="" class="sm-12 md-12 tab-12 dsk-12 lg-12 row bribes">
+                        <label  class="sm-12 md-12 tab-12 dsk-12 lg-12">Name</label>
+                        <input type="text"  class="sm-12 md-12 tab-12 dsk-12 lg-12"/>
+                        <label  class="sm-12 md-12 tab-12 dsk-12 lg-12">Payment</label>
+                        <input type="number"  class="sm-12 md-12 tab-12 dsk-12 lg-12" />
+                        <button  class="sm-2 md-2 tab-2 dsk-2 lg-2 paybtn">Pay !</button>
+                    </form>
+                    
                 </div>
 
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                <div class="page rightpage row sm-12  md-6 tab-6 dsk-6 lg-6">
+                    <h2 class="contact-title sm-12 md-12 tab-12 dsk-12 lg-12">S</h2>
+                    <table class="contact-list sm-12 md-12 tab-12 dsk-12 lg-12">
+                        <tr>
+                            <td>Sam Burns</td>
+                            <td>100€</td>
+                        </tr>
+                        <tr>
+                            <td>Samuel Yans</td>
+                            <td>525563€</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>Samuel Yans</td>
+                            <td class="total">525563€</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>42€</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+
+
+            <img src="image/inkpen.png" alt="an ink pen" class="inkpen  sm-0 md-0 tab-0 dsk-0 lg-2 center" />
         </section>
     </main>
 </body>
