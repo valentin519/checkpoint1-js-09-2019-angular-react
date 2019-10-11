@@ -22,17 +22,99 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <div class="whisky-contain">
+                <img  src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img  src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>  
 
             <div class="pages">
                 <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
+                    
+                    <form method="post" action="traitement.php">
+ 
+                            <fieldset>
+                                <legend>Add a bribe</legend> <!-- Titre du fieldset --> 
+                         
+                                <label for="nom">Name</label>
+                                <input type="text" name="nom" id="nom" />
+                        
+                            </fieldset>
+                          
+                            <fieldset>
+                                <legend>Payment</legend> <!-- Titre du fieldset -->
+                                <label for="pet-select"></label>
+
+                                <select name="payment" id="payment-select">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="transfert">Transfert</option>
+                                    <option value="Card"> Card</option>
+                                    <option value="check"> Check</option>
+              
+                                </select>
+                                <label><span> </span><input type="submit" value="Submit" /></label>
+                            </fieldset>
+                         </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                    <table> 
+                     
+                         <thead> <tr > <th colspan="2"> S </th></tr>
+                         </thead>
+
+                        <tbody>
+                               
+                        <tr>
+                            <td> Sam Burns</td>
+                            <td> 100 € </td>
+                        </tr>
+                        <tr>
+                            <td>Samuel Yans</td>
+                            <td>52563 €</td>
+
+                        </tr>
+                        <tr>
+                            <td>Simon Pogg</td>
+                            <td>52 €</td>
+                        </tr>
+                        <tr>
+                                <td> Sophia Maria</td>
+                                <td> 452 € </td>
+                            </tr>
+                            <tr>
+                                <td>Stacie Hunberg</td>
+                                <td>568 €</td>
+    
+                            </tr>
+                            <tr>
+                                <td>Steve Grant</td>
+                                <td> 1000 €</td>
+                            </tr>
+
+                            <tr>
+                                    <td> Steve Porcher</td>
+                                    <td> 7865 € </td>
+                                </tr>
+                                <tr>
+                                    <td>Sylvester Stallan</td>
+                                    <td>77897 €</td>
+        
+                                </tr>
+                                <tr>
+                                    <td>Szen Tren</td>
+                                    <td> 562 €</td>
+                                </tr>
+                            </tbody>
+                            
+                            <tfoot>
+                                <tr>
+                                   <td> Total</td> 
+                                   <td> 14059 €</td>
+                                </tr> 
+                            </tfoot>
+
+
+                    </table>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
