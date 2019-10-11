@@ -66,6 +66,47 @@ select, option {
     overflow: auto;
 }
 
+.titlepage {
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-family: arial;
+}
+
+ul {
+    list-style:none;
+    text-align: right;
+    margin-left:0;
+    padding-left:0;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+}
+
+.namelist, .pricelist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    background-color: blue;
+}
+
+.totalname, .pricename {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid red;
+}
+
+
   @media screen and (min-width: 1100px) {
     .empty-whisky {
        display: none;
