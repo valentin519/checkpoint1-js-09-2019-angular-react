@@ -18,15 +18,15 @@ Au final la liste devra ressembler à :
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
 
-var a = new Array();
+var chairs = new Array();
 
 for (i = 1; i < 27; i++) {
-  a[i] = new Array();
+  chairs[i] = new Array();
   
   for (j = 1; j < 101; j++) {
-    a[i][j] = (i + "-" + j) ;
+    chairs[i][j] = (i + "-" + j) ;
   }
   
 }
 
-console.log(a)
+console.log(chairs)
