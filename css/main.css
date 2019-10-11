@@ -8,7 +8,6 @@
     --paper-dark: #c7c196;
     --error: indianred;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -69,4 +68,10 @@ code {
 
 h3 {
     margin-top:3em;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    #resolution {width:60px};
 }
