@@ -13,9 +13,10 @@
 * Résultat : [-30, 108]
 * 
 * Exemple 3 :
-* Tableau d'entrée : [56, 7, 63, 9, 7, 12, 85]
+* Tableau d'entrée : []
 * Résultat : [7, 85]
-*/
+
+
 
 var minMax = () => (array) => {
     const min = 0;
@@ -32,3 +33,31 @@ var minMax = () => (array) => {
     }
     array.push(min, max);
   }
+
+*/
+arraytest = [56, 7, 63, 9, 7, 12, 85]
+function min( array ){
+  return Math.min.apply( Math, array );
+};
+function max( array ){
+  return Math.max.apply( Math, array );
+};
+/*
+function minMax(array) {
+  const min = [];
+    const max = [];
+  const newArray =[]
+    for (let i = 1; i = array.length; i+1) {
+      if (array[i] === Math.min(array[i])) {
+        newArray.push(array[i]);
+      }
+      if (array[i] === Math.max(array[i])) {
+        newArray.push(array[i])
+      }
+      
+    }
+    newArray.push(min, max);
+    return Newarray;
+  }
+*/
+console.log (max(arraytest));
