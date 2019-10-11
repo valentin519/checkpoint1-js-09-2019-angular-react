@@ -16,10 +16,10 @@
  * Tableau d'entrée : [56, 7, 63, 9, 7, 12, 85]
  * Résultat : [7, 85]
  */
-
+array = [-6, 7, 63, 9, 7, 12, 85];
 function minMax(array) {
-	let min = 0;
-	let max = 0;
+	let min = array[0];
+	let max = array[0];
 
 	for (let i = 0; i < array.length; i++) {
 		if (array[i] < min) {
@@ -34,3 +34,5 @@ function minMax(array) {
 	outputArray.push(min, max);
 	return outputArray;
 }
+
+console.log(minMax(array));
