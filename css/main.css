@@ -124,6 +124,10 @@ hr{
 .alphabet span{
     padding: 5px;
 }
+.container{
+    display:flex;
+    flex-direction: column;
+}
 @media(min-width:1200px){
     .empty-whisky{
         display:none;
@@ -172,15 +176,20 @@ hr{
     .empty-whisky,.whisky,.inkpen{
         display:none;
     }
+    
     .pages{
-        width: 100%;
+        width: 98%;
         margin:0;
+        height:auto !important;
         flex-basis: auto;
     }
     .page{
         width: 100% !important;
     }
     .desktop{
+        width: 100%;
+    }
+    .container{
         flex-direction: row-reverse;
         flex-wrap: nowrap !important;
     }
@@ -203,14 +212,31 @@ hr{
     .page{
         width: 100% !important;
         margin-bottom: 1em;
+        height:auto;
     }
     .leftpage{
-        margin-left: 0.5em;
+        margin-left: 0em;
+        width: 85% !important;
     }
     .rightpage{
-        width: 90% !important;
+        width: 85% !important;
     }
     .navbar a{
         font-size: 14px !important;
+    }
+    .desktop{
+        width: 100%;
+    }
+    .container{
+        flex-direction: row-reverse;
+        /* flex-wrap: nowrap !important; */
+    }
+    .alphabet{
+        flex-direction: column;
+        width: 55px;
+        text-align: center;
+    }
+    .alphabet span{
+        font-size: 0.5em;
     }
 }
