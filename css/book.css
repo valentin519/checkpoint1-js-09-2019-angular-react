@@ -101,3 +101,9 @@ form button{
     font-size: 1.7rem;
 }
 
+/* screen < 1200*/
+@media screen and (max-width: 1200px) {
+    .inkpen{
+        display:none;
+    }
+}
