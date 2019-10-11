@@ -16,9 +16,31 @@ main {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.whisky {
+   height: 7em;
+   width: 8em;
+}
+.inkpen {
+    height: 11em;
+    width: 6em;
+}
+.desktop {
+    width: auto;
+    display: flex;
+    align-content: space-around;
+    
+
+}
+/* .container {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+} */
+.empty-whisky {
+    display: none;
+}
 .pages {
     display: flex;
-    width: auto;
     flex-basis : 65%;
     margin:1em;
 }
