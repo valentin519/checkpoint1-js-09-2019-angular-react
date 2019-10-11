@@ -116,4 +116,26 @@ main {
     }
 }
 
+@media only screen and (max-width : 799px) {
+    .pages {
+        display: block;
+        flex-basis: 100%;
+    }
+    .leftpage {
+        width: 100%;
+    }
+    .rightpage {
+        width: 100%;
+    }
+     .whisky {
+         display: none;
+     }
+
+    .inkpen {
+        display: none;
+    }
+
+    .empty-whisky {
+        display: none;
+    }
 }
