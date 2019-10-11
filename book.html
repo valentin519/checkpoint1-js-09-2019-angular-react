@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Checkpoint Javascript 1</title>
 </head>
 
@@ -27,11 +27,46 @@
 
             <div class="pages">
                 <div class="page leftpage">
-                    Add a bribe
+                    Add a bribe <br />
+                    <form action="#" method="post" class="form--leftpage">
+                        <label for="name">Name</label><br />
+                        <input type="text" name="name" class="input--form--leftpage"><br />
+                        <label for="payment">Payment</label><br />
+                        <input type="number" name="payment" class="input--form--leftpage"><br />
+                        <button type="submit" class="button--form--leftpage">Pay !</button>
+                    </form>
                     <!-- TODO : Form -->
                 </div>
 
                 <div class="page rightpage">
+                    <p class="title--rightpage">S</p>
+                    <hr>
+                    <div class="table--rightpage">
+                        <div class="tablepart right">
+                            <p>Greta Thunberg</p>
+                            <p>Andréa Maugars</p>
+                            <p>Stan Le Voyou</p>
+                            <p>Sergio Cambriolo</p>
+                            <p>Juanito</p>
+                            <p>Dylanizos</p>
+                            <p>Sylvester Stallon</p>
+                            <p>Romain Sombre</p>
+                            <p>El Caméléon</p>
+                            <p>Total</p>
+                        </div>
+                        <div class="tablepart right--part">
+                            <p>256 €</p>
+                            <p>7852 €</p>
+                            <p>126 €</p>
+                            <p>7512 €</p>
+                            <p>152 €</p>
+                            <p>203 €</p>
+                            <p>265 €</p>
+                            <p>484 €</p>
+                            <p>7845 €</p>
+                            <p>15k €</p>
+                        </div>
+                    </div>
                     <!-- TODO : Display bribes and total paiement -->
                 </div>
             </div>

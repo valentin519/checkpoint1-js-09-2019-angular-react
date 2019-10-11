@@ -70,3 +70,128 @@ code {
 h3 {
     margin-top:3em;
 }
+
+.desktop{
+    display:flex;
+}
+.input--form--leftpage{
+    border:0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+.button--form--leftpage{
+    border:0;
+    background-color: #fff;
+    border-radius:5px;
+    padding: 10px;
+}
+.table--rightpage{
+    display:flex;
+    justify-content: center;
+}
+.right{
+    text-align: right;
+}
+.tablepart{
+    width: 50%;
+}
+.tablepart p {
+    font-size: 0.7em;
+    margin: 0;
+}
+.title--rightpage{
+    margin: 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.right--part{
+    text-align: right;
+}
+.right--part p:last-child{
+    border-top: 1px solid #000;
+}
+hr{
+    margin: 15px;
+}
+@media(min-width:1200px){
+    .empty-whisky{
+        display:none;
+    }
+    .whisky{
+        height: 200px;
+        margin-left: 3%;
+    }
+    .inkpen{
+        height: 400px;
+        margin-top: auto;
+    }
+}
+@media(min-width:1100px) and (max-width:1200px){
+    .inkpen{
+        display:none;
+    }
+    .empty-whisky{
+        display:none;
+    }
+    .whisky{
+        height: 200px;
+        margin-left: 3%;
+    }
+    .page{
+        height:auto!important;
+    }
+    .tablepart p {
+        font-size: 0.7em;
+        margin: 0;
+    }
+}
+@media(min-width:1000px) and (max-width:1100px){
+    .inkpen{
+        display:none;
+    }
+    .whisky{
+        display:none;
+    }
+    .empty-whisky{
+        height: 200px;
+        margin-left: 3%;
+    }
+}
+@media(min-width:800px) and (max-width:1000px){
+    .empty-whisky,.whisky,.inkpen{
+        display:none;
+    }
+    .pages{
+        width: 100%;
+        margin:0;
+        flex-basis: auto;
+    }
+    .page{
+        width: 100% !important;
+    }
+}
+@media(min-width:320px) and (max-width:800px){
+    .empty-whisky,.whisky,.inkpen{
+        display:none;
+    }
+    .pages{
+        width: 100%;
+        margin:0;
+        flex-basis: auto;
+        flex-direction: column-reverse;
+    }
+    .page{
+        width: 100% !important;
+        margin-bottom: 1em;
+    }
+    .leftpage{
+        margin-left: 0.5em;
+    }
+    .rightpage{
+        width: 90% !important;
+    }
+    .navbar a{
+        font-size: 14px !important;
+    }
+}
