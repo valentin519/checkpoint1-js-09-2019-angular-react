@@ -41,6 +41,60 @@ main {
     overflow: auto;
 }
 
+.rightpage .title {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 22pt;
+}
+
+.title {
+  margin: 1% 0;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.listName, .listPay {
+  max-height: 100vh;
+}
+
+.listName p, .listPay p {
+  font-size: 0.75em;
+}
+
+.listName {
+  padding-right: 15%;
+}
+
+.listName p {
+  margin: 2% 0;
+}
+
+.listName hr {
+  visibility: hidden;
+}
+
+.listPay p {
+  margin: 2.75% 0;
+}
+
+.listPay hr {
+  width: 150%;
+  left: -100px;
+  position: relative;
+}
+
+label {
+  font-size: 22pt;
+}
+
+input {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 1200px) {
   .desktop {
     display:flex;
@@ -108,7 +162,7 @@ main {
   .page {
     width: 100%
   }
-  
+
   .inkpen {
     display: none;
   }
