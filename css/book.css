@@ -34,14 +34,59 @@ main {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
-
+/****** Rigth page */
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+.rightpage p {
+    text-align: center;
+    border-bottom: 1px solid;
+    margin-top: 0;
+}
+.rightpage .paymentList {
+    display: flex;
+    
+}
+.rightpage .paymentList ul {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    list-style-type: none;
+    text-align: right;
+}
+.rightpage .paymentList ul li { 
+    width: 100%; 
+    font-size: .8em;
+}
+.rightpage .paymentList ul:last-child li:last-child {
+    border-top: 1px solid;
+}
+/****** FORM */
+.pages input {
+    border-radius: 3px;
+    border: 0;
+    padding: .5em;
+    margin: .5em auto;
+}
+.pages label {
+    margin-top: .5em;
+    font-size: .8em;
+}
+.pages label, .pages input[type='text'], .pages input[type='number'] {
+    display: block;
+    width: 90%;
+    margin-left: 0;
+}
+.pages input[type='submit'] {
+    background-color: #fff;
+    font-size: .43em;
+    margin-top: 1.5em;
+}
 /* On screens that are more than 1200px */
 @media screen and (min-width: 1201px) {
+    .rightpage .paymentList ul li { font-size: .8em; }
     .desktop {
         display: flex;
     }
@@ -66,6 +111,7 @@ main {
     .empty-whisky, .inkpen {
         display: none;
     }
+    .rightpage .paymentList ul li { font-size: .6em; }
 }
 /* On screens between 1000px and 1100px */
 @media screen and (max-width: 1099px) and (min-width: 1000px) {
@@ -78,6 +124,7 @@ main {
     .empty-whisky {
         flex: 1;
     }
+    .rightpage .paymentList ul li { font-size: .6em; }
 }
 /* On screens between 1000px and 1100px */
 @media screen and (max-width: 999px) and (min-width: 800px) {
@@ -90,6 +137,7 @@ main {
     .pages {
         flex: 1;
     }
+    .rightpage .paymentList ul li { font-size: .7em; }
 }
 /* On screens that are 800x or less, set the background color to blue */
 @media screen and (max-width: 799px) {
@@ -100,4 +148,5 @@ main {
         flex-direction: column;
         align-items: center;
     }
+    .rightpage .paymentList ul li { font-size: .45em; }
 }
