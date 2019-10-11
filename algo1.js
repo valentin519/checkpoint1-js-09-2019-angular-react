@@ -19,12 +19,12 @@ Au final la liste devra ressembler à :
 */
 
 
-const board = [];  
+const listSite = [];  
 
 for (let i = 0; i < 26; i++){ 
-  board[i] = [];             
+  listSite[i] = [];             
 for (let j = 0; j < 100; j++){ 
-  board[i][j]= `${(i + 1)}-${j + 1}`; 
+  listSite[i][j]= `${(i + 1)}-${j + 1}`; 
 }
 }
-console.log(board);;
+console.log(listSite);

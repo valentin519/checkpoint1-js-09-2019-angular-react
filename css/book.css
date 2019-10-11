@@ -15,9 +15,28 @@ main {
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
+@media all and (max-width: 1000px)
+{
+.boxwhisky{
+        display: none;
+}  
+}
+
+@media all and (max-width: 1100px) 
+{
+.boxinkpen {
+        display: none;
+}  
+}
+@media screen and (min-width: 800px){
+.righpages{
+   display: flex;
+}
+}
 
 .pages {
     display: flex;
+    justify-content: center;
     width: auto;
     flex-basis : 65%;
     margin:1em;
@@ -26,7 +45,7 @@ main {
 .page {
     height:65vh;
     padding: 3vw;
-    width: 50%;
+    width: 25%;
     background-blend-mode: multiply;
 }
 

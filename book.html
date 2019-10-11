@@ -21,21 +21,48 @@
 
     <main class="container">
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
+        <section class="desktop"> 
+            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky boxwhisky" />
             <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
+                <div  class="boxwhisky" >
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />  
                 </div>
+                   <div class="page leftpage">
+                    Add a bribe
+                    
+                    <form method="post" >
+                        <p class="n">
+                            <label for="pseudo">Name</label>
+                            <input type="text" name="pseudo" id="pseudo" />
+                                
+                            <br />
+                            <label for="pass">Payment</label>
+                            <input type="password" name="pass" id="pass" />
+                           <div>  
+                                <input class="favorite styled"
+                                       type="button"
+                                       value="Pay !">
+                            </div>  
+                        </p>
+                    </form>
 
+                     </div>
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                    <p>
+                    Sam Burns 100$ </br>
+                    Samuel Yans 52563$ </br>
+                    Simon Pogg 52$ </br>
+                    Sophia Maria 452$ </br>
+                    Stacie Humber 568$ </br>
+                    Steve Grant 1000$ </br>
+                    Steve Porcher 7865$</br>
+                    Total 14567$
+                    </p>
+                </div>
+                <div class="boxinkpen">
+                   <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
     </main>
 </body>
