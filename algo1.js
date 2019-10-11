@@ -17,3 +17,15 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+const theatreSiege = () => {
+  let totalSiege = [];
+  for (i = 0; i < 26; i++) {
+    for (j = 0; j < 100; j++) {
+      totalSiege.push(`${i}-${j}`);
+    }
+  }
+  return totalSiege;
+}
+
+console.log(theatreSiege());
