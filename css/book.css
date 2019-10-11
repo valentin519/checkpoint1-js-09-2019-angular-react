@@ -40,3 +40,23 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media screen and (min-width: 1200px) {
+    .desktop {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        
+    }
+    .empty-whisky {
+        visibility: hidden;
+        display: contents;
+    }
+}
+
+@media screen and (1100px <= width <= 1200px) {
+
+    .inkpen {
+        visibility: hidden;
+    }
+}
