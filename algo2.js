@@ -16,19 +16,24 @@
 * Tableau d'entrée : [56, 7, 63, 9, 7, 12, 85]
 * Résultat : [7, 85]
 */
-
-var minMax = () => (array) => {
+let newArray = [];
+var minMax = (array) => {
     const min = 0;
-    const max = array[0];
+    const max = 0;
   
-    for (let i = 1; i = array.length - 1; i+1) {
-      if (array(i) < min) {
-        min = array;
+    for (let i = 0; i < array.length - 1; i++) {
+      if (array[i] < min) {
+        min = array[i];
       }
-      if (array[i] = max) {
+      else if (array[i] > max) {
         max = array[i];
       }
-      return array;
+      
     }
-    array.push(min, max);
+    newArray.push(min, max);
+    return (newArray);
   }
+
+  
+
+  /*J'ai corrigé quelques erreurs mais je n'arrive pas à ajouter min et max à mon nouveau tableau.. console.log(newArray) me renvoie systématiquement un tableau vide */

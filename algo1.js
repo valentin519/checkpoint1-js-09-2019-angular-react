@@ -17,3 +17,14 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+let tab = [];
+function seat(){
+  
+  for(let i=0; i<26; i++){
+    for (let j=0; j<100; j++){
+      tab.push(i,"-",j);
+    }
+  }
+  return tab;
+}
+/* Je n'arrive pas à console log quoi que ce soit mise a part un tableau vide avec console.log(tab)*/
