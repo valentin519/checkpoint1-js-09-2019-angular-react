@@ -18,7 +18,7 @@
 */
 
 function minMax (array) {
-  let min = 0;
+  let min = array[0];
   let max = array[0];
   let finalArray = []
   for (let i = 1; i <= array.length - 1; i++) {
