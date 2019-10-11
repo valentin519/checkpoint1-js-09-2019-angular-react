@@ -17,11 +17,27 @@
 * Résultat : [7, 85]
 */
 
-array = [-30, 5, 43, 108, -5, -7, 89]
+array = [56, 7, 63, 9, 7, 12, 85]
 
-minMax = (array) => {
-  let min = 0;
-  let max = 0;
+// on déclare minMax en tant que fonction du paramètre Array, "array
+// " étant le tableau déclaré au dessus. //
+// ensuite on déclare les variables min et max qui sont égal
+// a array[0] c a d au premier élément du tableau nommé "array"
+// ensuite on écrit la boucle For qui va analysé en continu
+// le contenu du tableau sur "array.length" donc littéralement
+// " la taille du tableau " 
+// array[i] "<" min on lui dit que si "valeur du tableau" est supérieur a min=0
+// alors la valeur est stocké, si l'index trouve un chiffre supérieur au précédent
+// il le garde en mémoire en priorité.
+// même concept pour le "max"
+// pour finir on push dans notre tableau vide la valeur finale mix/max.
+// puis on le return dans un console.log pour avoir une vue
+// et on appelle la fonction pour qu'elle s'éxécute.
+
+
+minMax = (array) => {        
+  let min = array[0];   
+  let max = array[0];
   let tab = []
 
   for (let i = 0 ; i < array.length - 1; i++) {
