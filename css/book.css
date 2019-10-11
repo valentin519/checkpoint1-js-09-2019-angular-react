@@ -21,8 +21,17 @@ main {
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
+.whisky{
+    height: 50%;
+}
+
 .empty-whisky{
-    display:none
+    display:none;
+    height: 50%;
+}
+.inkpen{
+    height: 50%;
+    align-self: flex-end;
 }
 
 .pages {
