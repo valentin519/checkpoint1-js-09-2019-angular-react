@@ -17,3 +17,20 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+
+
+
+
+function seating(){
+  let _seat = [];
+  for(let rowIndex = 1; rowIndex <= 26; rowIndex++) {
+    for(let colIndex = 1; colIndex <= 100; colIndex++)
+      _seat.push(`${rowIndex}-${colIndex}`);
+    }
+  
+   return _seat;
+  
+};
+console.log(seating())
+module.exports = seating;
