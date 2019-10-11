@@ -40,3 +40,7 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media all and (max-width: 1200px){
+
+}
