@@ -41,6 +41,10 @@ main {
     overflow: auto;
 }
 
+td {
+    font-size: 80%;
+}
+
 @media screen and (min-width: 1200px) {
     .flexbox-container {
         display :flex;
