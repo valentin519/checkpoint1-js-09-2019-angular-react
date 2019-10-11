@@ -18,15 +18,13 @@ main {
 
 .pages {
     display: flex;
-    width: auto;
-    flex-basis : 65%;
+    flex-basis : 100%;
     margin:1em;
 }
 
 .page {
-    height:65vh;
+    height:700px;
     padding: 3vw;
-    width: 50%;
     background-blend-mode: multiply;
 }
 
@@ -39,4 +37,122 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .mob-0 {display: none}
+    .mob-1 {width: 8.33%}
+    .mob-2 {width: 16.66%}
+    .mob-3 {width: 25%}
+    .mob-4 {width: 33.33%}
+    .mob-5 {width: 41.66%}
+    .mob-6 {width: 50%}
+    .mob-7 {width: 58.33%}
+    .mob-8 {width: 66.66%}
+    .mob-9 {width: 75%}
+    .mob-10 {width: 83.33%}
+    .mob-11 {width: 91.66%}
+    .mob-12 {width: 100%}
+
+    .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+    .navbar {
+        height: 5%;
+        font-size: 0.55em;
+    }
+
+    .names {
+        flex-direction: column;
+        font-size: 0.9em;
+    }
+
+    .prices {
+        flex-direction: column;
+        font-size: 0.9em;
+    }
+
+    .whisky {
+        display: none;
+    }
+
+    .empty-whisky {
+        display: none;
+    }
+
+    .inkpen {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .small-0 {display: none}
+    .small-1 {width: 8.33%}
+    .small-2 {width: 16.66%}
+    .small-3 {width: 25%}
+    .small-4 {width: 33.33%}
+    .small-5 {width: 41.66%}
+    .small-6 {width: 50%}
+    .small-7 {width: 58.33%}
+    .small-8 {width: 66.66%}
+    .small-9 {width: 75%}
+    .small-10 {width: 83.33%}
+    .small-11 {width: 91.66%}
+    .small-12 {width: 100%}
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .medium-0 {display: none}
+    .medium-1 {width: 8.33%}
+    .medium-2 {width: 16.66%}
+    .medium-3 {width: 25%}
+    .medium-4 {width: 33.33%}
+    .medium-5 {width: 41.66%}
+    .medium-6 {width: 50%}
+    .medium-7 {width: 58.33%}
+    .medium-8 {width: 66.66%}
+    .medium-9 {width: 75%}
+    .medium-10 {width: 83.33%}
+    .medium-11 {width: 91.66%}
+    .medium-12 {width: 100%}
+
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .large-0 {display: none}
+    .large-1 {width: 8.33%}
+    .large-2 {width: 16.66%}
+    .large-3 {width: 25%}
+    .large-4 {width: 33.33%}
+    .large-5 {width: 41.66%}
+    .large-6 {width: 50%}
+    .large-7 {width: 58.33%}
+    .large-8 {width: 66.66%}
+    .large-9 {width: 75%}
+    .large-10 {width: 83.33%}
+    .large-11 {width: 91.66%}
+    .large-12 {width: 100%}
+
+}
+
+@media screen and (min-width: 1200px) {
+    .dsk-0 {display: none}
+    .dsk-1 {width: 8.33%}
+    .dsk-2 {width: 16.66%}
+    .dsk-3 {width: 25%}
+    .dsk-4 {width: 33.33%}
+    .dsk-5 {width: 41.66%}
+    .dsk-6 {width: 50%}
+    .dsk-7 {width: 58.33%}
+    .dsk-8 {width: 66.66%}
+    .dsk-9 {width: 75%}
+    .dsk-10 {width: 83.33%}
+    .dsk-11 {width: 91.66%}
+    .dsk-12 {width: 100%}
+
 }
