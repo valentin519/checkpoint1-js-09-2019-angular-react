@@ -17,3 +17,38 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+/*let colonnes = 0;
+let seats = 0;
+
+function nbSeat(colonne, seat) {
+  for (let i = 0; i <= colonne; i++) {
+    for (let y = 0; y <= seat; y++) {
+      return colonnes += y;
+    }
+    return seats += i;
+  }
+};
+
+nbSeat(26, 100);
+
+
+console.log(`${colonnes} - ${seats}`);*/
+
+let array = [0, 0];
+
+for (let i = 1; i <= 26; i++) {
+  for (let y = 1; y <= 100; y++) {
+    console.log(array.unshift(y));
+  }
+  console.log(array.push(i));
+};
+
+// je ne vois pas comment créer la fonction et intégrer les deux valeurs à un tableau.
+
+
+
+
+
+
+
