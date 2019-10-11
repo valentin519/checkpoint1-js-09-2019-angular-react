@@ -11,27 +11,38 @@ main {
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
+.desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
 
+}
 .whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
     
 }
 .whisky {
-    width: 300px;
-    margin: 0.5em;
-    float: left;      
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+         
 }      
 
 .inkpen{
-    float: right;
-
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    align-self: center;
+  
 }
 
 .pages {
     display: flex;
-    width: auto;
+    width: 100%;
     flex-basis : 65%;
     margin:1em;
+
 }
 
 .page {
