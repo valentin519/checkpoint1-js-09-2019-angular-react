@@ -28,14 +28,18 @@
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form>
+                        <label for="name"> Name </label>
+                        <input id="name" name="name" type="text">
+                        <label for="payment"> Payment</label>
+                        <input id="payment" name="payment" type="number">
+                        <input id="paySub" type="submit" value="Pay !">
+                    </form>
                 </div>
-
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
-                </div>
-            </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+                </div class="penbox">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
     </main>
 </body>

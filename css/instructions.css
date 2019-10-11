@@ -4,7 +4,7 @@
     filter: sepia(80%);
     padding: 2em;
     padding-top: 3em;
-    color:var(--light);
+    color: var(--light);
     background-blend-mode: soft-light;
 }
 
@@ -14,7 +14,7 @@
     transform: rotate(5deg);
     object-fit: cover;
     width: 300px;
-    margin:0.5em;
+    margin: 0.5em;
     float: right;
     text-align: center;
     box-shadow: 1px 1px 5px var(--shadow);
@@ -36,7 +36,7 @@
     background-repeat: no-repeat;
     flex-direction: column;
     width: 100%;
-    filter:sepia(40%);
+    filter: sepia(40%);
     font-size: 16pt;
 }
 
@@ -47,14 +47,14 @@
 }
 
 .instructions article {
-    padding:2em;
-    margin:2em;
+    padding: 2em;
+    margin: 2em;
     background-color: white;
     background-image: url("../image/paper.png");
     background-blend-mode: multiply;
     width: 60%;
     transform: rotateZ(-3deg);
-    filter:sepia(80%);
+    filter: sepia(80%);
     min-height: 800px;
     box-shadow: 1px 1px 5px var(--shadow);
     counter-set: instructions;
@@ -63,6 +63,7 @@
 .instructions ol {
     list-style-type: none;
 }
+
 .instructions li {
     counter-increment: instructions;
     padding: 0.5em;
@@ -79,14 +80,15 @@
 .instructions article.bonus {
     position: absolute;
     z-index: -1;
-    top:150px;
+    top: 150px;
     left: 20px;
     transform: rotateZ(2deg);
 }
 
-.seeBonus, .closeBonus {
+.seeBonus,
+.closeBonus {
     position: absolute;
-    top:1em;
+    top: 1em;
     right: 1em;
     text-decoration: none;
 }
@@ -103,23 +105,20 @@
 .instructions article.bonus:target .seeBonus {
     display: none;
 }
+
 .instructions article.bonus:target .closeBonus {
     display: block;
 }
 
-
-
 @keyframes pageSlide {
     50% {
-        left:calc(20px + 60%);
+        left: calc(20px + 60%);
     }
-
     100% {
         z-index: 1;
         left: 20px;
     }
 }
-
 
 .thumbnail {
     width: 100%;
@@ -134,8 +133,6 @@
     object-fit: contain;
 }
 
-
-
 .ness {
-    margin-top:2em;
+    margin-top: 2em;
 }
