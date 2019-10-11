@@ -30,11 +30,47 @@
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form>
+                        <label for="name">
+                            <span>
+                                Name
+                            </span>
+                            <input type="text" name="name" id="name">
+                        </label>
+
+                        <label for="payment">
+                            <span>
+                                Payment
+                            </span>
+                            <input type="text" name="payment" id="payment">
+                        </label>
+
+                        <button type="button" id="buttonForm">Pay !</button>
+                    </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                    <h1>S</h1>
+
+                    <div class="hr"></div>
+
+                    <div class="list" id="list">
+                        <div>
+                            <span>Sam Burns</span>
+                            <p class="calc">100€</p>
+                        </div>
+                    </div>
+                    <div class="list2">
+                        <div class="offSet"></div>
+                        <div class="hr2"></div>
+                    </div>
+
+                    <div class="list">
+                        <div>
+                            <span>Total</span>
+                            <p id="total">100€</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="inkpenDiv">
@@ -42,6 +78,7 @@
             </div>
         </section>
     </main>
+    <script src="book.js"></script>
 </body>
 
 </html>

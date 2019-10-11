@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
 
+html * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
 body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
@@ -35,10 +42,78 @@ main {
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+input {
+    border-radius: 4px;
+    border: 0;
+    height: 25px;
+}
+
+button  {
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #FFF;
+    margin-top: 15px;
+    font-size: auto;
+}
+
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-weight: inherit;
+    font-size: 40px;
+}
+
+.hr {
+    background-color: black;
+    height: 1px;
+}
+
+.offSet {
+    width: 50%;
+    height: 1px;
+}
+
+.hr2 {
+    background-color: black;
+    height: 1px;
+    width: 50%;
+}
+
+.list2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+.list div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+.list span, p {
+    width: 50%;
 }
 
 @media screen and (min-width: 1200px) {
