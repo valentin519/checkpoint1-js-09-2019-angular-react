@@ -12,6 +12,21 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+ul#bonus {
+    padding: 15px 0;
+    position: absolute;
+    top: 59px;
+    background-color: #999;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: space-between;
+    width: 100%;
+    font-family: courier, monospace;
+    color: #666;
+}
+
 .desktop {
     display: flex;
     margin: auto;
@@ -145,6 +160,19 @@ button:hover, form input:hover {
     }
     .rightpage, .leftpage {
         width: 100%;
+    }
+    ul#bonus {
+        right: 0;
+        padding: 15px;
+        width: 30px;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    ul#bonus li {
+        height: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+        flex:1;
     }
 }
 @media (max-width: 400px) { /* en dessous de 400px */

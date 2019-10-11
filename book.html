@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/book.css">
-    <title>Checkpoint Javascript 1</title>
+		<title>Checkpoint Javascript 1</title>
 </head>
 
 <body>
@@ -16,7 +16,8 @@
             <img src="image/logo.png" class="logo" alt="logo-wcs" />
             <a href="index.html">Instructions</a>
             <a href="book.html">Secret book</a>
-        </nav>
+				</nav>
+				<ul id="bonus"></ul>
     </header>
 
     <main class="container">
@@ -87,7 +88,15 @@
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
-    </main>
+		</main>
+		<script type="text/javascript">
+			const id_bonus = document.getElementById('bonus');
+			let list_letters = "";
+			for (l = 0; l < 26; l++) {
+        list_letters += `<li>${String.fromCharCode(65 + l)}</li>`;
+			}
+			id_bonus.innerHTML = list_letters;
+		</script>
 </body>
 
 </html>
