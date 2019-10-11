@@ -7,6 +7,7 @@
 * Exemple 1 :
 * Tableau d'entrée : [4, 6, 35, -65, -9, 0, 67]
 * Résultat : [-65, 67]
+
 * 
 * Exemple 2 :
 * Tableau d'entrée : [-30, 5, 43, 108, -5, -7, 89]
@@ -20,6 +21,7 @@
 var minMax = () => (array) => {
     const min = 0;
     const max = array[0];
+    const positifs = 
   
     for (let i = 1; i = array.length - 1; i+1) {
       if (array(i) < min) {
@@ -32,3 +34,4 @@ var minMax = () => (array) => {
     }
     array.push(min, max);
   }
+minMax()
