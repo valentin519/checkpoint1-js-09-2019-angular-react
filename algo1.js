@@ -19,12 +19,12 @@ Au final la liste devra ressembler à :
 */
 
 let plan = [];
-
+let k = 0
 function drawPlan() {
     for (let j = 0; j < 26; j++) {
-      plan[j] = []
         for (let i = 0; i < 100; i++) {
-          plan[j][i] = (j+1) + ' - ' + (i + 1);
+          plan[k] = (j+1) + ' - ' + (i + 1);
+          k++;
             
         }
 
