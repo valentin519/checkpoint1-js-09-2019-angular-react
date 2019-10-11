@@ -22,20 +22,92 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            
+            <!-- <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" /> -->
 
             <div class="pages">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form class="formPage">
+
+                        <div>
+                            <label for="">Name</label>
+                            <input type="text" name="name" id="name" class="inputStyle">
+                        </div>
+                        
+
+                        <label for="pay">Payments</label>
+                        <select name="paiement" id="pay" class="inputStyle">
+                            <option value="cb">Carte Bleue</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                        <div>
+                            <button type="submit" class="btnPay" >Pay !</button>
+                        </div>
+                        
+            
+                    </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    <p class="SCenter">S</p> 
+                
+                    <section class="sectionList">
+                        <table>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Samuel Yans</td>
+                                <td>52563€</td>
+                            </tr>
+                            <tr>
+                                <td>Simon Pogg</td>
+                                <td>52€</td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Maria</td>
+                                <td>452€</td>
+                            </tr>
+                            <tr>
+                                <td>Stacie Hunberg</td>
+                                <td>568€</td>
+                            </tr>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <hr>
+                            <tr>
+                        
+                                <td>Total</td>
+                                <td class="tdTotal">141059€</td>
+                            </tr>
+                        </table>
+
+                    </section>
+
                 </div>
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            
+            
         </section>
     </main>
 </body>
