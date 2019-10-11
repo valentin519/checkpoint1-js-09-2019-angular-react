@@ -45,7 +45,8 @@ const hihi = (array) => {
 
 
     }
-    console.log(min,max)
+    tab.push(min,max)
+    return tab
 }
 
-hihi(test)
+console.log(hihi(test))
