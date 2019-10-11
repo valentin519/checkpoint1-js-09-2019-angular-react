@@ -17,18 +17,25 @@
 * Résultat : [7, 85]
 */
 
-var minMax = () => (array) => {
-    const min = 0;
-    const max = array[0];
-  
-    for (let i = 1; i = array.length - 1; i+1) {
-      if (array(i) < min) {
-        min = array;
-      }
-      if (array[i] = max) {
-        max = array[i];
-      }
-      return array;
+
+
+ // J'ai voulu troller l'exo avec des choses randoms dans mes let c'était amusant.
+const minMax = (array) => {
+  const tab = []
+  let min = +Math.PI;
+  let max = -Math.PI;
+  for (let i = 0; i <= array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
     }
-    array.push(min, max);
+    if (array[i] > max) {
+      max = array[i];
+    }
   }
+  tab.push(min, max);
+  return tab;
+}
+
+const newTab = [88747498474, 0983092849275, 20284624726424, 92867245245824, 982737264872, 299882, 216516251615, 987237645, "jaaj", true.length, false.length, 0870870797024284,]
+
+console.log(minMax(newTab))
