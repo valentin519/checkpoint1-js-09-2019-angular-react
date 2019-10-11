@@ -32,57 +32,65 @@
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
-                    <form action="add_to_book">
-                        <label for="name">Name : </label>
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <label for="payment">Payment : </label>
-                        <input type="number" name="payment" id="payment" placeholder="Payment">
-                        <input type="submit" value="Pay !">
+                    <form action="add_to_book" class="addBribe">
+                        <label for="name">Name</label>
+                        <div>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <label for="payment">Payment</label>
+                        <div>
+                            <input type="number" name="payment" id="payment">
+                        </div>
+                        <div>
+                            <button type="submit">Pay !</button>
+                        </div>
                     </form>
                 </div>
 
                 <div class="page rightpage">
-                    <span>S</span>
-                    <hr>
-                    <ul>
-                        <li>
+                    <span class="pageLetter">S</span>
+                    <hr class="separatorLetter"> 
+                    <ul class="bribedList">
+                        <li class="ulBribed">
                             <span>Sam Burns</span>
                             <span>100 €</span>
                         </li>
-                        <li>
+                        <li class="ulBribed">
                             <span>Samuel Yans</span>
                             <span>52563 €</span>
                         </li>
-                        <li>
+                        <li class="ulBribed">
                             <span>Simon Pogg</span>
                             <span>52 €</span>
                         </li>
-                        <li>
+                        <li class="ulBribed">
                             <span>Sophia Maria</span>
                             <span>452 €</span>
                         </li>
-                        <li>
+                        <li class="ulBribed">
                             <span>Stacie Hunberg</span>
                             <span>568 €</span>
                         </li>
-                        <li>
+                        <li class="ulBribed">
                             <span>Steve Grant</span>
                             <span>1000 €</span>
                         </li>
-                        <li>
+                        <li class="ulBribed">
                             <span>Steve Porcher</span>
                             <span>7865 €</span>
                         </li>
-                        <li>
+                        <li class="ulBribed">
                             <span>Sylvester Stallan</span>
                             <span>77897 €</span>
                         </li>
-                        <li>
+                        <li class="ulBribed">
                             <span>Szen Tren</span>
                             <span>562 €</span>
                         </li>
-                        <hr>
-                        <li>
+                        <li class="ulSeparator">
+                            <hr class="separatorTotal">
+                        </li>
+                        <li class="ulBribed">
                             <span>Total</span>
                             <span>141059 €</span>
                         </li>
