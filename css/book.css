@@ -5,7 +5,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Impossible de retrouver la propriété qui ajoute du margin top et bottom? */
+#name p, #fund p, h2, form p, hr, .bribe p{
+    margin-top: 0px;
+    margin-bottom: 0px 
 
+}
 main {
     padding-top: 4em;
     font-size: 26pt;
@@ -19,7 +24,7 @@ main {
 .pages {
     display: flex;
     width: auto;
-    flex-basis : 65%;
+    flex-basis : 100%;
     margin:1em;
 }
 
@@ -35,8 +40,104 @@ main {
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+form p{
+    text-align: left;
+}
+form input{
+    text-align: center;
+    max-width: 80%;
+    align-self: center;
+    width: 80%;
+} 
+form button {
+    align-self: flex-end;
+    margin: 5px;
+}
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+.desktop {
+    display: flex; 
+    flex-direction: row;
+}
+
+.whisky{
+    align-self: flex-start;
+}
+.inkpen{
+    align-self: flex-end;
+}
+.empty-whisky{
+    display: none;
+}
+h2 {
+    text-align: center;
+    font-size: 1em;
+}
+.bribes {
+    display: flex;
+    flex-direction: column;
+}
+.bribe, .bribes hr{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    align-items: center;
+}
+.bribe p{
+    width:50%;
+}
+.bribes hr {
+    align-self: flex-end;
+    text-align: right;
+    width : 50%;
+    margin-right: 0;
+
+}
+
+
+/* Between 1200 and 1100 */
+@media (max-width: 1200px){
+    .inkpen{
+        display: none;
+    }
+
+}
+/* Between 1100 and 1000 */
+
+@media (max-width: 1100px){
+    .whisky{
+        display: none
+    }
+    .empty-whisky{
+        display:flex;
+        align-self: flex-start;
+    }
+    
+}
+/* Between 1000 and 800 */
+
+@media (max-width: 1000px){
+    .empty-whisky{
+        display:none;
+    }
+    
+}
+/* Under 800px */
+
+@media (max-width: 800px){
+    .pages{
+        flex-direction: column-reverse;
+    }
+    .page{
+        width: 100%;
+
+    }
 }
