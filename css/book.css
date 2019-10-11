@@ -40,3 +40,74 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+/* je commence là */
+
+.desktop{
+    display: flex;
+}
+.empty-whisky{
+    display: none;
+}
+.whisky{
+    align-self: flex-start;
+}
+.inkpen{
+    align-self: flex-end;
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+    .inkpen{
+        display: none;
+    }
+ } 
+
+ @media (min-width: 1000px) and (max-width: 1100px) {
+    .inkpen{
+        display: none;
+    }
+    .whisky{
+        display: none;
+    }
+    .empty-whisky{
+        display: block;
+        align-self: flex-start;
+    }
+ } 
+ @media (min-width: 800px) and (max-width: 1000px) {
+    .inkpen{
+        display: none;
+    }
+    .whisky{
+        display: none;
+    }
+    .empty-whisky{
+        display: none;
+    }
+    .desktop{
+        justify-content: center;
+    }
+ } 
+
+ @media (min-width: 320px) and (max-width: 800px) {
+    .inkpen{
+        display: none;
+    }
+    .whisky{
+        display: none;
+    }
+    .empty-whisky{
+        display: none;
+    }
+    .desktop{
+        justify-content: center;
+    }
+    .pages{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .page{
+        width: 100%;
+    }
+ }
