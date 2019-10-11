@@ -1,4 +1,4 @@
-z/*
+/*
 Un employé de théatre voudrait afficher la liste de tous les sièges présents dans sa salle principale.
 Dans la salle les sièges sont répartis de la manière suivantes : 
   - Il y a 26 colonnes de sièges, numérotés de "1" à "26"
@@ -17,3 +17,12 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+const board = [];
+for (let i = 0; i < 26; i++) {
+  board[i] = [];
+  for (let j = 0; j < 100; j++) {
+    board[i+j] = `${i+1}-${j + 1}`;
+  }
+}
+console.log(board);
