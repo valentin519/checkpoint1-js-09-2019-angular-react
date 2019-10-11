@@ -17,3 +17,18 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+function theater (row, column) {
+
+  let chairs = "";
+  for (r = 0; r < row; r++) {
+    for (c = 0; c < column; c++) {
+      chairs += `${r+1}-${c+1}\n`; 
+    } 
+
+  }
+  return chairs;
+
+}
+
+console.log(theater(26,100));
