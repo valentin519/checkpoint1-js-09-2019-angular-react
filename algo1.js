@@ -17,3 +17,19 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+const nbCol = 26;
+const nbChairCol = 100;
+
+const createListPlaces = (nbCol,nbChairCol) => {
+  let listPlaces = [];
+  let placeNumber = "";
+  for (let i = 1; i <= nbCol; i++) {
+    for (let j = 1; j <= nbChairCol; j++)
+    {
+      placeNumber = i + "-" + j;
+      listPlaces.push(placeNumber);
+    }
+  }
+  console.log(listPlaces);
+  return listPlaces;
+}
