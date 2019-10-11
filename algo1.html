@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        let colonne = []
+        
+            for (let i = 1; i <= 26; i++) { 
+                colonne.push(i);
+            }
+
+            function nbSiege() {
+                
+                for (let i = 0; i < colonne.length; i++) {
+                    let finalArray = [];
+                    for (let j = 1; j <= 100; j++) {
+                        finalArray.push(`${colonne[i]} - ${j}`)   
+                    }
+                    return finalArray;
+                }     
+            }
+            console.log(nbSiege())
+           
+        
+        
+    
+    
+    
+    </script>
+</body>
+</html>
