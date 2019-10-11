@@ -15,6 +15,16 @@ main {
   font-family: "Bilbo Swash Caps", cursive;
 }
 
+.bonus {
+  background-color: #f8f8f8;
+  justify-content: space-around;
+  align-items: center;
+  height: 2em;
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  color: #b4b3b3;
+}
+
 .desktop {
   display: flex;
 }
@@ -141,5 +151,17 @@ tr {
   }
   body {
     height: auto;
+  }
+  .bonus {
+    flex-direction: column;
+    width: 2em;
+    height: auto;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .desktop {
+    width: 90%;
   }
 }
