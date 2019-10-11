@@ -17,3 +17,20 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+function theatreRoom() {
+  //On va initialiser un tableau dans une variable 
+  let theatreRoom = [];
+  //On initialise une boucle for i qui fera 26 boucle et qui a chaque tour incrémentera de 1 i
+  for (let j = 0; j < 26; j++) {
+      for (let i = 0; i < 100; i++) {
+          //    A l'index i du tableau theatreRoom on va concaténer
+          //    la place actuelle
+          theatreRoom.push((j + 1) + ' - ' + (i + 1))
+          //    renvoyer le tableau theatreRoom !!!!!!! 
+      }
+  }
+  return theatreRoom;
+}
+
+console.log(theatreRoom())
