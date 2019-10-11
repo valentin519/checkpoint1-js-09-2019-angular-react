@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    padding-top: 4em;
+    padding-top: 84px;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
@@ -20,7 +20,7 @@ main {
     display: flex;
     width: auto;
     flex-basis : 65%;
-    margin:1em;
+    margin: auto;
 }
 
 .page {
@@ -39,4 +39,66 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.desktop {
+    display: flex;
+    align-items: flex-start;
+}
+
+.whisky, .empty-whisky {
+    padding-left: 32px;
+}
+
+.empty-whisky {
+    display: none;
+}
+
+.inkpen {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
+
+    body {
+        background-size: 1200px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .whisky {
+        display: none;
+    }
+    
+    .empty-whisky {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .empty-whisky {
+        display: none;
+    }
+
+    .pages {
+        flex-basis: 98%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pages {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .page {
+        width: 90%;
+    }
+
+    .leftpage {
+        margin-top: 16px;
+    }
 }
