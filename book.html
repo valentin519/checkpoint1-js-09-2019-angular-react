@@ -58,15 +58,16 @@
                 <div class="page leftpage">
                     <h1>Add a bribe</h1>
                     <!-- TODO : Form -->
-                    <form action="payment.php" method="post">
+                    <form>
                         <p>Name :</p>
                         <label for="name">
                             <input type="text" id="name" name="name">
                         </label>
                         <p>Payment :</p>
-                        <label for="payment">
-                            <input type="number" id="payment" name="payment">
+                        <label for="bribe">
+                            <input type="number" id="bribe" name="bribe">
                         </label>
+                        <button id="pay" onClick="displayBribe()">Pay !</button>
                     </form>
                 </div>
 
@@ -74,47 +75,8 @@
                     <!-- TODO : Display bribes and total paiement -->
                     <h2>S</h2>
                     <div class="barre"></div>
-                    <table>
-                        <tr>
-                            <td>Sam Burns</td>
-                            <td>100$</td>
-                        </tr>
-                        <tr>
-                            <td>Samuel Yans</td>
-                            <td>52563$</td>
-                        </tr>
-                        <tr>
-                            <td>Simon Pogg</td>
-                            <td>52$</td>
-                        </tr>
-                        <tr>
-                            <td>Sophia Maria</td>
-                            <td>452$</td>
-                        </tr>
-                        <tr>
-                            <td>Stacie Hunberg</td>
-                            <td>568$</td>
-                        </tr>
-                        <tr>
-                            <td>Steve Grant</td>
-                            <td>1000$</td>
-                        </tr>
-                        <tr>
-                            <td>Steve Porcher</td>
-                            <td>7865$</td>
-                        </tr>
-                        <tr>
-                            <td>Sylvester Stallan</td>
-                            <td>562$</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><div class="barre"></div></td>
-                        </tr>
-                        <tr>
-                            <td>Total</td>
-                            <td>141059$</td>
-                        </tr>
+                    <table id="bribesList">
+                        
                     </table>
                 </div>
             </div>
@@ -122,5 +84,6 @@
         </section>
     </main>
 </body>
+<script src="./bonus.js"></script>
 
 </html>
