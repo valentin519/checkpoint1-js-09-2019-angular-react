@@ -16,6 +16,7 @@ main {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+
 .pages {
     display: flex;
     width: auto;
@@ -39,4 +40,71 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+
+@media screen and (min-width : 1200px){ 
+
+    .empty-whisky {
+        display: none;
+    }
+    
+    .desktop {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .whisky {
+        margin-bottom: auto;
+    }
+
+    .inkpen {
+        margin-top:auto;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1100px) {
+
+    .inkpen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+
+    .whisky {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+
+    .whisky, .empty-whisky {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .whisky, .empty-whisky, .inkpen {
+        display: none;
+    }
+
+    .pages {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .rightpage {
+        width: auto;
+    }
+
+    .leftpage {
+        width: auto;
+    }
+
 }
