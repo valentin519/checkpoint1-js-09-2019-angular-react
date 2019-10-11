@@ -2,29 +2,78 @@
 
 body {
     background-image: url('../image/background.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+background-repeat: no-repeat;
+  background-size: cover;
+  zoom: 0.5;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     padding-top: 4em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.desktop {
+    flex-direction: row;
+    display: flex;
 }
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.navbar {
+    background-color: var(--dark);
+    padding: 15px;
+    color: var(--light);
+    font-family: 'Monoton', cursive;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    font-size: 4vw;
+}
+
+.navbar .logo {
+    width: 67px;
+    filter: sepia(70%);
+}
+
+
+.whisky, .inkpen, .page {
+    filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.whisky {
+    margin-left: 3%;
+    height: 0%;
+}
+
+.inkpen {
+    margin-top: 13%;
+    width: 17%;
+    margin-right: 1%;
+}
+
+.empty-whisky {
+    visibility: hidden;
+}
+
 .pages {
     display: flex;
     width: auto;
-    flex-basis : 65%;
-    margin:1em;
+    flex-basis: 65%;
+    margin-right: 5%;
+    margin-top: -0.2rem;
+    margin-left: -6rem;
+    width: 77%;
 }
 
 .page {
-    height:65vh;
+    height: 133vh;
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
@@ -39,4 +88,67 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+@media (max-width: 1200px) {
+    .inkpen {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .pages{
+        flex-basis: 73%;
+    }
+
+    .page {
+        height: 145vh;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .empty-whisky {
+        margin-left: 3%;
+        height: 0%;
+        margin-top: 1%;
+        visibility: visible;
+    }
+
+    .pages {
+        margin-left: 5rem;
+    }
+
+    .whisky {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1000px) {
+    .empty-whisky {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .pages {
+        margin-left: 2rem;
+        flex-basis: 91%;
+    }
+
+    .page {
+        height: 155vh;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .pages {
+        flex-wrap: wrap;
+    }
+
+    .page {
+        height: 155vh;
+        width: 100%;
+        margin-bottom: 5%;
+    }
 }
