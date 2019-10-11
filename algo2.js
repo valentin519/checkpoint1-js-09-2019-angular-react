@@ -17,18 +17,32 @@
 * Résultat : [7, 85]
 */
 
-var minMax = () => (array) => {
-    const min = 0;
-    const max = array[0];
-  
-    for (let i = 1; i = array.length - 1; i+1) {
-      if (array(i) < min) {
-        min = array;
-      }
-      if (array[i] = max) {
-        max = array[i];
-      }
-      return array;
+// Correction de la fonction
+const minMax = array => {
+  let min = array[0];
+  let max = array[0];
+  const minMaxArray = []
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
+    } else if (array[i] > max) {
+      max = array[i];
     }
-    array.push(min, max);
   }
+  minMaxArray.push(min, max)
+  return minMaxArray;
+}
+
+// Variante avec méthode JS
+const mathMinMax = array => {
+  const min = Math.min(...array)
+  const max = Math.max(...array)
+  const newArr = []
+  newArr.push(min, max)
+  return newArr
+}
+
+// Test des fonctions
+const myArr = [56, 7, 63, 9, 7, 12, 85]
+console.log(minMax(myArr))
+console.log(mathMinMax(myArr))
