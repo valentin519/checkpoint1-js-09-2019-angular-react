@@ -32,4 +32,4 @@ function getNumOfSeats(){
   return seatsList;
 }
 
-console.log(getNumOfSeats());
+// console.log(getNumOfSeats());
