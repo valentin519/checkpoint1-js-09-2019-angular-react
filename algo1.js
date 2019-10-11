@@ -17,3 +17,22 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+const myTheater = (rows, columns) => {
+  rows = []
+    for (let i = 1; i < 101; i++){
+      rows.push(i)
+    }
+  columns = []
+    for (let j=1; j < 27; j++){
+       columns.push(j)
+    }
+  const result = []
+  for (let k=0; k < columns.length; k++){
+    for (let l = 0; l < rows.length; l++){
+      result.push(`${columns[k]} -  ${rows[l]}`)
+    }
+    }  
+    return result
+ }
+ 
