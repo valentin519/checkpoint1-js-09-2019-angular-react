@@ -20,12 +20,11 @@ Au final la liste devra ressembler à :
 
 function theater (row, column) {
 
-  let chairs = "";
+  const chairs = [];
   for (r = 0; r < row; r++) {
     for (c = 0; c < column; c++) {
-      chairs += `${r+1}-${c+1}\n`; 
+      chairs.push(`${r+1}-${c+1}`); 
     } 
-
   }
   return chairs;
 
