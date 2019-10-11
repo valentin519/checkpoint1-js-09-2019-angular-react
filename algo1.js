@@ -19,17 +19,18 @@ Au final la liste devra ressembler à :
 */
 
 const salle = () => {
-  const salle = []
+  const salle = [];
 
   for (let i = 1; i < 27; i++) {
-    const firstnum = []  
-    for (let j = 1; j < 27; j++) {
-      const scdnum = []
-      firstnum.push(`${scdnum}`)
+    const firstnum = [i]
+
+    for (let j = 0; j < 27; j++) {
+      const scdnum = [j]
+      firstnum.push(`${scdnum} - ${j+1}`)
     }
-  salle.push(firstnum);
-    }
-    return salle;
+    salle.push(firstnum);
+  }
+  // return salle;
 }
-console.log(salle)
+console.log(salle);
 
