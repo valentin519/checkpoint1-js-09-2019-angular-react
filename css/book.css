@@ -13,6 +13,7 @@ main {
 }
 
 .whisky, .empty-whisky, .inkpen, .page {
+    display: flex;
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
@@ -22,6 +23,16 @@ main {
 }
 }
 
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+.inkpen {
+    display: none;
+}
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+.whisky {
+    display: none;
+}
+}
 .pages {
     display: flex;
     width: auto;
