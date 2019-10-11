@@ -36,6 +36,7 @@ main {
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    
 }
 
 .rightpage {
@@ -68,6 +69,35 @@ main {
     align-self : flex-end;
     object-fit: contain;
 }
+
+
+.leftpage form {
+
+    display: flex;
+    flex-direction: column;
+    margin-top : 15px;
+    font-size: 26px;
+}
+
+
+.leftpage form input{
+    width : 90%;
+    margin:10px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#submitBribeButton {
+    background-color: white;
+    max-width: 75px;
+    height: auto;
+    font-size: 24px;
+    margin-left:10px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    
+
+}
+
 
 /* between 1100px and 1200px screenwidth */
 
@@ -122,7 +152,7 @@ main {
   
     
     .pages{
-        flex-direction: column;
+        flex-direction: column-reverse;
         flex-basis: 100%;
         }
 
