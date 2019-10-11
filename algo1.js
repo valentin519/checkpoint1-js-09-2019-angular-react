@@ -24,13 +24,13 @@ const salle = () => {
   for (let i = 1; i < 27; i++) {
     const firstnum = [i]
 
-    for (let j = 0; j < 27; j++) {
+    for (let j = 0; j < 100; j++) {
       const scdnum = [j]
       firstnum.push(`${scdnum} - ${j+1}`)
     }
     salle.push(firstnum);
   }
-  // return salle;
+  return salle;
 }
 console.log(salle);
 

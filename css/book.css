@@ -45,6 +45,11 @@ main {
     display: none;
 }
 
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 1200px) {
     .desktop {
         display: flex;
@@ -105,4 +110,25 @@ main {
 
 }
 
+.pay {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    width: 4em;
+    margin: 1em 0;
+}
+
+input {
+    border-radius: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 1em;
+}
    
+hr {
+    color: black;
+}
