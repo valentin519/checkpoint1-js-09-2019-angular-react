@@ -17,3 +17,13 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+ nbSieges = () => {
+  tbl = []
+  for (let a = 1; a < 27; a++) {
+    for (let b = 1; b < 101; b++) {
+      tbl.push(a+'-'+b)
+    }
+  }
+  return [tbl]
+}
+console.log(nbSieges());
