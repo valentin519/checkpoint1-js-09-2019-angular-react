@@ -93,7 +93,15 @@ main {
 @media screen and (max-width:799px){
     .pages {
         flex-direction: column-reverse;
+
        
+    }
+    .leftpage{
+        margin-top: inherit;
+    }
+
+    .leftpage, .rightpage{
+        width: auto;
     }
     .empty-whisky{
         display: none;
@@ -104,4 +112,5 @@ main {
     .inkpen{
         display: none;
     }
+    
 }
