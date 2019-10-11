@@ -35,8 +35,69 @@ main {
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
 
+
+.desktop{
+    display: flex;
+    flex-direction: row;
+}
+.whisky, .empty-whisky{
+    width: 20%;
+    height: 20%;
+}
+.empty-whisky{
+    display: none;
+}
+.inkpen{
+    height: 75%;
+    margin-top: 15%;
+}
+
+/* formulaire paiement*/
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top:-10%;
+}
+.form span{
+    font-size: 1.7rem;
+}
+form input{
+    width: 90%;
+    border: none;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+form select{
+    width: 90%;
+    border: none;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+form button{
+    width: 100px;
+    border: none;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+
+/*right page*/
+
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+.rightpage h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+.rightpage td{
+    text-align: right;
+    width:40%;
+    
+    font-size: 1.7rem;
+}
+
