@@ -17,3 +17,39 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+
+
+
+function salle() {
+
+  const siege =  100 //[1, 2, 3, 4, 5, 6, 7, 8 , 9 ,10];//
+  const colonne = 26 //[1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10];//
+
+  
+  let grille = [];
+
+  
+  for (let j => 0; j <= 100 ; < siege.length; j++) {
+
+      
+      let row = [];
+
+      let currentsiege = siege[j];
+
+ 
+    
+      for (let i = 0; i <= 26 ;< colonne.length; i++) {
+          
+          row.push(currentsiege + "-" + colonne[i]);
+      }
+
+  
+      grid.push(row);
+  }
+
+  
+  return grid;
+}
+console.log(salle());
+
