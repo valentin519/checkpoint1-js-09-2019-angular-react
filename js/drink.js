@@ -39,6 +39,8 @@ glass.addEventListener('click', () => {
         warnings++;
     } else if (howManyDrinks > 6 && warnings === 4) {
         document.getElementById('body').style.filter = 'blur(8px)';
+        document.getElementById('elephant').style.display = 'inline';
+        document.getElementById('elephant').style.transform = 'translateX(-500px)';
         document.getElementById('drink').style.transform = 'translate(22px, 133px)';
         document.getElementById('bookIndex').style.transform = 'rotate(-43deg)';
         confirm("So tsirhty...")

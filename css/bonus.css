@@ -50,6 +50,10 @@
     outline: none;
 }
 
+#elephant {
+    display: none;
+}
+
 html {
     background-color: black;
 }
