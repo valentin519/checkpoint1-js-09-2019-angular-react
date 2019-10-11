@@ -17,3 +17,18 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+// Outer loop 1 => 26
+// Inner loop 1 => 100
+
+const printListSeats = (columns,seats) => {
+  const allNumberOfSeats = [];
+
+  for(let i = 1; i <= columns; i++) {
+    for(let j = 1; j <= seats; j++) {
+      allNumberOfSeats.push(i, j)
+    }
+  }
+
+  return allNumberOfSeats;
+}
