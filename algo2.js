@@ -17,9 +17,13 @@
 * Résultat : [7, 85]
 */
 
+
+const array = [56, 7, 63, 9, 7, 12, 85]
+
+
 var minMax = (array) => {
-  let min = 999999;
-  let max = -999999;
+  let min = array[0];
+  let max = array[0];
   const newarray = []    
   
   for (let i = 0; i <= array.length; i++) {
@@ -33,3 +37,4 @@ var minMax = (array) => {
   newarray.push(min,max)
   return newarray
 }
+
