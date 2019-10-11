@@ -30,11 +30,13 @@ const makeList = () => {
         return sitList.push([(`${i} - ${j}`)]);   
         
   }
+
+  return sitList
 }
 
 }
 
 makeList();
 
-console.log(sitList)
+console.log(makeList)
         
