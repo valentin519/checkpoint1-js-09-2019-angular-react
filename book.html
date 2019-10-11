@@ -22,20 +22,62 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <div class="whiskyGlass">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form>
+                        <label for="name"> Name</label>
+                        <input type="name" id="name" name="name">
+                    
+                        <label for="pay"> Payment</label>
+                        <input type="payment" id="payment" name="payment">
+
+                        <input type="submit" value="Pay">
+                    </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                        <p id="s">S</span>
+
+                    <div class="liste">
+                        <ul class="ulName">
+                          <li>Sam Burns</li>
+                          <li>Samuel Yans</li>
+                          <li>Simon Pogg</li>
+                          <li>Sophia Maria</li>
+                          <li>Stacie Hunberg</li>
+                          <li>Steve Grant</li>
+                          <li>Steve Porcher</li>
+                          <li>Sylvester Stallan</li>
+                          <li>Szen Tren</li>
+                          <li>Total</li>
+                          
+                        </ul>
+
+                        <ul class= "ulPrice">
+                            <li>100<li>
+                            <li>52563</li>
+                            <li>52</li>
+                            <li>452</li>
+                            <li>568</li>
+                            <li>1000</li>
+                            <li>7865</li>
+                            <li>77897</li>
+                            <li>562</li>
+                            <li>141059</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            
+            <div class="pen">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
         </section>
     </main>
 </body>

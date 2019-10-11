@@ -12,13 +12,32 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
-.whisky, .empty-whisky, .inkpen, .page {
+.whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+   
+}
+
+.desktop{
+    display:flex;
+
+}
+
+.empty-whisky{
+    display:none;
+}
+
+.whiskyGlass{
+padding-bottom: 150px;
+}
+
+.pen{
+width:20%;
+padding-top:150px;
 }
 
 .pages {
-    display: flex;
-    width: auto;
+    display:flex;
+    width: 70%;
     flex-basis : 65%;
     margin:1em;
 }
@@ -40,3 +59,24 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+
+.liste {
+    display:flex;
+}
+
+.ulName {
+    border-top: 1px solid black;
+    list-style-type: none;
+}
+
+.ulPrice {
+    border-bottom: 1px solid black;
+    list-style-type: none;
+}
+
+#s {
+    text-align: center;
+    
+}
+
