@@ -17,15 +17,26 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+/*  Fonction :
+    - j'initialise une fonction relié a une constante du nom siegeTheatre
+      qui prendra en parametre 2 valeurs col_p et lig_p
+    - s'initialise 1 tableau vide qui receptionnera les rangees de sieges => qui se nommera "rangee"
+    - on itialise 2 boucles for i et j à 1 et ces dernieres seront inférieures a leurs parametres
+      respectives col_p et lig_p
+    - puis on enverra le resultat des boucles dans le tableau rangee
+    - lorsque la boucle sera terminée, on retournera le tableau "rangee"
 
+    Appel de la fonction:
+    - on initialise une variable rangeeSiege, qui recevra le retourn de la fonction SiegeTheatre
+    - puis un console log du resultat rangeeSiege
+    */
 
 const siegeTheatre = (col_p, lig_p) => {
-  let col = col_p;
-  let lig = lig_p;
+
   let rangee = [];
 
-  for(let i = 1; i <= col; i++){
-    for(let j =1; j <= lig; j++){
+  for(let i = 1; i <= col_p; i++){
+    for(let j =1; j <= lig_; j++){
       rangee.push(`${i} - ${j}`);
     }
   }
