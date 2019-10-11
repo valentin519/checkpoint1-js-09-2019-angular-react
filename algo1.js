@@ -22,7 +22,9 @@ let Tab =[]
 const NbPlaces = () =>{
 for(let i = 0; i <= 26; i++){
   for(let n = 0; n <= 100; n++){}}
-  return Tab.push(n,i)
+  return Tab.push(n,'-',i)
 }
 
 NbPlaces();
+
+//reponse non verifié je n'arrive pas à console.log exercice tres compliqué pour moi ayant un niveau proche de 0 en algo

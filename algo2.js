@@ -32,3 +32,5 @@ var minMax = () => (array) => {
     }
     array.push(min, max);
   }
+
+  //aucune idee de la réponse je me rends compte d'avoir des grosses lacunes en algo
