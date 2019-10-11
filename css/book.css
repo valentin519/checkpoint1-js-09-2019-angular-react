@@ -12,6 +12,12 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+.desktop {
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
@@ -39,4 +45,97 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.name_page {
+    display: inline-flex;
+}
+
+.rightpage h3, .rightpage hr {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.rightpage li {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 1.1em;
+    font-size: 0.8em;
+    width: 6em;
+    list-style: none;
+}
+
+.rightpage ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+form {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+}
+form input {
+    width: 90%;
+}
+form p, button, input {
+    padding: 10px;
+    margin: 10px;
+}
+form input, form button {
+    padding: 10px;
+    border: 1px solid #fff;
+    transition-duration: 250ms;
+}
+button:hover, form input:hover {
+    border: 1px solid #999;
+    transition-duration: 250ms;
+}
+
+
+@media (min-width: 1200px) {  /* au dessus de 1200px */
+    .pages {
+        margin:0;
+    }
+    .empty-whisky {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) { /* en dessous de 1200px */
+    .inkpen {
+        display: none;
+    }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+    .empty-whisky {
+        display: none;
+    }
+}
+@media (max-width: 1100px) { /* en dessous de 1100px */
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {
+        display: block;
+    }
+}
+@media (max-width: 1000px) { /* en dessous de 1000px */
+    .whisky, .empty-whisky {
+        display: none;
+    }
+    .desktop {
+        justify-content: center;
+    }
+}
+@media (max-width: 800px)  { /* en dessous de 800px */
+    .pages {
+        display: inline-flex;
+        flex-direction: column-reverse;
+    }
+    .rightpage, .leftpage {
+        width: 100%;
+    }
 }
