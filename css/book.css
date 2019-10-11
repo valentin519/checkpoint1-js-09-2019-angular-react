@@ -12,31 +12,89 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
-.whisky, .empty-whisky, .inkpen, .page {
+.whisky,
+.empty-whisky,
+.inkpen,
+.page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
 .pages {
     display: flex;
+    flex-direction: column;
     width: auto;
-    flex-basis : 65%;
-    margin:1em;
+    flex-basis: 65%;
+    margin: 1em;
 }
 
 .page {
-    height:65vh;
+    height: 65vh;
     padding: 3vw;
-    width: 50%;
     background-blend-mode: multiply;
 }
 
 .leftpage {
-    background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+    background: url('../image/paper.png'), linear-gradient(270deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    order: 1;
 }
 
 .rightpage {
-    background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
-    border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+    background: url('../image/paper.png'), linear-gradient(90deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
+    border-radius: 40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    order: 0;
+}
+
+.empty-whisky,
+.whisky {
+    display: none;
+}
+
+.inkpen {
+    display: none;
+    align-self: flex-end;
+}
+
+@media only screen and (min-width: 800px) {
+    .pages {
+        flex-direction: row;
+    }
+    .page {
+        width: 50%;
+    }
+    .leftpage {
+        order: 0;
+    }
+    .rightpage {
+        order: 1;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .empty-whisky {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .empty-whisky {
+        display: none;
+    }
+
+    .whisky {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .inkpen {
+        display: block;
+    }
+
+    .desktop {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 }
