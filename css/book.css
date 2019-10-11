@@ -144,7 +144,7 @@ main {
 @media screen and (max-width: 800px) {
 
     .pages {
-        flex-direction: column;
+        flex-direction: column-reverse;
         flex-basis: 95%;
         margin: 0;
     }
