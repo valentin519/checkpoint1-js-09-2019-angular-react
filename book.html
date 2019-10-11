@@ -1,43 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/book.css" />
     <title>Checkpoint Javascript 1</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav class="navbar">
-            <img src="image/logo.png" class="logo" alt="logo-wcs" />
-            <a href="index.html">Instructions</a>
-            <a href="book.html">Secret book</a>
-        </nav>
+      <nav class="navbar">
+        <img src="image/logo.png" class="logo" alt="logo-wcs" />
+        <a href="index.html">Instructions</a>
+        <a href="book.html">Secret book</a>
+      </nav>
     </header>
 
     <main class="container">
+      <section class="desktop">
+        <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+        <img
+          src="image/empty_whisky.png"
+          alt="an empty whisky glass"
+          class="empty-whisky"
+        />
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+        <div class="pages">
+          <div class="page leftpage">
+            Add a bribe
+            <!-- TODO : Form -->
+            <label for="name" class="label">Name</label>
+            <input class="input" type="name" />
+            <label for="payment" class="label">Payment</label>
+            <select class="select" name="payment">
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <input id="button" type="button" value="Pay !" />
+          </div>
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                </div>
-
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
-                </div>
-            </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-        </section>
+          <div class="page rightpage">
+            <!-- TODO : Display bribes and total paiement -->
+            <table id="bribe">
+              <tr>
+                <td id="titre">S</td>
+              </tr>
+              <tr>
+                <td class="nom">Sam Burns</td>
+                <td class="prix">100€</td>
+              </tr>
+              <tr>
+                <td class="nom">Samuel Yans</td>
+                <td class="prix">56563€</td>
+              </tr>
+              <tr>
+                <td class="nom">Simon Pogg</td>
+                <td class="prix">52€</td>
+              </tr>
+              <tr>
+                <td class="nom">Sophia Maria</td>
+                <td class="prix">452€</td>
+              </tr>
+              <tr>
+                <td class="nom">Stacy Hunberg</td>
+                <td class="prix">568€</td>
+              </tr>
+              <tr>
+                <td class="nom">Steve Grant</td>
+                <td class="prix">1000€</td>
+              </tr>
+              <tr>
+                <td class="nom">Steve Porcher</td>
+                <td class="prix">7865€</td>
+              </tr>
+              <tr>
+                <td class="nom">Sylvester Stallan</td>
+                <td class="prix">77897€</td>
+              </tr>
+              <tr>
+                <td class="nom">Szen Tren</td>
+                <td class="prix">562€</td>
+              </tr>
+              <tr>
+                <td class="nom">Total</td>
+                <td id="total">141059€</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+      </section>
     </main>
-</body>
-
+  </body>
 </html>

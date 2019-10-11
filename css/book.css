@@ -1,42 +1,166 @@
-@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap");
 
 body {
-    background-image: url('../image/background.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../image/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
-    padding-top: 4em;
-    font-size: 26pt;
-    font-family: 'Bilbo Swash Caps', cursive;
+  padding-top: 4em;
+  font-size: 26pt;
+  font-family: "Bilbo Swash Caps", cursive;
 }
 
-.whisky, .empty-whisky, .inkpen, .page {
-    filter: drop-shadow(15px 15px 5px var(--shadow));
+.desktop {
+  display: flex;
+  flex-direction: row;
+}
+
+.whisky,
+.empty-whisky,
+.inkpen,
+.page {
+  filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.whisky {
+  align-self: flex-start;
+}
+
+.empty-whisky {
+  display: none;
 }
 
 .pages {
-    display: flex;
-    width: auto;
-    flex-basis : 65%;
-    margin:1em;
+  display: flex;
+  width: auto;
+  flex-basis: 65%;
+  margin: 1em;
 }
 
 .page {
-    height:65vh;
-    padding: 3vw;
-    width: 50%;
-    background-blend-mode: multiply;
+  height: 65vh;
+  padding: 3vw;
+  width: 50%;
+  background-blend-mode: multiply;
 }
 
 .leftpage {
-    background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
-    border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+  background: url("../image/paper.png"),
+    linear-gradient(
+      270deg,
+      rgba(157, 158, 137, 1) 0%,
+      rgba(233, 226, 187, 1) 5%,
+      rgba(255, 251, 203, 1) 18%
+    );
+  border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 30px;
+  margin: 10px;
+}
+.input {
+  width: 80%;
+  height: 30px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.select {
+  width: 80%;
+  height: 30px;
+  align-self: center;
+  margin-right: 20px;
+}
+
+#button {
+  padding: 4px;
+  /* margin-top: 20px; */
+  margin: 20px 20px 20px 40px;
+  align-self: flex-start;
 }
 
 .rightpage {
-    background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
-    border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
-    overflow: auto;
+  background: url("../image/paper.png"),
+    linear-gradient(
+      90deg,
+      rgba(157, 158, 137, 1) 0%,
+      rgba(233, 226, 187, 1) 5%,
+      rgba(255, 251, 203, 1) 18%
+    );
+  border-radius: 40% 24px 24px 40%/8px 8px 8px 8px;
+  overflow: auto;
+  display: flex;
+  justify-content: end;
+}
+
+#titre {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#bribe {
+  text-align: end;
+  margin-left: 20px;
+}
+
+#titre {
+  border-bottom: 1px solid black;
+}
+
+.nom {
+  padding: 5px;
+}
+
+.prix {
+  padding-left: 20px;
+}
+
+#total {
+  border-top: 1px solid black;
+}
+
+.inkpen {
+  align-self: flex-end;
+}
+
+/* between 1100 and 1200 */
+@media screen and (max-width: 1200px) {
+  .inkpen {
+    display: none;
+  }
+}
+
+/* between 1000 and 1100  */
+@media screen and (max-width: 1100px) {
+  .whisky {
+    display: none;
+  }
+
+  .empty-whisky {
+    display: flex;
+    align-self: flex-start;
+  }
+}
+
+/* between 800 and 1000 */
+@media screen and (max-width: 1000px) {
+  .empty-whisky {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* between 320 and 800 */
+@media screen and (max-width: 800px) {
+  .pages {
+    display: flex;
+    flex-direction: column;
+  }
 }
