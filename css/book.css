@@ -39,4 +39,66 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    justify-items: center;
+}
+
+.empty-whisky{
+    display: none;
+}
+
+.indexOfPage{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.line{
+    margin-top: -40px;
+    width: 80%;
+}
+
+.desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.boxBribe{
+    display: flex;
+    flex-direction: column;
+}
+
+.bribeName{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 1,5vh;
+}
+
+.pricing{
+    display:flex;
+    justify-content: center;
+}
+
+.pricingval{
+    font-size:1,5vh;
+}
+
+.inkpen{
+    max-height: 350px;
+    width: auto;
+}
+
+.whisky{
+    margin-bottom: 500px;
+}
+
+.formd{
+    display: flex;
+    flex-direction: column;
 }
