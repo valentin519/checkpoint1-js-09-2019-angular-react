@@ -41,19 +41,25 @@ main {
     overflow: auto;
 }
 
+/*all addition below*/
+
+.whisky, .empty-whisky, .inkpen{
+    display: none;
+}
+
+
+
 @media only screen and (min-width: 1200px) {
     .desktop{
         display: flex;
     }
 
-    .empty-whisky{
-        display: none;
-    }
-
     .whisky{
+        display: block;
         height: 50%;
     }
     .inkpen{
+        display: block;
         height: 50%;
         margin-top: 14%;
     }
@@ -63,16 +69,9 @@ main {
     .desktop{
         display: flex;
     }
-    
-    .inkpen{
-        display: none;
-    }
-
-    .empty-whisky{
-        display: none;
-    }
 
     .whisky{
+        display: block;
         height: 50%;
     }
 }
@@ -82,33 +81,16 @@ main {
         display: flex;
     }
 
-    .inkpen{
-        display: none;
-    }
-
-    .whisky{
-        display: none;
-    }
-
     .empty-whisky{
+        display: block;
         height: 50%;
     }
 }
-
+/*media not needed
 @media only screen and (min-width: 800px) and (max-width: 1000px){
-    .inkpen{
-        display: none;
-    }
-
-    .whisky{
-        display: none;
-    }
-
-    .empty-whisky{
-        display: none;
-    }
+    
 }
-
+*/
 @media only screen and (max-width: 800px){
     .pages{
         flex-direction: column-reverse;
@@ -118,17 +100,5 @@ main {
     .leftpage, .rightpage{
         width: 90%; 
         margin: 0;
-    }
-
-    .inkpen{
-        display: none;
-    }
-
-    .whisky{
-        display: none;
-    }
-
-    .empty-whisky{
-        display: none;
     }
 }
