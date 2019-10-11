@@ -17,12 +17,13 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
-const colonne=[]
-function tab1 (){ 
-  for (const i = 1 ; i<27; i ++)
+
+function tab1 (colonne){ 
+  for (const i = 0 ; i<27; i ++)
   {
-  colonne = [i]
-  return colonne[i];
+   
+    console.log(colonne.push(i))
+    return colonne[i];
 };
-consolelog(colonne)
+
 }
