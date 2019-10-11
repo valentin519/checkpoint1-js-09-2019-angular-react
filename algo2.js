@@ -33,8 +33,7 @@
 //     array.push(min, max);
 //   }
 
-
-let tab1 = [4, 6, 35, -65, -9, 0, 67];
+let tab1 = [4, 6, 35, -65, -9, 110000, 67];
 let tab2 = [-30, 5, 43, 108, -5, -7, 89];
 let tab3 = [56, 7, 63, 9, 7, 12, 85];
 
@@ -60,7 +59,7 @@ function plusGrandeValeur(array)
 
 function plusPetiteValeur(array)
 {
-	let min = array.length;
+	let min = 0;
 	for (i = 0; i < array.length; i++)
 	{
 		if (array[i] < min)
@@ -71,5 +70,4 @@ function plusPetiteValeur(array)
 	return min;
 }
 
-console.log(minMax(tab1))
-
+console.log(minMax(tab3))
