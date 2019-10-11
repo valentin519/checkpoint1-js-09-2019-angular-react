@@ -120,3 +120,13 @@ form{
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media screen and (max-width: 1199px){
+    .containInkPen{
+        display: none;
+    }
+
+    .payment{
+        font-size: 1em;
+    }
+}
