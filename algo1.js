@@ -17,3 +17,13 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+const sallePrincipale = [];
+for (let i = 0; i < 26; i++){
+  sallePrincipale[i] = [];
+  for (let j = 0; i < 100; j++){
+    sallePrincipale[i][j]= ${(i + 1)}-${j + 1};
+  }
+}
+console.log(sallePrincipale);
+
