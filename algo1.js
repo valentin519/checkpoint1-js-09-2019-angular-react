@@ -18,18 +18,25 @@ Au final la liste devra ressembler à :
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
 function theator() {
-  let rows = []
-  let columns = []
-  for (let i = 1; i < 101; i ++) {
-    rows.push(i)
+  // let rows = []
+  // let columns = []
+  // for (let i = 1; i < 101; i ++) {
+  //   rows.push(i)
+  // }
+  // for (let j = 1; j < 27; j++ ) {
+  //   columns.push(j)
+  // }
+  // const res = columns.map(numCol => rows.map(numRow => `${numCol} - ${numRow}`))
+  // // res.flatMap()
+  // console.log(res)
+  // return res
+  let array = []
+  for (let i = 1; i < 27; i++) {
+    for (let j = 1; j < 101; j++) {
+      array.push(i + '-' + j)
+    }
   }
-  for (let j = 1; j < 27; j++ ) {
-    columns.push(j)
-  }
-  const res = columns.map(numCol => rows.map(numRow => `${numCol} - ${numRow}`))
-  // res.flatMap()
-  console.log(res)
-  return res
+  console.log(array)
 }
 
 theator()

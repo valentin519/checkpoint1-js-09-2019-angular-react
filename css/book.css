@@ -19,6 +19,7 @@ main {
 .whisky {
    height: 7em;
    width: 8em;
+   align-self: flex-start;
 }
 .inkpen {
     height: 11em;
@@ -27,8 +28,7 @@ main {
 .desktop {
     width: auto;
     display: flex;
-    align-content: space-around;
-    
+    justify-content: center;
 
 }
 /* .container {
@@ -61,4 +61,108 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    display: flex;
+}
+
+table {
+    font-size: 1em;
+}
+
+th {
+    font-weight: normal;
+}
+td {
+    text-align: end;
+}
+hr {
+    color: black;
+}
+
+thead {
+    text-align: center;
+}
+tfoot {
+    text-align: end;
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+    .inkpen {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+    .empty-whisky {
+        height: 7em;
+        width: 8em;
+        display: flex;
+        align-self:flex-start;
+    }
+    .whisky {
+        display:none;
+    }
+    .inkpen {
+        display:none;
+    }
+    table {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .empty-whisky, .whisky {
+        display: none;
+    }
+    .inkpen {
+        display:none;
+    }
+    table {
+        font-size: 0.7em;
+    }
+    .desktop {
+        display: flex;
+        justify-content: center;
+    }
+    .pages {
+        display: flex;
+        align-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    .empty-whisky, .whisky {
+        display: none;
+    }
+    .inkpen {
+        display:none;
+    }
+    .desktop {
+        display: flex;
+        justify-content: center;
+    }
+    .pages {
+        width: 90%;
+        height: 75%;
+        display: flex;
+        align-content: center;
+        flex-direction: column-reverse;
+    }
+    .page {
+        width: 90%;
+    }
+    table {
+        font-size: 0.8em;
+    }
+
 }
