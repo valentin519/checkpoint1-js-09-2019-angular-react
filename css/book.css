@@ -6,16 +6,27 @@ body {
     background-size: cover;
 }
 
-main {
+.container {
     padding-top: 4em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
+}
+
+.desktop {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.whisky{
+    
 }
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.empty-whisky{
+    display: none;
+}
 .pages {
     display: flex;
     width: auto;
@@ -40,3 +51,29 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media screen and (max-width: 1100px){
+    .inkpen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .empty-whisky {
+        display: block;
+    }
+    .whisky {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pages{
+        display: block;
+    }
+    .empty-whisky{
+        display: none;
+    }
+
+}
+
