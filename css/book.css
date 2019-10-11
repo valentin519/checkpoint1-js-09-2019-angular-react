@@ -40,3 +40,22 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media only screen and (min-width : 1200px) {
+   .desktop {
+       display: flex;
+   }
+    .empty-whisky {
+        display: none;
+    }
+
+    .desktop .whisky {
+        height: 200px;
+    }
+
+    .inkpen {
+        height: 400px;
+        align-self: flex-end;
+    }
+    
+}
