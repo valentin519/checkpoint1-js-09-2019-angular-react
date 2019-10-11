@@ -18,4 +18,21 @@ Au final la liste devra ressembler à :
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
 
-/* working progress */
+
+const siegeTheatre = (col_p, lig_p) => {
+  let col = col_p;
+  let lig = lig_p;
+  let rangee = [];
+
+  for(let i = 1; i <= col; i++){
+    for(let j =1; j <= lig; j++){
+      rangee.push(`${i} - ${j}`);
+    }
+  }
+  return rangee;
+}
+
+let rangeeSiege = siegeTheatre(26, 100);
+console.log(rangeeSiege);
+
+
