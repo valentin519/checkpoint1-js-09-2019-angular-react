@@ -17,3 +17,20 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+const test = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+];
+
+function theatre(param){
+  let testTableau = [];
+  let newTableau = param.map(cellule => {
+    let i = 1;
+    while ( i <= 100){
+      testTableau.push(`${cellule}-${i}`)
+      i++;
+    }
+  })
+  return testTableau;
+};
+
+console.log(theatre(test));
