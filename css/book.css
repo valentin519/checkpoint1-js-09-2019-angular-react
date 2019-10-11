@@ -40,3 +40,60 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+/* checkpoint modifs starting here */
+
+.desktop {
+    display: flex;
+}
+
+.empty-whisky {
+    display: none;
+}
+.whisky {
+    height: 6.5em;
+}
+.inkpen {
+    height: 12em;
+    align-self: center;
+}
+
+.pageRightTittle {
+    flex-direction: row;
+    text-align: center;
+}
+.page rightpage {
+    display: flex;
+}
+
+.textsPageRight {
+    display: flex;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    text-align: right;
+    width: 6em;
+}
+.money {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    text-align: right;
+    width: 7em;
+}
+
+.page.leftpage{
+    display: inline-block;
+}
+
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+}
+.payButton {
+    width: 1em;
+}
