@@ -22,6 +22,8 @@ main {
 
 .empty-whisky{
     display: none;
+    height: 30%;
+    margin: -1.2em 0 0 1.5em;
 }
 .whisky{
     height: 30%;
@@ -128,5 +130,15 @@ form{
 
     .payment{
         font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1099px){
+    .whisky{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: block;
     }
 }
