@@ -70,3 +70,293 @@ code {
 h3 {
     margin-top:3em;
 }
+
+@media screen and (min-width:1200px){
+    .letter{
+        text-align: center;
+        font-family: "Arial";
+    }
+
+    .list{
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    .empty-whisky{
+        display:none;
+    }
+
+    .container{
+        display:flex;
+    }
+
+
+    #hr1{
+        border: 1px solid grey;
+    }
+
+    #hr2{
+        border: 1px solid grey;
+        width: 50%;
+        margin-left:50%
+    }
+    input[type=text]{
+        width:96%;
+        padding:2%;
+        border:none;
+    }
+    select[name=Payment]{
+        width:100%;
+        padding:2%;
+        background-color: white;
+        border:none;
+    }
+    input[type=button]{
+        font-size:0.5em;
+    }
+    label{
+        font-size:1.6rem;
+    }
+    .tarif{
+        
+        display: flex;
+        flex-direction: column;
+        
+        text-align:right;
+        
+        
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px){
+    .container{
+        display:flex
+    }
+
+    .empty-whisky{
+        display:none;
+    }
+
+    .inkpen{
+        display:none;
+    }
+    .letter{
+        text-align: center;
+        font-family: "Arial";
+    }
+    #hr1{
+        border: 1px solid grey;
+    }
+
+    #hr2{
+        border: 1px solid grey;
+        width: 50%;
+        margin-left:50%
+    }
+
+    .list{
+        list-style-type: none;
+        text-align: center;
+    }
+    input[type=text]{
+        width:96%;
+        padding:2%;
+        border:none;
+    }
+    select[name=Payment]{
+        width:100%;
+        padding:2%;
+        background-color: white;
+        border:none;
+    }
+    input[type=button]{
+        font-size:0.5em;
+    }
+    label{
+        font-size:1.6rem;
+    }
+    .tarif{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1099px){
+    .container{
+        display:flex
+    }
+
+    .whisky{
+        display:none;
+    }
+
+    .inkpen{
+        display:none;
+    }
+    .letter{
+        text-align: center;
+        font-family: "Arial";
+    }
+    #hr1{
+        border: 1px solid grey;
+    }
+
+    #hr2{
+        border: 1px solid grey;
+        width: 50%;
+        margin-left:50%
+    }
+
+    .list{
+        list-style-type: none;
+        text-align: center;
+    }
+    input[type=text]{
+        width:96%;
+        padding:2%;
+        border:none;
+    }
+    select[name=Payment]{
+        width:100%;
+        padding:2%;
+        background-color: white;
+        border:none;
+    }}
+    input[type=button]{
+        font-size:0.5em;
+    }
+    label{
+        font-size:1.6rem;
+    }
+    .tarif{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px){
+    
+     .whisky{
+        display:none;
+    }
+    .empty-whisky{
+        display:none;
+    }
+
+    .inkpen{
+        display:none;
+    }
+    .letter{
+        text-align: center;
+        font-family: "Arial";
+    }
+    #hr1{
+        border: 1px solid grey;
+    }
+
+    #hr2{
+        border: 1px solid grey;
+        width: 50%;
+        margin-left:50%
+    }
+
+    .list{
+        list-style-type: none;
+        text-align: center;
+    }
+    input[type=text]{
+        width:96%;
+        padding:2%;
+        border:none;
+    }
+    select[name=Payment]{
+        width:100%;
+        padding:2%;
+        background-color: white;
+        border:none;
+    }
+    input[type=button]{
+        font-size:0.5em;
+    }
+    .tarif{
+        text-align:right;
+        font-size:2rem;
+    }
+    label{
+        font-size:1.6rem;
+    }
+    .tarif{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        
+    }
+}
+
+@media screen and (max-width : 799px){
+    
+    .whisky{
+        display:none;
+    }
+    .empty-whisky{
+        display:none;
+    }
+
+    .inkpen{
+        display:none;
+    }
+    .letter{
+        text-align: center;
+        font-family: "Arial";
+    }
+    #hr1{
+        border: 1px solid grey;
+    }
+
+    #hr2{
+        border: 1px solid grey;
+        width: 50%;
+        margin-left:50%
+    }
+
+    .list{
+        list-style-type: none;
+        text-align: center;
+    }
+    .pages{
+        flex-direction: column-reverse;
+        margin:auto;
+    }
+    input[type=text]{
+        width:96%;
+        padding:2%;
+        border:none;
+    }
+    select[name=Payment]{
+        width:100%;
+        padding:2%;
+        background-color: white;
+        border:none;
+    }
+    input[type=button]{
+        font-size:0.5em;
+    }
+    label{
+        font-size:1.6rem;
+    }
+    .tarif{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        
+    }
+}

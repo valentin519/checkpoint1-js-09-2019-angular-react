@@ -20,19 +20,72 @@
     </header>
 
     <main class="container">
-
+        <div class="container1">
         <section class="desktop">
             <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
             <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
+        </div>
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
+                    <form action="/ma-page-de-traitement" method="post">
+                        <div>
+                            <label for="name">Name</label>
+                            
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="user_name">
+                            
+                        </div>
+                        <div>
+                            <label for="Payement-select">Payment</label>
+                            
+                        </div>
+                        <div>
+                            <select name="Payment" id="pet-select">
+                                    <option value="price"></option>
+                                    <option value="price">100€</option>
+                                    <option value="price">52563€</option>
+                                    <option value="price">52€</option>
+                                    <option value="price">452€</option>
+                                    <option value="price">568€</option>
+                                    <option value="price">1000€</option>
+                                    <option value="price">7865€</option>
+                                    <option value="price">77897€</option>
+                                    <option value="price">562€</option>
+                                    </select>
+                        </div>
+                        <div>
+                                <input type="button" value="Pay !">
+                        </div>
+                        
+                    </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    <p class="letter">S</p>
+
+                    <hr id="hr1">
+
+                    <ul class="list">
+                        
+                        <li >Sam Burns <div class="tarif">100€</div></li>
+                        <li>Samuel Yans <div class="tarif">52563€</div></li>
+                        <li>Simon Pogg <div class="tarif"> 52€</div></li>
+                        <li>Sophia Maria <div class="tarif">452€</div></li>
+                        <li>Stacie Hunberg <div class="tarif">568€</div></li>
+                        <li>Steve Grant<div class="tarif">1000€</div></li>
+                        <li>Steve Porcher<div class="tarif">7865€</div></li>
+                        <li>Sylvester Stallan <div class="tarif">77897€</div></li>
+                        <li>Szen Tren <div class="tarif">562€</div></li> 
+
+                        <hr id="hr2">
+
+                        <li>Total   <span class="tarif">141059€</span></li>
+
+                    </ul>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
