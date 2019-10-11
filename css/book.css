@@ -28,7 +28,9 @@ main {
     display: none;
 }
 
-
+.desktop,.inkpen{
+    align-self: flex-end;
+}
 
 .pages {
     display: flex;
