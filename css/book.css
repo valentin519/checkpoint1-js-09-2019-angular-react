@@ -40,3 +40,48 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+/*css added for a page >= 1200px*/
+.desktop {
+    display:flex;
+    align-items: flex-start;
+}
+.empty-whisky {
+    display:none;
+}
+.inkpen{
+    align-self: flex-end;
+}
+@media screen and (max-width:1200px) {
+    .inkpen{
+        display:none;
+    }
+}
+@media screen and (max-width:1100px) {
+    .whisky{
+        display:none;
+    }
+    .empty-whisky {
+        display:block;
+    }
+}
+@media screen and (max-width:1000px) {
+    .empty-whisky {
+        display:none;
+    }
+    .pages {
+        flex-basis:100%;
+    }
+    .container {
+        padding-top:2em;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .pages {
+        flex-direction: column-reverse;
+    }
+    .leftpage, .rightpage {
+        width:auto;
+    }
+}
