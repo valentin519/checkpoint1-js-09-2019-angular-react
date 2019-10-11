@@ -21,21 +21,77 @@
 
     <main class="container">
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+        <section class="desktop flex flex-h-center-1000">
+            <div class="glass display-none-1000">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky display-none-1100" />
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky display-1100" />
+            </div>
 
-            <div class="pages">
+            <div class="pages flex-v-center-800">
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
+                    <form class='flex flex-column' id='form'>
+                        <label for='name'>Name</label>
+                        <input type="text" name="name" id="name">
+                        <label for='payment'>Payment</label>
+                        <input type="number " name="payment" id="payment">
+                        <button type="submit" form="form" value="Submit">Pay</button>
+                    </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    <h3 class="w-100">S</h3>
+                    <div id='bigDash'></div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Sam Buns</p>
+                        <p class="payment">100 $</p>
+                    </div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Samuel Yans</p>
+                        <p class="payment">52563 $</p>
+                    </div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Simon Pogg</p>
+                        <p class="payment">52 $</p>
+                    </div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Smaël Vincent</p>
+                        <p class="payment">452 $</p>
+                    </div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Stacie Hunberg</p>
+                        <p class="payment">568 $</p>
+                    </div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Steve Grant</p>
+                        <p class="payment">1000 $</p>
+                    </div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Steve Rogers</p>
+                        <p class="payment">1000 €</p>
+                    </div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Sylvester Stallon</p>
+                        <p class="payment">77897 $</p>
+                    </div>
+                    <div class="flex flex-basis-100">
+                        <p class="name">Szeb Tren</p>
+                        <p class="payment">562 $</p>
+                    </div>
+                    <div>
+                        <div id="smallDash"></div>
+                    </div>
+                    <div class="flex flex-basis-100">
+                            <p class="name">Total</p>
+                            <p class="payment">141059 $</p>
+                        </div>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            <div class="pen flex flex-v-center display-none-1200">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
         </section>
     </main>
 </body>

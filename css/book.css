@@ -7,20 +7,50 @@ body {
 }
 
 main {
-    padding-top: 4em;
+    padding-top: 3em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
-
+h3 {
+    text-align: center;
+    margin-top: 0;
+}
+p {
+    text-align: end;
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 0;
+}
+button {
+    background-color: white;
+    border-radius : 10px;
+    width: 20%;
+}
+label, input, button {
+    margin-top : 16px;
+}
+input {
+    width: 80%;
+}
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
 
+.empty-whisky {
+    display: none;
+}
+.glass {
+    flex-basis: 20%;
+}
+.pen {
+    flex-basis: 15%;
+}
 .pages {
     display: flex;
     width: auto;
     flex-basis : 65%;
-    margin:1em;
 }
 
 .page {
@@ -39,4 +69,75 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+#bigDash {
+    height: 2px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+#smallDash {
+    height: 2px;
+    width: 40%;
+    margin-left: 60%;
+    background-color: black;
+}
+.name {
+    flex-basis: 60%;
+}
+.payment {
+    flex-basis: 40%;
+}
+
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-v-center {
+    align-items: center;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.w-100 {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .display-none-1200 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .display-none-1100 {
+        display: none;
+    }
+    .display-1100 {
+        display: block;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .display-none-1000 {
+        display: none;
+    }
+    .flex-h-center-1000 {
+        justify-content: center;
+    }
+    .pages {
+        flex-basis: 95%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .pages {
+        flex-direction: column;
+    }
+    .flex-v-center-800 {
+        align-items: center;
+    }
+    .page {
+        width: 90%;
+    }
 }
