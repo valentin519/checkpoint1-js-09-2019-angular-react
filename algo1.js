@@ -17,3 +17,15 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+
+function TabNumSiege(nbRange,nbSiege) {
+  let rangeCourant = 1
+  let numRange = []
+  for(let y = 1; y < nbRange + 1; y++)
+    for (let i = 1; i < nbSiege + 1; i++){
+        numRange.push( y + '-' + i )}
+    rangeCourant += 1;
+    return numRange
+}
+
