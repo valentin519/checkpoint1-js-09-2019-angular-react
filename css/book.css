@@ -38,5 +38,182 @@ main {
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
-    overflow: auto;
+    /* overflow: auto; */
+    
+}
+
+@media only screen and (min-width: 1200px){
+    .desktop {
+        display: flex;
+    }
+
+    .empty-whisky {
+        display: none;
+    }
+
+    .whisky {
+        width: 20%;
+        height: 20%;
+    }
+
+    .inkpen {
+        padding-top: 5%;
+    }
+
+    .renseignement {
+        width: 80%;
+    }
+
+    .label {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 0%;
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    .listClients {
+        display: flex;
+        font-size: 1.1rem;
+        padding-bottom: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+    .desktop {
+        display: flex;
+    }
+
+    .empty-whisky {
+        display: none;
+    }
+
+    .whisky {
+        width: 20%;
+        height: 20%;
+    }
+
+    .inkpen {
+        display: none;
+        padding-top: 5%;
+    }
+
+    .renseignement {
+        width: 80%;
+    }
+
+    .label {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    .listClients {
+        display: flex;
+        font-size: 1.3rem;
+        padding-bottom: 10%;
+    }
+
+}
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+    .desktop {
+        display: flex;
+    }
+
+    .empty-whisky {
+        width: 20%;
+        height: 20%;
+        
+    }
+
+    .whisky {
+        display: none;
+    }
+
+    .inkpen {
+        display: none;
+        padding-top: 5%;
+    }
+
+    .renseignement {
+        width: 80%;
+    }
+
+    .label {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    .listClients {
+        display: flex;
+        font-size: 1.1rem;
+        padding-bottom: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .desktop {
+        display: flex;
+    }
+
+    .empty-whisky {
+        display: none;
+        
+    }
+
+    .whisky {
+        display: none;
+    }
+
+    .inkpen {
+        display: none;
+        padding-top: 5%;
+    }
+
+    .renseignement {
+        width: 80%;
+    }
+
+    .label {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    ul li{
+        list-style: none;
+    }
+
+    .listClients {
+        display: flex;
+        font-size: 1.1rem;
+        padding-bottom: 10%;
+    }
+
 }
