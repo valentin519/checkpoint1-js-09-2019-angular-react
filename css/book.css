@@ -30,6 +30,7 @@ main {
     background-blend-mode: multiply;
 }
 
+
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
@@ -39,4 +40,167 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+.rightpage ul li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.rightpage h4{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px){
+    .navbar{
+        height: 4%;
+    }
+    .empty-whisky{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .inkpen{
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
+    .pages{
+        margin-bottom: 0;
+    }
+
+    .container{
+        padding-top: 5%;
+    }
+
+}
+
+@media screen and (min-width: 1100px) and (max-width:1200px){
+    .navbar{
+        height: 4%;
+    }
+    .empty-whisky{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .inkpen{
+       display: none;
+    }
+
+    .pages{
+        margin-bottom: 0;
+    }
+
+    .container{
+        padding-top: 5%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width:1100px){
+    .navbar{
+        height: 4%;
+    }
+    .empty-whisky{
+        display: block;
+    }
+
+    .whisky{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .inkpen{
+       display: none;
+    }
+
+    .pages{
+        margin-bottom: 0;
+    }
+
+    .container{
+        padding-top: 6%;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px){
+    .navbar{
+        height: 4%;
+    }
+    .empty-whisky{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .inkpen{
+       display: none;
+    }
+
+    .pages{
+        margin-bottom: 0;
+    }
+
+    .container{
+        padding-top: 6%;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width:800px){
+    .navbar{
+        height: 4%;
+    }
+    .empty-whisky{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+
+   
+    .inkpen{
+       display: none;
+    }
+
+    .pages{
+        flex-direction: column-reverse;
+        margin: 0.5em;
+
+    }
+    .page{
+        width: 90%;
+        margin: auto;
+    }
+
+    .container{
+        padding-top: 6%;
+    }
+
 }
