@@ -75,6 +75,51 @@ main {
   display: none;
 }
 
+.leftpage .form_payement .form_input {
+  background: #fff;
+  width: 100%;
+  line-height: 30px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.leftpage .form_payement p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.leftpage .form_payement .form_submit {
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.rightpage {
+  overflow: hidden;
+}
+
+.rightpage h3 {
+  text-align: center;
+  border-bottom: 1px solid #000;
+  font-family: "Roboto Mono", monospace;
+  margin-top: 0;
+}
+
+.rightpage ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+
+.rightpage hr {
+  height: 1px;
+  background: #000;
+  border: 0;
+}
+
 @media screen and (min-width: 1200px) {
   .desktop .inkpen {
     display: flex;
@@ -105,11 +150,14 @@ main {
 
 @media screen and (max-width: 800px) {
   .pages {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .page {
     box-sizing: border-box;
     min-width: 100%;
+  }
+  .rightpage {
+    height: auto;
   }
   .leftpage {
     margin-bottom: 0.5em;
