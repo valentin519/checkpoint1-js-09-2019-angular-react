@@ -28,3 +28,4 @@ Réalise l'ensemble des algos présents
 ### Attention, ce test est à réaliser sans Boostrap, tu devras utiliser flexbox à la place !
 
 Suis les instructions contenues dans le fichier > [index.html](./index.html)
+# checkpoint1-js-09-2019-angular-react
