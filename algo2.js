@@ -17,7 +17,7 @@
 * Résultat : [7, 85]
 */
 
-var minMax = () => (array) => {
+let minMax = () => (array) => { //remplacement du var par let => ES6
     const min = 0;
     const max = array[0];
   
@@ -31,4 +31,10 @@ var minMax = () => (array) => {
       return array;
     }
     array.push(min, max);
+
   }
+
+  console.log(minMax)
+
+
+  //Je n'ai pas trouvé de solution.
