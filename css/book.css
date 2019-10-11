@@ -82,6 +82,11 @@ main {
   border: 0;
   border-radius: 5px;
   margin-bottom: 10px;
+  padding: 0 5px;
+  box-sizing: content-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .leftpage .form_payement p {
@@ -100,7 +105,7 @@ main {
   overflow: hidden;
 }
 
-.rightpage h3 {
+.rightpage p {
   text-align: center;
   border-bottom: 1px solid #000;
   font-family: "Roboto Mono", monospace;
@@ -118,6 +123,8 @@ main {
   height: 1px;
   background: #000;
   border: 0;
+  width: 50%;
+  margin-right: 0;
 }
 
 @media screen and (min-width: 1200px) {
