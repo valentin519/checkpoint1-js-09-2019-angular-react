@@ -18,17 +18,21 @@
 */
 const array = [4, 6, 35, -65, -9, 0, 67];
 
-var minMax = (array) => {
+
+const minMax = (array) => {
+  let min = array[0];
+  let max = array[0];
+  const newArray = []
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i] == a-b) {
+    if (array[i] < min) {
       min = array[i];
     }
-    if (array[i] == a + b) {
+    if (array[i] > max){
       max = array[i];
     }
-    return array;
   }
-  array.push(min, max);
+  newArray.push(min, max);
+  return newArray
 }
 console.log(minMax(array))
