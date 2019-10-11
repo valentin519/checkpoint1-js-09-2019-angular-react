@@ -40,3 +40,272 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media screen and (min-width: 1200px) {
+    .whisky, .empty-whisky, .inkpen, .page {
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+    }
+    
+    .pages {
+        display: flex;
+        width: auto;
+        flex-basis : 65%;
+        margin:1em;
+    }
+    
+    .page {
+        height:65vh;
+        padding: 3vw;
+        width: 50%;
+        background-blend-mode: multiply;
+    }
+    
+    .leftpage {
+        background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+        border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    }
+    
+    .rightpage {
+        background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+        border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+        overflow: auto;
+    }
+    .container{
+      display: flex;
+      flex-direction: row;
+      padding-top: 1.4em;
+    }
+    .whisky{
+      margin-left: 42px;
+      height : 172px;
+      width: auto;
+      margin-top: 52px;
+    }
+    .empty-whisky{
+      display:none;
+    }
+    .desktop{
+      display: flex;
+      width: 100%;
+    }
+    .inkpen{
+      margin-top: 122px;
+      height: 342px;
+      margin-right: 22px;
+    }
+  }
+
+
+  @media screen and (min-width:1100px) and (max-width:1200px){
+    .whisky, .empty-whisky, .inkpen, .page {
+      filter: drop-shadow(15px 15px 5px var(--shadow));
+  }
+  
+  .pages {
+      display: flex;
+      width: auto;
+      flex-basis : 65%;
+      margin:1em;
+  }
+  
+  .page {
+      height:65vh;
+      padding: 3vw;
+      width: 50%;
+      background-blend-mode: multiply;
+  }
+  
+  .leftpage {
+      background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+      border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+  }
+  
+  .rightpage {
+      background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+      border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+      overflow: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.4em;
+  }
+  .whisky{
+    margin-left: 42px;
+    height : 172px;
+    width: auto;
+    margin-top: 52px;
+  }
+  .empty-whisky{
+    display:none;
+  }
+  .desktop{
+    display: flex;
+    width: 100%;
+  }
+  .inkpen{
+    display : none;
+  }
+  }
+
+
+  @media screen and (min-width:1000px) and (max-width:1100px){
+    .whisky, .empty-whisky, .inkpen, .page {
+      filter: drop-shadow(15px 15px 5px var(--shadow));
+  }
+  
+  .pages {
+      display: flex;
+      width: auto;
+      flex-basis : 65%;
+      margin:1em;
+  }
+  
+  .page {
+      height:65vh;
+      padding: 3vw;
+      width: 50%;
+      background-blend-mode: multiply;
+  }
+  
+  .leftpage {
+      background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+      border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+  }
+  
+  .rightpage {
+      background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+      border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+      overflow: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.4em;
+  }
+  .whisky{
+    display:none;
+  }
+  .empty-whisky{
+    margin-left: 42px;
+    height : 172px;
+    width: auto;
+    margin-top: 52px;
+  }
+  .desktop{
+    display: flex;
+    width: 100%;
+  }
+  .inkpen{
+    display : none;
+  }
+  }
+
+
+
+  @media screen and (min-width:800px) and (max-width:1000px){
+    .whisky, .empty-whisky, .inkpen, .page {
+      filter: drop-shadow(15px 15px 5px var(--shadow));
+  }
+  
+  .pages {
+      display: flex;
+      width: auto;
+      flex-basis : 65%;
+      margin:1em;
+  }
+  
+  .page {
+      height:65vh;
+      padding: 3vw;
+      width: 50%;
+      background-blend-mode: multiply;
+  }
+  
+  .leftpage {
+      background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+      border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+  }
+  
+  .rightpage {
+      background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+      border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+      overflow: auto;
+
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.4em;
+    justify-content: center;
+    align-items: center;
+  }
+  .whisky{
+    display: none;
+  }
+  .empty-whisky{
+    display: none;
+  }
+  .desktop{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .inkpen{
+    display : none;
+  }
+  }
+
+
+  @media screen and (max-width:800px){
+    .whisky, .empty-whisky, .inkpen, .page {
+      filter: drop-shadow(15px 15px 5px var(--shadow));
+  }
+  
+  .pages {
+      display: flex;
+      width: auto;
+      flex-basis : 65%;
+      margin:1em;
+      flex-direction: column-reverse;
+  }
+  
+  .page {
+      height:65vh;
+      padding: 3vw;
+      width: 100%;
+      background-blend-mode: multiply;
+  }
+  
+  .leftpage {
+      background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+      border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+  }
+  
+  .rightpage {
+      background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
+      border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
+      overflow: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.4em;
+    justify-content: center;
+    align-items: center;
+  }
+  .whisky{
+    display: none;
+  }
+  .empty-whisky{
+    display: none;
+  }
+  .desktop{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .inkpen{
+    display : none;
+  }
+  }
