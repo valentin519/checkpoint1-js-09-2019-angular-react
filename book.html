@@ -22,17 +22,45 @@
     <main class="container">
 
         <section class="desktop">
+            <div class="whisky-glass">
             <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
             <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
+            </div>
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form action="contacter" method="post">
+                            <div>
+                              <p id="formulaire">
+                                <label for="name">Name :</label>
+                                <input type="text" id="name" name="user_name"></br>
+                                <label for="msg">Payment</label>
+                                <textarea id="msg" name="user_message" rows="1" cols="40"></textarea>
+                            </div>
+                            <input id="bouton" type="submit" value="Pay"/></br>
+                          </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                    <h1>S</h1>
+                    <table id="Tableau">
+                        <tr>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                        <tr>
+                          <th>Samuel yants</th>
+                          <td>100€</td>
+                        </tr>
+                        <tr>
+                          <th>Simon Pogg</th>
+                          <td>52563€</td>
+                        </tr>
+                        <tr>
+                            <th>sam Burnts</th>
+                            <td>52€</td>
+                        </tr>
+                      </table>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />

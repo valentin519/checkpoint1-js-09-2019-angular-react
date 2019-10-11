@@ -40,3 +40,75 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media only screen and (min-width: 1200px){
+    .empty-whisky {
+        display:none;
+      }
+    .desktop {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+}
+
+h2{
+    text-align:center;
+    font-size:1rem
+}
+
+
+@media only screen and (min-width: 1100px) and (max-width:1200px){
+    .empty-whisky {
+        display:none;
+      }
+    .desktop {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .inkpen{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width:1100px){
+    .whisky {
+        display:none;
+      }
+      .empty-whisky {
+        display:block;
+      }
+
+    .desktop {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .inkpen{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width:1000px){
+    .whisky, .inkpen, .empty-whisky{
+        display:none;
+      }
+    .desktop {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }  
+}
+
+@media only screen and (max-width:800px){
+    .whisky, .inkpen, .empty-whisky{
+        display:none;
+      }
+    .pages {
+        display:flex;
+        flex-wrap:wrap ;
+        width:90%;
+    }  
+}
