@@ -40,3 +40,42 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+@media screen and (min-width: 1200px){
+.desktop{
+    display: flex;
+    align-items: flex-start
+}
+.empty-whisky{
+    display: none;
+}
+.whisky{
+    height: 25%;
+}
+.inkpen{
+    height: 30%;
+    align-self: flex-end;
+}
+#name, #payment{
+    width: 300px;
+    height: 20px;
+    margin-left: 30px;
+}
+caption{
+    border-bottom: 1px solid black;
+}
+.lastTd{
+    border-top: 1px solid black;
+}
+table{
+    display: flex;
+    flex-direction: column;
+}
+
+td{
+    text-align: right;
+
+}
+tbody{
+    margin-left: 10%;
+}
+}
