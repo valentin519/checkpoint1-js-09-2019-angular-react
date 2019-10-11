@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/book.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <title>Checkpoint Javascript 1</title>
 </head>
 
@@ -28,11 +29,37 @@
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
-                    <!-- TODO : Form -->
+                    <form action="" method="get" class="form-debtors">
+                        <div class="name">
+                          <label class="name_title" for="name">Name: </label>
+                          <input class="name_field" type="text" name="name" required>
+                        </div>
+                        <div class="payment">
+                          <label class="payment_title" for="payment">Payment </label>
+                          <input class="payment_field" type="number" name="payment" required>
+                        </div>
+                        <div class="form-example">
+                          <input type="submit" value="Pay!">
+                        </div>
+                      </form>
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                    <h1>S</h1>
+                    <hr class= "title_break">
+                    <ul class="debtors" >
+                        <li class="debtors_name">Sam burns<span>100€</span></li>
+                        <li class="debtors_name">Samuel Yans<span>52563€</span></li>
+                        <li class="debtors_name">Simon Pogg<span>52€</span></li>
+                        <li class="debtors_name">Sophia Maria<span>452€</span></li>
+                        <li class="debtors_name">Stacie Hunberg<span>568€</span></li>
+                        <li class="debtors_name">Steve Grant<span>1000€</span></li>
+                        <li class="debtors_name">Steve Porcher<span>7865€</span></li>
+                        <li class="debtors_name">sylvester Stallan<span>77897€</span></li>
+                        <li class="debtors_name">Szen Tren<span>562€</span></li>
+                        <hr class= "total_break">
+                        <li class="debtors_name">Total<span>141059€</span></li>
+                      </ul>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
