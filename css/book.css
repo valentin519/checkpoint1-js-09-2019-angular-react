@@ -76,3 +76,21 @@ main {
         height: 200px;
     }
 }
+
+
+@media only screen and (min-width : 1000px) and (max-width : 1099px) {
+    .desktop {
+        display: flex;
+    }
+     .whisky {
+         display: none;
+     }
+
+    .inkpen {
+        display: none;
+    }
+
+    .empty-whisky {
+        height: 200px;
+    }
+}
