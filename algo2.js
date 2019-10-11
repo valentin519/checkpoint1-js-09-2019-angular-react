@@ -20,8 +20,11 @@
 var minMax = (array) => {
     let min = 1000000;
     let max = -10000000;
+    newArray = [];
+    
   
-    for (let i = 1; i = array.length - 1; i+1) {
+    for (let i = 0; i < array.length - 1; i+1) {
+      
       if (array[i] > max) {
         max = array[i];
         return max;
@@ -31,8 +34,9 @@ var minMax = (array) => {
         return min;
       }
     }
-    array.push(min, max);
-    return  array;
+    newArray.push(min, max);
+    return  newArray;
+    
   }
-  const a = [1, -6, 0, 657556 ]
+  const a = [1, -6, 0, 6]
   console.log(minMax(a));
