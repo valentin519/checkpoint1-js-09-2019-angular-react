@@ -17,23 +17,24 @@
 * Résultat : [7, 85]
 */
 
-// const tabNum = [56, 7, 63, 9, 7, 12, 85]
+const tabNum = [56, 7, 63, 9, 7, 12, 85]
+const tabNumMinMax = [];
 
-// function minMax(array) {
-//     const min = array[0];
-//     const max = array[0];
+function minMax(array) {
+    var min = array[0];
+    var max = array[0];
   
-//     for (let i = 1; i = array.length - 1; i++) {
-//       if (array(i) <= min) {
-//         min = array;
-//       }
-//       if (array[i] >= max) {
-//         max = array[i];
-//       }
-//       array.push(min, max);
-//     }
-//     return array;
-//   }
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] <= min) {
+        min = array[i];
+      }
+      if (array[i] >= max) {
+        max = array[i];
+      }
+    }
+    tabNumMinMax.push(min, max);
+    return tabNumMinMax;
+  }
 
-//   minMax(tabNum)
-//   console.log(minMax)
+
+  console.log(minMax(tabNum))
