@@ -87,6 +87,18 @@ table{
 td{
    text-align: end; 
 }
+.whisky, .empty-whisky, .inkpen {
+    object-fit: contain;
+
+}
+.whisky {
+    align-self: flex-start;
+}
+
+.inkpen{
+    align-self: flex-end;
+}
+
 
 @media screen and (max-width:500px){
     .mob-0{display: none;}
@@ -103,7 +115,7 @@ td{
     .mob-11{width: 91.66%;}
     .mob-12{width: 100%;}
 }
-@media screen and (min-width:500px) and (max-width:1023px){
+@media screen and (min-width:1100px) and (max-width:1200px){
     .tab-0{display: none;}
     .tab-1{width: 8.33%;}
     .tab-2{width: 16.66%;}
