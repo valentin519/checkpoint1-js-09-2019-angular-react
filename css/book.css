@@ -42,73 +42,6 @@ main {
 }
 
 
-/**
-* Les classes contenues dans cette media query ne seront appliquées 
-* qu'à condition que la largeur de l'écran ne dépasse pas 500px.
-**/
-
-@media screen and (max-width: 500px) {
-    .mob-0 {display: none;}
-    .mob-1 {width: 8.33%;}
-    .mob-2 {width: 16.66%;}
-    .mob-3 {width: 25%;}
-    .mob-4 {width: 33.33%;}
-    .mob-5 {width: 41.66%;}
-    .mob-6 {width: 50%;}
-    .mob-7 {width: 58.33%;}
-    .mob-8 {width: 66.66%;}
-    .mob-9 {width: 75%;}
-    .mob-10 {width: 83.33%;}
-    .mob-11 {width: 91.66%;}
-    .mob-12 {width: 100%;}
-    .mob-offset-1 {margin-left: 8.33%;}
-    .mob-offset-2 {margin-left: 16.66%;}
-    .mob-offset-3 {margin-left: 25%;}
-    .mob-offset-4 {margin-left: 33.33%;}
-    .mob-offset-5 {margin-left: 41.66%;}
-    .mob-offset-6 {margin-left: 50%;}
-    .mob-offset-7 {margin-left: 58.33%;}
-    .mob-offset-8 {margin-left: 66.66%;}
-    .mob-offset-9 {margin-left: 75%;}
-    .mob-offset-10 {margin-left: 83.33%;}
-    .mob-offset-11 {margin-left: 91.66%;}
-    .mob-offset-12 {margin-left: 100%;}
-}
-
-
-/**
-* Les classes contenues dans cette media query ne seront appliquées 
-* qu'à condition que la largeur de l'écran soit comprise entre 501px et 800px inclus.
-**/
-
-@media screen and (min-width: 501px) and (max-width: 800px) {
-    .tab-0 {display: none;}
-    .tab-1 {width: 8.33%;}
-    .tab-2 {width: 16.66%;}
-    .tab-3 {width: 25%;}
-    .tab-4 {width: 33.33%;}
-    .tab-5 {width: 41.66%;}
-    .tab-6 {width: 50%;}
-    .tab-7 {width: 58.33%;}
-    .tab-8 {width: 66.66%;}
-    .tab-9 {width: 75%;}
-    .tab-10 {width: 83.33%;}
-    .tab-11 {width: 91.66%;}
-    .tab-12 {width: 100%;}
-    .tab-offset-1 {margin-left: 8.33%;}
-    .tab-offset-2 {margin-left: 16.66%;}
-    .tab-offset-3 {margin-left: 25%;}
-    .tab-offset-4 {margin-left: 33.33%;}
-    .tab-offset-5 {margin-left: 41.66%;}
-    .tab-offset-6 {margin-left: 50%;}
-    .tab-offset-7 {margin-left: 58.33%;}
-    .tab-offset-8 {margin-left: 66.66%;}
-    .tab-offset-9 {margin-left: 75%;}
-    .tab-offset-10 {margin-left: 83.33%;}
-    .tab-offset-11 {margin-left: 91.66%;}
-    .tab-offset-12 {margin-left: 100%;}
-}
-
 
 /**
 * Les classes contenues dans cette media query ne seront appliquées 
@@ -141,9 +74,14 @@ main {
     .dsk-offset-10 {margin-left: 83.33%;}
     .dsk-offset-11 {margin-left: 91.66%;}
     .dsk-offset-12 {margin-left: 100%;}
+
+    .empty-whisky{
+        display: none;
+    }
+
 }
 
-@media screen and (min-width: 1100px) and (max-width:1200px) {
+@media screen and (min-width: 1101px) and (max-width:1200px) {
     .dsk-int-0 {display: none;}
     .dsk-int-1 { width: 8.33%;}
     .dsk-int-2 {width: 16.66%;}
@@ -172,6 +110,111 @@ main {
 
     .inkpen{
         display: none;
+    }
+
+    .empty-whisky{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width:1100px) {
+    .dsk-int2-0 {display: none;}
+    .dsk-int2-1 { width: 8.33%;}
+    .dsk-int2-2 {width: 16.66%;}
+    .dsk-int2-3 {width: 25%;}
+    .dsk-int2-4 {width: 33.33%;}
+    .dsk-int2-5 {width: 41.66%;}
+    .dsk-int2-6 {width: 50%;}
+    .dsk-int2-7 {width: 58.33%;}
+    .dsk-int2-8 {width: 66.66%;}
+    .dsk-int2-9 {width: 75%;}
+    .dsk-int2-10 {width: 83.33%;}
+    .dsk-int2-11 {width: 91.66%;}
+    .dsk-int2-12 {width: 100%;}
+    .dsk-int2-offset-1 {margin-left: 8.33%;}
+    .dsk-int2-offset-2 {margin-left: 16.66%;}
+    .dsk-int2-offset-3 {margin-left: 25%;}
+    .dsk-int2-offset-4 {margin-left: 33.33%;}
+    .dsk-int2-offset-5 {margin-left: 41.66%;}
+    .dsk-int2-offset-6 {margin-left: 50%;}
+    .dsk-int2-offset-7 {margin-left: 58.33%;}
+    .dsk-int2-offset-8 {margin-left: 66.66%;}
+    .dsk-int2-offset-9 {margin-left: 75%;}
+    .dsk-int2-offset-10 {margin-left: 83.33%;}
+    .dsk-int2-offset-11 {margin-left: 91.66%;}
+    .dsk-int2-offset-12 {margin-left: 100%;}
+
+    .inkpen{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: block;
+    }
+
+    .whisky{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width:1000px) {
+    .tab-0 {display: none;}
+    .tab-1 { width: 8.33%;}
+    .tab-2 {width: 16.66%;}
+    .tab-3 {width: 25%;}
+    .tab-4 {width: 33.33%;}
+    .tab-5 {width: 41.66%;}
+    .tab-6 {width: 50%;}
+    .tab-7 {width: 58.33%;}
+    .tab-8 {width: 66.66%;}
+    .tab-9 {width: 75%;}
+    .tab-10 {width: 83.33%;}
+    .tab-11 {width: 91.66%;}
+    .tab-12 {width: 100%;}
+
+    .inkpen{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 800px) {
+    .mob-0 {display: none;}
+    .mob-1 { width: 8.33%;}
+    .mob-2 {width: 16.66%;}
+    .mob-3 {width: 25%;}
+    .mob-4 {width: 33.33%;}
+    .mob-5 {width: 41.66%;}
+    .mob-6 {width: 50%;}
+    .mob-7 {width: 58.33%;}
+    .mob-8 {width: 66.66%;}
+    .mob-9 {width: 75%;}
+    .mob-10 {width: 83.33%;}
+    .mob-11 {width: 91.66%;}
+    .mob-12 {width: 100%;}
+
+    .inkpen{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+
+    .pages{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -232,9 +275,7 @@ main {
 
 /************/
 
-.empty-whisky{
-    display: none;
-}
+
 
 
 .inkpen{
