@@ -8,7 +8,7 @@ body {
 
 main {
     padding-top: 1.4em;
-    font-size: 26pt;
+    font-size: 2rem;
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
@@ -18,6 +18,55 @@ main {
 
 .desktop {
     display: flex;
+}
+
+/*Formulaire */
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+label{
+    margin: 0.3em;
+}
+input, select{
+    width: 100%;
+    height: 1em;
+}
+button{
+    width: 60px;
+    margin-top: 0.5em;
+    border-radius: 5px;
+}
+
+/*page de droite */
+
+.rightpage h2 {
+    width: 100%;
+    text-align: center;
+    margin : 0px;
+    font-size: 30px;
+}
+hr{
+    margin: 0em;
+}
+.liste{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+.name, .price{
+    text-align: end;
+    margin : 0;
+}
+.name{
+    width:70%;
+}
+.price{
+    width: 30%;
+}
+li{
+    list-style: none;
 }
 
 /* Placement des images */
@@ -110,7 +159,7 @@ main {
     .desktop{
         width: 100%;
     }
-
+   
 }
 @media screen and (max-width: 799px) and (min-width: 320px){
     .pages {
@@ -126,3 +175,15 @@ main {
         width: 93%;       
     }
 }
+
+@media screen and (max-width: 1534px)and (min-width: 1317px) {
+    main{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 1317px) and (min-width: 1000px){
+    main{
+        font-size: 1rem;
+    }
+}
+
