@@ -68,10 +68,11 @@ button{
     padding-bottom: 10vh;
 }
 
-@media screen and (min-width: 1200px){
 
     .empty-whisky{
         display: none;
+        width: 250px;
+        height: 200px; 
     }
 
     .whisky{
@@ -84,7 +85,6 @@ button{
         width: 70%;
         height: auto;
     }
-}
 
 @media screen and (max-width: 1200px){
 
@@ -92,3 +92,56 @@ button{
         display: none;
     }
 }
+
+@media screen and (max-width: 1100px){
+    .inkpen{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: block;
+    }
+
+    .whisky{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .inkpen{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .inkpen{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+
+    .pages{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rightpage{
+        align-content: flex-start;
+    }
+}
+
