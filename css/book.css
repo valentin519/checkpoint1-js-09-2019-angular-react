@@ -1,42 +1,141 @@
-@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap");
 
 body {
-    background-image: url('../image/background.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../image/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
-    padding-top: 4em;
-    font-size: 26pt;
-    font-family: 'Bilbo Swash Caps', cursive;
+  padding-top: 4em;
+  font-size: 26pt;
+  font-family: "Bilbo Swash Caps", cursive;
 }
 
-.whisky, .empty-whisky, .inkpen, .page {
-    filter: drop-shadow(15px 15px 5px var(--shadow));
+.desktop {
+  display: flex;
+  flex-direction: row;
+}
+
+.whisky,
+.empty-whisky,
+.inkpen,
+.page {
+  filter: drop-shadow(15px 15px 5px var(--shadow));
+}
+
+.whisky {
+  display: flex;
+  align-self: flex-start;
 }
 
 .pages {
-    display: flex;
-    width: auto;
-    flex-basis : 65%;
-    margin:1em;
+  display: flex;
+  width: auto;
+  flex-basis: 65%;
+  margin: 1em;
+  flex-grow: 2;
 }
 
 .page {
-    height:65vh;
-    padding: 3vw;
-    width: 50%;
-    background-blend-mode: multiply;
+  height: 65vh;
+  padding: 3vw;
+  width: 50%;
+  background-blend-mode: multiply;
 }
 
 .leftpage {
-    background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
-    border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+  background: url("../image/paper.png"),
+    linear-gradient(
+      270deg,
+      rgba(157, 158, 137, 1) 0%,
+      rgba(233, 226, 187, 1) 5%,
+      rgba(255, 251, 203, 1) 18%
+    );
+  border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
 
 .rightpage {
-    background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
-    border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
-    overflow: auto;
+  background: url("../image/paper.png"),
+    linear-gradient(
+      90deg,
+      rgba(157, 158, 137, 1) 0%,
+      rgba(233, 226, 187, 1) 5%,
+      rgba(255, 251, 203, 1) 18%
+    );
+  border-radius: 40% 24px 24px 40%/8px 8px 8px 8px;
+  overflow: auto;
+}
+
+/* TO DO */
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-input {
+  height: 3em;
+  border-radius: 0.5em;
+  border-style: none;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.payement {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.payement-input {
+  height: 3em;
+  border-radius: 0.5em;
+  border-style: none;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.btn-submit {
+  height: 3em;
+  border-radius: 0.5em;
+  border-style: none;
+  width: 4em;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+/* Display bribes and total paiement */
+
+.somme {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  border-bottom: black solid 2px;
+}
+
+.name-payement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+
+.total-payement {
+  /* border-top: solid 2px black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+
+.separator-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.separator {
+  border-top: solid 2px black;
+  width: 50%;
 }

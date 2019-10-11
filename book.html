@@ -1,43 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/book.css" />
     <title>Checkpoint Javascript 1</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav class="navbar">
-            <img src="image/logo.png" class="logo" alt="logo-wcs" />
-            <a href="index.html">Instructions</a>
-            <a href="book.html">Secret book</a>
-        </nav>
+      <nav class="navbar">
+        <img src="image/logo.png" class="logo" alt="logo-wcs" />
+        <a href="index.html">Instructions</a>
+        <a href="book.html">Secret book</a>
+      </nav>
     </header>
 
     <main class="container">
+      <section class="desktop">
+        <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+        <!-- <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" /> -->
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+        <div class="pages">
+          <div class="page leftpage">
+            Add a bribe
+            <!-- TODO : Form -->
+            <form>
+              <div class="name">
+                <label id="fname">Name</label>
+                <input type="text" id="fname" class="name-input" />
+              </div>
+              <div class="payement">
+                <label id="fname">Payement</label>
+                <input type="number" id="payement" class="payement-input" />
+              </div>
+              <div class="btn">
+                <input type="submit" value="PAY!" class="btn-submit" />
+              </div>
+            </form>
+          </div>
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
+          <div class="page rightpage">
+            <!-- TODO : Display bribes and total paiement -->
+                <h2 class="somme">S</h2>
+                <div class="allpayement">
+                    <div class="name-payement">
+                            <div class="people">Sam Burns</div>
+                            <div class="nb">100€</div>
+                    </div>
+                    <div class="name-payement">
+                            <div class="people">Samuel Yans</div>
+                            <div class="nb">52563€</div>
+                    </div>
+                    
+                    <div class="name-payement">
+                            <div class="people">Simon Pogg</div>
+                            <div class="nb">52€</div>
+                    </div>
+                    
+                    <div class="name-payement">
+                            <div class="people">Sophia Maria</div>
+                            <div class="nb">452€</div>
+                    </div>
+                    
+                    <div class="name-payement">
+                            <div class="people">Stacie Hunberg</div>
+                            <div class="nb">568€</div>
+                    </div>
+                    
+                    <div class="name-payement">
+                            <div class="people">Steve Grant</div>
+                            <div class="nb">1000€</div>
+                    </div>
+                    
+                    <div class="name-payement">
+                            <div class="people">Steve Porcher</div>
+                            <div class="nb">7865€</div>
+                    </div>
+                    
+                    <div class="name-payement">
+                            <div class="people">Sylvester Stallan</div>
+                            <div class="nb">77897€</div>
+                    </div>
+                    
+                    <div class="name-payement">
+                            <div class="people">Szen Tren</div>
+                            <div class="nb">562€</div>
+                    </div>
+
+                    <div class="separator-total">
+                        <div></div>
+                        <div class="separator"></div>
+                    </div>
+
+                    <div class="total-payement">
+                            <div class="total">Total</div>
+                            <div class="nb-total">141059€</div>
+                    </div>
+                    
                 </div>
 
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
-                </div>
-            </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-        </section>
+            
+          
+        </div>
+        <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
