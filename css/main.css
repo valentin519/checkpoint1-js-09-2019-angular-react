@@ -114,6 +114,16 @@ h3 {
 hr{
     margin: 15px;
 }
+.alphabet{
+    /* width: 100%; */
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(192, 182, 182);
+    margin-top: -55px;
+}
+.alphabet span{
+    padding: 5px;
+}
 @media(min-width:1200px){
     .empty-whisky{
         display:none;
@@ -169,6 +179,15 @@ hr{
     }
     .page{
         width: 100% !important;
+    }
+    .desktop{
+        flex-direction: row-reverse;
+        flex-wrap: nowrap !important;
+    }
+    .alphabet{
+        flex-direction: column;
+        width: 55px;
+        text-align: center;
     }
 }
 @media(min-width:320px) and (max-width:800px){
