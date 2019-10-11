@@ -29,4 +29,4 @@ while (count<27){
   Array.prototype.push.apply(salle, line)
 }
 
-console.log(salle[400])
+console.log(salle)
