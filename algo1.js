@@ -22,14 +22,13 @@ Au final la liste devra ressembler à :
 const sitList = [];
 
 
-
 const makeList = () => {
-  for (let i=1; i<27; i++) {
-    
+  for (let i=1; i<i+1; i+1) {
+
     for (let j=1; j<101; j++) {
-      
-      sitList.push(`${i} - ${j}`);
-       
+
+        return sitList.push([(`${i} - ${j}`)]);   
+        
   }
 }
 
@@ -37,4 +36,5 @@ const makeList = () => {
 
 makeList();
 
-console.log(makeList);
+console.log(sitList)
+        
