@@ -16,6 +16,18 @@ main {
     justify-content: left;
 }
 
+.empty-whisky{
+    display: none;
+}
+.desktop{
+    display: flex;
+    justify-content: center;
+}
+
+.whisky{
+    align-self: flex-start;
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
@@ -25,6 +37,7 @@ main {
     width: auto;
     flex-basis : 65%;
     margin:1em;
+    align-self: center;
 }
 
 .page {
@@ -43,4 +56,52 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+@media screen and (min-width:1100px) and (max-width:1200px){
+    .inkpen{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1000px) and (max-width:1100px){
+    .whisky{
+        display: none;
+    }
+    .empty-whisky{
+        display: flex;
+        align-self: flex-start;
+    }
+    .inkpen{
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1000px){
+    .empty-whisky{
+        display: none;
+    }
+    .whisky{
+        display: none;
+    }
+    .inkpen{
+        display: none;
+    }
+}
+
+@media screen and (max-width:799px){
+    .pages {
+        flex-direction: column-reverse;
+       
+    }
+    .empty-whisky{
+        display: none;
+    }
+    .whisky{
+        display: none;
+    }
+    .inkpen{
+        display: none;
+    }
 }
