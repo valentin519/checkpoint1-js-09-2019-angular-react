@@ -40,3 +40,104 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+
+/*pour écran de min 1200px*/
+
+@media screen and (max-width: 1200px){
+    .empty-whisky{
+        display: none;
+
+    }
+    .desktop{
+        display: flex;
+    }
+
+    .whisky{
+        display: block;
+        height: 50%;
+    }
+    .inkpen{
+        display: block;
+        height: 50%;
+        margin-top: 14%;
+    }
+}
+
+/*pour écran de 1100/1200px*/
+
+@media screen and (min-width: 1100px) and (max-width: 1199px){
+    .inkpen {
+        display:none;
+    }
+    .empty-whisky{
+        display: none;
+
+    }
+    .desktop{
+        display: flex;
+    }
+
+    .whisky{
+        display: block;
+        height: 50%;
+    }
+}
+
+/*pour écran de 1000/1100px*/
+
+@media screen and (min-width: 1000px) and (max-width: 1099px){
+    .whisky{
+        display: none;
+    }
+    .inkpen {
+        display:none;
+    }
+    .desktop{
+        display: flex;
+    }
+
+    .empty-whisky{
+        display: block;
+        height: 50%;
+    }
+}
+
+/*pour écran de 800/1000px*/
+
+@media screen and (min-width: 800px) and (max-width: 999px){
+    .whisky{
+        display: none;
+    }
+    .inkpen {
+        display:none;
+    }
+    .empty-whisky{
+        display: none;
+    }
+}
+
+/*pour écran de 800px*/
+
+@media screen and (max-width: 799px){
+    .whisky{
+        display: none;
+    }
+    .inkpen {
+        display:none;
+    }
+    .empty-whisky{
+        display: none;
+    }
+    .pages{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftpage, .rightpage{
+        width: 90%; 
+        margin: 0;
+    }
+}

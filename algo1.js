@@ -16,4 +16,20 @@ Au final la liste devra ressembler à :
 26-100
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
+
+
 */
+
+
+
+
+const theater = () => {
+  const result=[];
+  for (let i = 1; i < 27 ; i++){
+    for (let f = 1 ; f < 101; f++ ){
+      result.push(`${i}-${f}`)
+    }
+  }
+  return (result)
+}
+console.log(theater())
