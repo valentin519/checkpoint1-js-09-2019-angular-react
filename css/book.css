@@ -12,27 +12,219 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
-.whisky, .empty-whisky, .inkpen, .page {
-    filter: drop-shadow(15px 15px 5px var(--shadow));
+@media screen and (min-width: 1200px){
+
+    .desktop{
+        display: flex;
+    }
+    .whisky, .inkpen, .page {
+        filter: drop-shadow(15px 15px 5px var(--shadow));
+    }
+    .whisky{
+        height: 30%;
+        flex: 1 0 auto;
+        width: 1%;
+        position:relative;
+        top: -77px;
+        left: 28px;
+    }
+    .pages {
+        display: flex;
+        width: auto;
+        flex-basis : 65%;
+        /* flex: 3 0 auto; */
+        margin:1em;
+        position:relative;
+        top:-112px;
+    }
+    .inkpen{
+        height: 2%;
+        flex: 1 0 auto;
+        width: 1%;
+        position: relative;
+        top: -40px;
+        left: -38px;
+    }
+    .empty-whisky{
+        display:none;
+    }
+   
+    .page {
+        height:65vh;
+        padding: 3vw;
+        width: 50%;
+        background-blend-mode: multiply;
+        display:flex;
+    
+    }
+    
 }
 
-.pages {
+@media screen and (min-width: 1100px) and (max-width: 1200px){
+
+    .whisky{
+        height: 30%;
+        flex: 1 0 auto;
+        width: 17%;
+        position:relative;
+        top: -77px;
+        left: 28px;
+    }
+    .pages {
+        display: flex;
+        width: auto;
+        flex-basis : 65%;
+        /* flex: 3 0 auto; */
+        margin:1em;
+        position:relative;
+        top: -273px;
+        left: 21%;
+    }
+    .inkpen{
+        display:none;
+    }
+    .empty-whisky{
+        display:none;
+    }
+    .page {
+        height:65vh;
+        padding: 3vw;
+        width: 30%;
+        background-blend-mode: multiply;
+        display:flex;
+    
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px){
+
+    .whisky{
+        display:none;
+    }
+    .pages {
+        display: flex;
+        width: auto;
+        flex-basis : 65%;
+        /* flex: 3 0 auto; */
+        margin:1em;
+        position:relative;
+        top: -273px;
+        left: 21%;
+    }
+    .inkpen{
+        display:none;
+    }
+    .empty-whisky{
+        
+        height: 30%;
+        flex: 1 0 auto;
+        width: 17%;
+        position:relative;
+        top: -77px;
+        left: 28px;
+    }
+    .page {
+        height:65vh;
+        padding: 3vw;
+        width: 30%;
+        background-blend-mode: multiply;
+        display:flex;
+    
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+
+    .whisky{
+        display:none;
+    }
+    .pages {
+        display: flex;
+        width: 130%;
+        flex-basis : 65%;
+        /* flex: 3 0 auto; */
+        margin:1em;
+        position:relative;
+        top: -100px;
+        left: 2%;
+    }
+    .inkpen{
+        display:none;
+    }
+    .empty-whisky{
+        display:none;
+    }
+    .page {
+        height:65vh;
+        padding: 3vw;
+        width: 30%;
+        background-blend-mode: multiply;
+        display:flex;
+    
+    }
+
+}
+
+@media screen  and (max-width: 800px){
+
+    .whisky{
+        display:none;
+    }
+    .pages {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+	    align-items: center;
+    } 
+    .inkpen{
+        display:none;
+    }
+    .empty-whisky{
+        display:none;
+    }
+    .page {
+        height:65vh;
+        padding: 3vw;
+        width: 80%;
+        background-blend-mode: multiply;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+}
+
+
+.myform{
     display: flex;
-    width: auto;
-    flex-basis : 65%;
-    margin:1em;
+flex-direction: column;
+align-items: flex-start;
+
 }
 
-.page {
-    height:65vh;
-    padding: 3vw;
-    width: 50%;
-    background-blend-mode: multiply;
+#payement{
+    width:100%;
 }
+.myform  p{
+    margin:0;
+    font-size: 1.5rem;
+
+}
+
+table{
+    font-size: 1.5rem;
+}
+
+
+
 
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+
 }
 
 .rightpage {
@@ -40,3 +232,4 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+

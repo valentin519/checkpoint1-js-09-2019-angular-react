@@ -34,7 +34,7 @@ ul.error:empty {
 }
 .navbar {
     background-color: var(--dark);
-    padding: 15px;
+    padding: 3px;
     color: var(--light);
     font-family: 'Monoton', cursive;
     display: flex;
@@ -55,8 +55,13 @@ ul.error:empty {
 }
 
 .navbar .logo {
-    width: 50px;
-    filter:sepia(70%);
+    width: 40px;
+
+    filter: sepia(70%);
+    
+    padding-top: 4px;
+    
+    padding-bottom: 4px;
 }
 
 code {
