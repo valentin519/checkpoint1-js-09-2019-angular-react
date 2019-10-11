@@ -11,24 +11,38 @@
 * Exemple 2 :
 * Tableau d'entrée : [-30, 5, 43, 108, -5, -7, 89]
 * Résultat : [-30, 108]
-* 
-* Exemple 3 :
-* Tableau d'entrée : [56, 7, 63, 9, 7, 12, 85]
-* Résultat : [7, 85]
 */
 
-var minMax = () => (array) => {
-    const min = 0;
-    const max = array[0];
+// * Résultat : [7, 85]
+
+
+// var minMax = () => (array) => {
+//     const min = 0;
+//     const max = array[0];
   
-    for (let i = 1; i = array.length - 1; i+1) {
-      if (array(i) < min) {
-        min = array;
-      }
-      if (array[i] = max) {
-        max = array[i];
-      }
-      return array;
+//     for (let i = 1; i = array.length - 1; i+1) {
+//       if (array(i) < min) {
+//         min = array;
+//       }
+//       if (array[i] = max) {
+//         max = array[i];
+//       }
+//       return array;
+//     }
+//     array.push(min, max);
+//     console.log(array)
+//   }
+
+const array = [56, 7, 63, 9, 7, 12, 85]
+
+
+const minMax = (array) => {
+    const result = [];
+    let min = Math.min(...array);
+    let max = Math.max(...array);
+    result.push(min, max);
+    return console.log(result)
+
     }
-    array.push(min, max);
-  }
+    
+minMax(array)
