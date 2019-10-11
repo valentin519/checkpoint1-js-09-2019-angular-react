@@ -22,6 +22,7 @@
     <main class="container">
 
         <section class="desktop">
+
             <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
             <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
@@ -29,10 +30,83 @@
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
+                    <form action="x.php" method="get">
+                        <p>
+                            <label for="name">Name : </label>
+                            <br/>
+                            <input type="text" name="name" id="name"/>
+                        </p>
+                        <p>
+                            <label for="payment">Payment</label>
+                            <br/>
+                            <select name="payment" id="payment">
+                                <option value="Sam_Burns">Sam Burns 100€</option>
+                                <option value="Samuel_Yans">Samuel Yans 52 563€</option>
+                                <option value="Simon_Pogg">Simon Pogg 52€</option>
+                                <option value="Sophie_Maria">Sophia Maria 452€</option>
+                                <option value="Stacie_Hunberg">Stacie Hunberg 568€</option>
+                                <option value="Steve_Grant">Steve Grant 1 000€</option>
+                                <option value="Steve_Porcher">Steve Porcher 7 865€</option>
+                                <option value="Sylvester_Stallan">Syvester Stallan 77 897€</option>
+                                <option value="Szen_Tren">Szen Tren 562€</option>
+                            </select>
+                        </p>
+                        <button type="submit">Pay !</button>
+
+                    </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">S</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Samuel Yans</td>
+                                <td>52 563€</td>
+                            </tr>
+                            <tr>
+                                <td>Simon Pogg</td>
+                                <td>52€</td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Maria</td>
+                                <td>452€</td>
+                            </tr>
+                            <tr>
+                                <td>Stacie Hunberg</td>
+                                <td>568€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Grant</td>
+                                <td>1 000€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Porcher</td>
+                                <td>7 865€</td>
+                            </tr>
+                            <tr>
+                                <td>Syvester Stallan</td>
+                                <td>77 897€</td>
+                            </tr>
+                            <tr>
+                                <td>Szen Tren</td>
+                                <td>562€</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td class="border-top">141 059€</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
