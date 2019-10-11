@@ -12,6 +12,11 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+.desktop {
+    display: flex;
+    align-items: flex-start;
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
@@ -40,3 +45,103 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+.rightpage p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.rightpage p:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.list  {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    text-align: right;
+}
+.list li {
+    font-size: 2rem;
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.list li:nth-child(18):after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+
+}
+form label, form input, form select {
+    display: block;
+}
+form select, form input {
+    width: 100%;
+    margin-left: 15px;
+}
+form input {
+    width: calc(100% - 15px);
+}
+form button {
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+    .empty-whisky {
+        display: none;
+    }
+    .lists ul li {
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .inkpen {
+        display: none;
+    }
+    .empty-whisky {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .whisky {
+        display: none;
+    }
+    .empty-whisky {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .empty-whisky, .whisky {
+        display: none;
+    }
+    .pages {
+        flex-basis : 100%;
+        margin:0.3em;
+    } 
+}
+
+@media screen and (max-width: 800px) {
+    .pages {
+        flex-direction: colum;
+        flex-wrap: wrap-reverse;
+    }
+    .page {
+        width: 100%;
+    }
+    .rightpage {
+        margin-bottom: 20px;
+    }
+}
+
