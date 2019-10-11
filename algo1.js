@@ -17,13 +17,13 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
-const i = 100;
-const x = 26;
+const colonne = 26;
+const siege = 100;
 
-let numeroSiege = (i, x) => {
-  for (i= 1; i<= 26; i++){
-    for (x= 1; x<= 100; x++){
-      console.log(i + "-" + x)
+let numeroSiege = (colonne, siege) => {
+  for (colonne= 1; colonne<= 26; colonne++){
+    for (siege= 1; siege<= 100; siege++){
+      console.log(colonne + "-" + siege)
     }
   }
   }
