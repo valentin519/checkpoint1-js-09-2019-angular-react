@@ -22,22 +22,52 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            <img src="image/whisky.png" alt="a whisky glass" class="whisky" id="whisky-full" />
             <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
+                    <form>
+                        <label for='name'>Name</label><br>
+                        <input type="text" name="name"><br>
+                        <label for='number'>Payment</label>
+                       <input type="number" name="number" placeholder=""><br>
+                        <input type="submit" name="Pay!" value="Pay!">
+                    </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+                    <h3>S</h3>
+                    <hr>
+                    <div id="names">
+                    <p>Sam Burns</p>
+                     <p>Samuel Yans</p>
+                      <p>Simon Pogg</p>
+                       <p>Sofia Maria</p>
+                        <p>Stacie Hunberg</p>
+                        <p>Steve Grant</p>
+                        <p>Steve Porcher</p>
+                        <p>Sylvester Stallan</p>
+                        <p>Szen Tren</p>
+                    </div>
+                    <div id="prices">
+                        
+                    </div>
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
     </main>
 </body>
+
+<script type="text/javascript">
+    //change image verre plein --> verre vide
+    //const imageEmptyGlass = "image/empty_whisky.png"
+    //const fullGlass = document.getElementById('whisky-full')
+    //fullGlass.src = imageEmptyGlass
+</script>
 
 </html>
