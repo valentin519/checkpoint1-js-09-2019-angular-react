@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
 
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+
+
 body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
@@ -12,15 +20,17 @@ main {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+    
 }
 
 .pages {
     display: flex;
-    width: auto;
     flex-basis : 65%;
     margin:1em;
+    
 }
 
 .page {
@@ -39,4 +49,125 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.imgauto {
+
+    width: auto;
+    height:60%;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+tr {
+    font-size: 1.5rem;
+}
+
+.fontsmall{font-size:1.2rem}
+
+.borderbot{border-bottom: 1px solid black}
+.border{border:2px solid black}
+
+.bordertop{border-top:1px solid black}
+
+.marginhead{margin-top:0; margin-bottom: 20px}
+/*mise en page*/
+.flex{display: flex}
+.flexcol{display: flex; flex-direction: column}
+.flexrow{display: flex; flex-direction: row}
+.wrap{flex-wrap: wrap}
+.flexone{flex: 1}
+.flexend{display: flex; justify-content: flex-end}
+
+.aligntext{text-align: right}
+.aligntextcenter{text-align:center}
+.marginoff{margin: 0}
+.justifycenter{ display:flex;justify-content: center}
+
+.ml{display: none;}
+  .ml-1{width: 8.3%;}
+  .ml-2{width: 16.6%;}
+  .ml-3{width: 25%;}
+  .ml-4{width: 33.3%;}
+  .ml-5{width: 41.6%;}
+  .ml-6{width: 50%;}
+  .ml-7{width: 58.6%}
+  .ml-8{width: 67%;}
+  .ml-9{width: 75%;}
+  .ml-10{width: 83.3%;}
+  .ml-11{width: 91.6%;}
+  .ml-12{width: 100%;}
+
+
+
+@media screen and (max-width:800px){
+
+    .pagebottom{display: flex; }
+    .pagebottomcol{flex-direction: column-reverse}
+
+    .flexnone{flex:none; display:block}
+
+  .mob-0{display: none !important;}
+  .mob-1{width: 8.3%;}
+  .mob-2{width: 16.6%;}
+  .mob-3{width: 25%;}
+  .mob-4{width: 33.3%;}
+  .mob-5{width: 41.6%;}
+  .mob-6{width: 50%;}
+  .mob-7{width: 58.6%}
+  .mob-8{width: 67%;}
+  .mob-9{width: 75%;}
+  .mob-10{width: 83.3%;}
+  .mob-11{width: 91.6%;}
+  .mob-12{width: 100%;}
+
+
+  .flexrowmob{display: flex; flex-direction: row}
+}
+
+
+@media screen and (min-width:320px) and (max-width:999px){
+
+    .none-999{display: none !important}
+    .justifycenterd{justify-content: center}
+
+}
+
+@media screen and (min-width:1000px) and (max-width:1099px){
+
+    .none1000-0{display: none !important;}
+}
+
+@media screen and (min-width:1099px) and (max-width:1199px){
+  .none1100-0{display: none ;}
+  .none0{width:0% ;}
+  .larg{width: 67%;}
+  .flex{display: flex}
+  .flextab{display: flex; flex-direction: column}
+  .flextab{display: flex; flex-direction: row}
+  .wraptab{flex-wrap: wrap}
+  .flexonetab{flex: 1}
+
+  .ml-1{width: 8.3%;}
+
+}
+
+@media screen and (min-width: 1100px){
+  .desk-0{display: none;}
+  .desk-1{width: 8.3%;}
+  .desk-2{width: 16.6%;}
+  .desk-3{width: 25%;}
+  .desk-4{width: 33.3%;}
+  .desk-5{width: 41.6%;}
+  .desk-6{width: 50%;}
+  .desk-7{width: 58.6%}
+  .desk-8{width: 67%;}
+  .desk-9{width: 75%;}
+  .desk-10{width: 83.3%;}
+  .desk-11{width: 91.6%;}
+  .desk-12{width: 100%;}
+
 }
