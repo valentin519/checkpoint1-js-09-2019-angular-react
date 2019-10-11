@@ -41,6 +41,15 @@ main {
     overflow: auto;
 }
 
+.registerNamesAndPayments {
+    display: flex;
+    flex-direction: column;
+}
+
+.payButton {
+    width: 15%;
+}
+
 @media only screen and (min-width : 1200px) {
    .desktop {
        display: flex;
