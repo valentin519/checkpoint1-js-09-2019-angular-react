@@ -94,3 +94,26 @@ main {
         height: 200px;
     }
 }
+
+@media only screen and (min-width: 800px) and (max-width : 999px) {
+    .desktop {
+        display: flex;
+    }
+
+    .pages {
+        flex-basis: 100%;
+    }
+     .whisky {
+         display: none;
+     }
+
+    .inkpen {
+        display: none;
+    }
+
+    .empty-whisky {
+        display: none;
+    }
+}
+
+}
