@@ -17,3 +17,16 @@ Au final la liste devra ressembler à :
 
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
+
+let siegeList = []
+const obSiegeList = (newArr,nbColonne, nbsiege)=>{
+
+  for(let i=1;i<nbColonne+1; i++){
+    for( let j=1; j<nbsiege+1; j++){
+      newArr.push(i + '-' + j)
+    };
+  };
+  console.log(newArr)
+};
+obSiegeList(siegeList,26, 100);
+
