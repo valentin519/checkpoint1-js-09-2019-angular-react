@@ -22,20 +22,93 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <div class="head_page">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
+                    <form action="" method="get" class="myForm">
+                        <div class="name_form">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div>
+                            <label for="pay">Payment</label>
+                            <select name="pets" id="pay" required>
+                                <option value=""></option>
+                                <option value="">bribes</option>
+                                <option value="">bribes</option>
+                                <option value="">bribes</option>
+                                <option value="">bribes</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="submit" value="Pay" id="payBtn">
+                        </div>
+                    </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
+
+                    <div class="brides">
+                        <table>
+                            <tr>
+                                <th colspan=2>S</th>
+                            </tr>
+                            <tr>
+                                <td>Sam burns</td>
+                                <td>100&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Samuel Yans</td>
+                                <td>52563&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Simon Pogg</td>
+                                <td>52&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Maria</td>
+                                <td>452&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Stacie Hunberg</td>
+                                <td>568&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Grant</td>
+                                <td>1000&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Porcher</td>
+                                <td>7865&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Sylvester Stallan</td>
+                                <td>77897&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Szen Tren</td>
+                                <td>562&euro;</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td style="border-top :1px solid black;">141059&euro;</td>
+                            </tr>
+                
+                        </table>
+                    </div>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+
+            <div class="pen">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
         </section>
     </main>
 </body>

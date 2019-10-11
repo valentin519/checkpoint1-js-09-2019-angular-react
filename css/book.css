@@ -30,6 +30,15 @@ main {
     background-blend-mode: multiply;
 }
 
+.desktop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.empty-whisky{
+    display: none;
+}
+
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
@@ -39,4 +48,98 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+}
+
+.pen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.name_form input{
+    width: calc(100% - 3vw);
+}
+
+.myForm select{
+    width: calc(100% - 1vw);
+}
+
+.brides table{
+    text-align: right;
+    width: 100%;
+}
+
+.brides table th{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .pen{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .pen{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .pen{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .pen{
+        display: none;
+    }
+
+    .whisky{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .pages{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .page{
+        width: 95%;
+        margin-bottom: 10px;
+    }
 }
