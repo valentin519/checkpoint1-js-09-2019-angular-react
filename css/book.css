@@ -11,9 +11,31 @@ main {
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
+.desktop{
+    display: flex;
+    flex-direction: row;
+
+}    
+
+
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+    
+}
+ .whisky, .empty-whisky {
+        width: 220px;
+        height: 220px;
+ }
+
+.inkpen {
+   
+    height: 400px; 
+}
+
+
+.empty-whisky {
+    display: none;
 }
 
 .pages {
@@ -40,3 +62,65 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+
+    .inkpen {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+
+    .whisky, .inkpen {
+        display: none;
+    }
+    .empty-whisky{
+
+ display: inline;
+        
+    }
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+
+    .whisky, .inkpen  {
+        display: none;
+    }
+
+    .pages {
+        margin-left: 30%;
+        align-items: center;
+
+}
+.page {
+    
+    }
+}
+
+
+@media only screen and (max-width :800px) {
+    .pages {
+        flex-direction: column;
+        margin-left: auto;
+        margin-left: auto;
+    }
+
+
+    .whisky, .inkpen {
+        display: none;
+    }
+
+    .navbar {
+ 
+        text-align: center;
+     
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
