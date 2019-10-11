@@ -21,7 +21,7 @@ Au final la liste devra ressembler à :
 
 function places() {
   let result = []
-  for(let i = 0;i<26;i++){
+  for(let i = 1;i<27;i++){
     for (let o = 0;o<100;o++){
       result.push(i + '-'+ o)
     }
