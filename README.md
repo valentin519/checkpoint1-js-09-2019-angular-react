@@ -1,6 +1,8 @@
 # Checkpoint 1 - JS
 Your 1st checkpoint !
 
+1er commit
+
 
 
 **!!! PREMIERE ETAPE OBLIGATOIRE AVANT DE COMMENCER LE PREMIER EXERCICE !!!**
