@@ -20,12 +20,12 @@ Au final la liste devra ressembler à :
 */
 function theatre (){
   const array=[];
-  for(let i =1 ; i <= 26; i++){
-    const colonne = [];
-    for(let j=1 ; j<= 100;i++){
-    const siege =[];
-      colonne.push(siege);
-        array.push(colonne);
+  for(let i =1 ; i <26; i++){
+    const rows = [];
+    for(let j=0 ; j<100;j++){
+    const column =[i];
+      rows.push(`${column}-${j+1}`);
+        array.push(rows);
     }
   }
   return array;
