@@ -20,7 +20,7 @@ body {
 
 main {
     padding-top: 4em;
-    font-size: 29pt;
+    font-size: 30pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
@@ -131,7 +131,7 @@ button{
   justify-content: space-around;
   
   font-family: 'Courier';
-  font-size:2vw;
+  font-size:1em;
 }
 .alphaNav a {
     text-decoration: none;
