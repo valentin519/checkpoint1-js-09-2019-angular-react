@@ -20,7 +20,7 @@ body {
 
 main {
     padding-top: 4em;
-    font-size: 26pt;
+    font-size: 29pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
@@ -48,22 +48,95 @@ main {
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.leftpage span{
+    align-self: flex-start;
+    margin-bottom: 30px;
+    
+    
 }
 
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157, 158, 137, 1) 0%, rgba(233, 226, 187, 1) 5%, rgba(255, 251, 203, 1) 18%);
     border-radius: 40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    display: flex;
+    padding-left: 0;
+    
 }
 
 ul{
-    font-size: 2vw;
+    list-style: none;
+    width: 80%;    
+}
+
+.pages{
+    font-size: 55%;
+    display: flex;
 }
 
 input{
     width: 90%;
-    height: 30px;
+    height: 25px;
     border-radius: 8px;
+    
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+
+  }
+
+li:nth-child(10) span{
+    width: 50%;
+    text-align: end;
+    border-bottom: 1px solid rgb(124, 117, 117);
+}
+li:nth-child(1){
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(124, 117, 117);
+    margin-bottom: 60px;
+
+}
+
+.payList{
+    display: flex;
+    flex-direction: column;     
+}
+
+.payList span {
+    float: right;
+}
+
+button{
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 30px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+.alphaNav {
+  margin-top: 10px;
+  width: 95%;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: space-around;
+  
+  font-family: 'Courier';
+  font-size:2vw;
+}
+.alphaNav a {
+    text-decoration: none;
+    color: darkgrey;
+    
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1100px) {
