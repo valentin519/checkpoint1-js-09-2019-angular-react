@@ -33,5 +33,3 @@ const displayRoom = () => {
 
   console.log(room);
 }
-
-displayRoom();
