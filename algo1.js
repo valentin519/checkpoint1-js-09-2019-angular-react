@@ -23,9 +23,13 @@ Au final la liste devra ressembler à :
 function seatNumber(){
   let b =[]
   for (let i = 1; i < 27; i++){
+    let array = []
     for (let index = 1; index < 101; index++) {
-    b.push(`${i} - ${index}`) 
+      
+    array.push(`${i} - ${index}`) 
+    
   } 
+    b.push(array)
 }
 return b;
 }
