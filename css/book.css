@@ -29,6 +29,10 @@ main {
   align-self: flex-start;
 }
 
+.empty-whisky {
+  display: none;
+}
+
 .pages {
   display: flex;
   width: auto;
@@ -67,11 +71,67 @@ main {
   overflow: auto;
 }
 
-/* TO DO */
+.inkpen-flex {
+  display: flex;
+  align-self: flex-end;
+}
+
+/* MEDIA QUERIES */
+
+/* > 1100px */
+
+@media screen and (max-width: 1100px) {
+  .inkpen-flex {
+    display: none;
+  }
+}
+
+/* > 1000px & < 1100px */
+
+@media screen and (max-width: 1000px) {
+  .whisky {
+    display: none;
+  }
+
+  .empty-whisky {
+    display: flex;
+    align-self: flex-start;
+  }
+}
+
+/* > 800px & <1000px */
+
+@media screen and (max-width: 800px) {
+  .empty-whisky {
+    display: none;
+  }
+}
+
+/* < 800px */
+
+@media screen and (max-width: 800px) {
+  .pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rightpage {
+    width: 100%;
+  }
+
+  .leftpage {
+    width: 100%;
+    order: 3;
+  }
+}
+
+/* TO DO FORM */
 
 .name {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .name-input {
@@ -80,6 +140,7 @@ main {
   border-style: none;
   margin-top: 1em;
   margin-left: 2em;
+  width: -webkit-fill-available;
 }
 
 .payement {
