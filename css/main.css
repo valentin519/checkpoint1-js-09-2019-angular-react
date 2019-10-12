@@ -34,7 +34,7 @@ ul.error:empty {
 }
 .navbar {
     background-color: var(--dark);
-    padding: 15px;
+    padding: 7px;
     color: var(--light);
     font-family: 'Monoton', cursive;
     display: flex;
@@ -48,6 +48,7 @@ ul.error:empty {
     color: var(--light);
     text-decoration: none;
     padding-left: 1em;
+    font-size: smaller;
 }
 
 .navbar a:hover {
@@ -55,7 +56,7 @@ ul.error:empty {
 }
 
 .navbar .logo {
-    width: 50px;
+    width: 38px;
     filter:sepia(70%);
 }
 
@@ -69,4 +70,16 @@ code {
 
 h3 {
     margin-top:3em;
+}
+
+@media screen and (min-width:801px) and (max-width: 1000px){
+    .navbar{
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:800px){
+    header{
+        font-size: 26pt;
+    }
 }

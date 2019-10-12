@@ -7,16 +7,21 @@ body {
 }
 
 main {
-    padding-top: 4em;
+    padding-top: 1em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
 .desktop{
     display: flex;
+    
 }
 
 .whisky{
     align-self: flex-start;
+    margin-left: 0.8em;
+    width: 17vw;
+    margin-top: 0.5em;
+    margin-right: -1em;
 }
 
 .empty-whisky{
@@ -26,6 +31,7 @@ main {
 
 .inkpen{
     align-self: flex-end;
+    width: 17%;
 }
 
 .whisky, .empty-whisky, .inkpen, .page {
@@ -36,7 +42,7 @@ main {
     display: flex;
     width: auto;
     flex-basis : 65%;
-    margin:1em;
+    margin: 0.6em 1em 1em 1em;
 }
 
 .payment{
@@ -128,45 +134,89 @@ td{
 .inkpen{
     display: none;
 }
-@media screen and (min-width: 1000px)  and (max-width: 1100px) {
+
+.desktop{
+ width: 100%;
+ height: 105vh;
+ align-items: flex-end;
+}
+
+.pages{
+    flex-basis: 72%;
+    height: 94vh;
+    margin-right: 3em;
+    align-items: flex-start;
+}
+
+.page{
+    height: 90vh;
+}
+
+.whisky{
+    margin: 1.3em;
+}
+
+@media screen and (min-width: 1001px)  and (max-width: 1100px) {
     .whisky{
         display: none;
     }
     
     .empty-whisky{
         display: flex;
-        align-self: flex-start;
+        width: 22vw;
+        margin: 1.5em 0em 0em 1em;
+    }
+
+    .page{
+        height : 90vh;
+        
+    }
+
+    .pages{
+        align-self: baseline;
+        margin: 1.2em 1.2em 1.2em 0.4em;
     }
    
 }
 
-@media screen and (max-width: 1000px){
-  .whisky{
-      display: none;
-  }
+@media screen and (min-width:801px) and (max-width: 1000px){
+  
+    .desktop{
+        align-items: self-start;
+    }
+  
+    .whisky{
+        display: none;
+     }
 
-  .pages{
-    flex-basis: 98%;
-    margin: 1em 0.5em 0.5em 0.5em;
-  }
+    .pages{
+       flex-basis: 98%;
+        margin: 1em 0.5em 0.5em 0.5em;
+      }
 }
 
 @media screen and (max-width: 800px){
- .pages{
-     display: flex;
-     flex-direction: column-reverse;
-     align-items: center;
-     margin-top: -1.5em;
- }
+    .desktop{
+        margin-top: 2em;
+    }
 
- .page {
-     width: 98%;
- }
+    .whisky{
+        display: none;
+    }
 
- header{
-     font-size: 12pt;
- }
+    .pages{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0em;
+    }
 
-}
+    .page {
+        width: 131%;
+        min-height: min-content;
+    }
+
+
+
+
 
 }
