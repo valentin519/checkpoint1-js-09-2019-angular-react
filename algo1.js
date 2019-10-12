@@ -19,14 +19,14 @@ Au final la liste devra ressembler à :
 */
 
 let siegeList = []
-const obSiegeList = (newArr,nbColonne, nbsiege)=>{
+const obSiegeList = (nbColonne, nbsiege)=>{
 
   for(let i=1;i<nbColonne+1; i++){
     for( let j=1; j<nbsiege+1; j++){
-      newArr.push(i + '-' + j)
+      siegeList.push(i + '-' + j)
     };
   };
-  console.log(newArr)
+  console.log(siegeList)
 };
-obSiegeList(siegeList,26, 100);
+obSiegeList(26, 100);
 

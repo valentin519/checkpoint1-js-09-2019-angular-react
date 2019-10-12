@@ -14,7 +14,7 @@
 body {
     margin:0;
     box-sizing: border-box;
-    font-size: 16pt;
+    font-size: 14pt;
     font-family: 'Roboto Mono', monospace;
     background-color: black;
 }
@@ -55,7 +55,7 @@ ul.error:empty {
 }
 
 .navbar .logo {
-    width: 50px;
+    width: 30px;
     filter:sepia(70%);
 }
 

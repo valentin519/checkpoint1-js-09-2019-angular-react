@@ -7,8 +7,8 @@ body {
 }
 
 main {
-    padding-top: 4em;
-    font-size: 26pt;
+    padding-top: 3em;
+    font-size: 2vw;
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
@@ -20,7 +20,6 @@ main {
     display: flex;
     width: auto;
     flex-basis : 65%;
-    margin:1em;
 }
 
 .page {
@@ -40,42 +39,114 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
-@media screen and (min-width: 1200px){
-.desktop{
+#payment, #name{
+    width: 80%;
+    margin-left: 10%;
+}
+.payment, .name{
     display: flex;
-    align-items: flex-start
+    flex-direction: column;
 }
-.empty-whisky{
-    display: none;
-}
-.whisky{
-    height: 25%;
-}
-.inkpen{
-    height: 30%;
-    align-self: flex-end;
-}
-#name, #payment{
-    width: 300px;
-    height: 20px;
-    margin-left: 30px;
+button, #payment, #name{
+    border-radius: 5px;
 }
 caption{
+    font-family: 'Courier New', Courier, monospace;
     border-bottom: 1px solid black;
+    margin-bottom: 3%;
+}
+table{
+    width: 100%;
+    text-align: right;
+    height: 100%;
 }
 .lastTd{
     border-top: 1px solid black;
 }
-table{
+.desktop{
     display: flex;
-    flex-direction: column;
+}
+.inkpen{
+    align-self: flex-end;
+    opacity: 0;
+}
+.whisky, .empty-whisky{
+    height: 20%;
+    width: 20%;
+    margin-left: 25px;
+}
+@media screen and (min-width: 1201px){
+    .empty-whisky{
+        display: none;
+    }
+    .inkpen{
+        opacity: 1;
+    }
 }
 
-td{
-    text-align: right;
+@media screen and (min-width: 1100px) and (max-width: 1200px){
+    .page{
+        padding-bottom: 17%;
+    }
+    .empty-whisky{
+        display: none;
+    }
+}
 
+@media screen and (min-width: 1000px) and (max-width: 1099px){
+    .page{
+        padding-bottom: 17%;
+    }
+    .whisky{
+        display: none;
+    }
 }
-tbody{
-    margin-left: 10%;
+@media screen and (min-width: 800px) and (max-width: 999px){
+    .whisky, .empty-whisky, .inkpen{
+        display: none;
+    }
+    .page{
+        width: 21em;
+        margin-top: 2%;
+    }
+    .pages{
+        margin-left: 2%;
+    }
+    table{
+        height: auto;
+        font-size: 1.5em;
+    }
+    label, .bribe{
+        font-size: 1.5em;
+    }
 }
+@media screen and (min-width: 320px) and (max-width: 799px){
+    .pages{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .whisky, .empty-whisky, .inkpen{
+        display: none;
+    }
+    table{
+        height: auto;
+    }
+    .leftpage{
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+    .page{
+        margin-top: 3%;
+        width: 90vw;
+        font-size: 2.5em;
+        height: auto;
+    }
+
+    .desktop{
+        margin-top: 6%;
+    }
+    .navbar{
+        font-size: 10pt;
+        padding: 10px;
+    }
 }
