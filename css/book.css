@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
 
 body {
@@ -31,7 +32,10 @@ main {
     flex-basis : 65%;
     margin:1em;
 }
-
+p{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
 .page {
     height:65vh;
     padding: 3vw;
@@ -43,6 +47,13 @@ main {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
+.name, .pay{
+    display: grid;
+}
+button{
+    border-radius: 15%;
+}
+
 
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
@@ -51,12 +62,16 @@ main {
     font-size: 1em;
     
 }
-
-.number, .name{
-    display: block;
-    width: 200px;
-    height: 150px;
+ul{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 0.5em;
 }
+.total{
+    text-decoration: overline black;
+}
+
+/*media queries*/
 @media (max-width: 1200px) {
     .inkpen{
         display: none;
@@ -84,10 +99,12 @@ main {
     .pages{
         display: flex;
         flex-direction: column-reverse;
+        width: 100% ;
     }
     .leftpage, .rightpage{
         margin-left: auto;
         margin-right: auto;
         width: 10em
     }
+
 }
