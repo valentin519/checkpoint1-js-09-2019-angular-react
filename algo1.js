@@ -19,18 +19,29 @@ Au final la liste devra ressembler à :
 */
 
 
-  let places = [];
+/*let places = [];
 for (let i = 1; i <= 26; i++) {
   let acc = [];
   for (let j = 1; j <= 100; j++) {
     acc.push(i + "-" + j);
-    
   }
   places.push(acc);
 
 }
 
-/*Manque à passer le code en fonction...*/
+console.log(places);*/
 
+const theatre = () => {
+  let places = []
+for(let i = 1; i <= 26; i++){
+    let acc=[];
+  for(let j=1; j <= 100; j++){
+    acc.push(i + "-" + j);
+  }
+  places.push(acc);
+}
+return places;
 
-console.log(places);
+}
+console.log(theatre());
+
