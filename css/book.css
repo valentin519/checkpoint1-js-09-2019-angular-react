@@ -1,9 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
 
+
+/* Version screenshot > 1200px */
+
+
+@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
+.container{
+    display: flex;
+    flex-direction: row;
+    
+   
+    
+    
+}
 body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    
+    
 }
 
 main {
@@ -14,13 +28,34 @@ main {
 
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
+    display: flex;
+    display: inline;
+     
 }
+.whisky {
+  float:left;
+  width: calc(13% - 11px);
+  
+}
+
+.empty-whisky {
+    display:none;
+}
+
+
+.inkpen{
+   
+   float:right; 
+   width: calc(13% - 11px);
+}
+  
 
 .pages {
     display: flex;
     width: auto;
     flex-basis : 65%;
     margin:1em;
+    
 }
 
 .page {
@@ -28,15 +63,71 @@ main {
     padding: 3vw;
     width: 50%;
     background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
 }
 
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+    
 }
 
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    
 }
+
+    
+
+input, textarea {
+    margin-right: 5rem;
+    
+}
+textarea {
+    width: 80%;
+}
+input {
+    width: 80%;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) { 
+    .inkpen {
+        
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .whisky {
+        display:none;
+        
+      }
+      
+    .empty-whisky {
+        display: flex;
+        width: calc(15% - 13px);
+    }
+        
+    
+}
+@media only screen and (min-width: 800px) {
+    .empty-whisky {
+        display:none;
+    }
+ }
+
+    
+        
+    
+  
+    

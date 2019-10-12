@@ -22,20 +22,84 @@
     <main class="container">
 
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+           <img src="image/whisky.png" alt="a whisky glass" class="whisky"/>
             <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
+            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
             <div class="pages">
+                
                 <div class="page leftpage">
-                    Add a bribe
+                    
                     <!-- TODO : Form -->
+                  <p> Add a bribe</p>
+                   <form method="post" target="_blank" action="traitement.php">
+        <label for="name">Name</label>
+        <input type="name" name="name" id="name" required><br><br>
+        <label for="form-message">Message</label>
+        <textarea id="form-message" rows="1" cols="15" name="message"></textarea><br><br>
+        <button id="button"> pay!</button>        
+       </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
-                </div>
+                    
+            <table>
+                
+            <thead>
+                
+                    <tr>
+                        <th>S</th>
+                        
+
+                    </tr>  
+                            
+            </thead>
+            
+                <tbody>
+                    
+                    <tr>
+                        <td>Sam Burns</td>
+                        <td>100€</td>
+                   </tr>
+                   <tr>
+                        <td> Samuel Yans</td>
+                        <td>52563€</td>
+                  </tr>
+                  <tr>
+                        <td>Simon Pogg</td>
+                        <td>52€</td>
+                  </tr>
+                  <tr>
+                        <td>Sophia Maria</td>
+                        <td>452€</td>
+                   </tr>
+                   <tr>
+                        <td>Stacie Humberg</td>
+                        <td>568€</td>
+                   </tr>
+                   <tr>
+                        <td> Steve Porcher</td>
+                        <td>7865€</td>
+                   </tr>
+                   <tr>
+                       <td>Sylvester Stallan</td>
+                       <td>77897€</td>
+                   </tr>
+                   <tr>
+                       <td>Szen Tren</td>
+                       <td>562€</td>
+                    </tr>
+                    <tr>
+                       
+                        <td>Total</td>
+                        <td>141059€</td>
+                    </tr>
+                </tbody>
+            </table>
+                
+        </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            
         </section>
     </main>
 </body>
