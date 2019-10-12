@@ -27,15 +27,70 @@
 
             <div class="pages">
                 <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
+                    <form>
+                        <p>Add a bribe</p>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" />
+                        <label for="payment">Payment</label>
+                        <input id="payment" name="payment" type="number" />
+                        <input id="submit" type="submit" value="Pay!">
+                    </form>
+
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
+                    <p>S</p>
+                    <table>
+                        <tfoot>
+                            <tr>
+                                <th>Total</th>
+                                <th class="totalmoney">141059€</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Samuel Yans</td>
+                                <td>52563€</td>
+                            </tr>
+                            <tr>
+                                <td>Simon Pogg</td>
+                                <td>52€</td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Maria</td>
+                                <td>452€</td>
+                            </tr>
+                            <tr>
+                                <td>Stacie Hunberg</td>
+                                <td>568€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Grant</td>
+                                <td>1000€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Porcher</td>
+                                <td>7865€</td>
+                            </tr>
+                            <tr>
+                                <td>Sylvester Stallan</td>
+                                <td>77897€</td>
+                            </tr>
+                            <tr>
+                                <td>Szen Tren</td>
+                                <td>562€</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            <div class="imgpen">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
         </section>
     </main>
 </body>
