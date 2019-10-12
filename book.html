@@ -1,63 +1,103 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
-    <title>Checkpoint Javascript 1</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/book.css">
+        <title>Checkpoint Javascript 1</title>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <nav class="navbar">
-            <img src="image/logo.png" class="logo" alt="logo-wcs" />
-            <a href="index.html">Instructions</a>
-            <a href="book.html">Secret book</a>
-        </nav>
-    </header>
+        <header>
+            <nav class="navbar">
+                <img src="image/logo.png" class="logo" alt="logo-wcs"/>
+                <a href="index.html">Instructions</a>
+                <a href="book.html">Secret book</a>
+            </nav>
+        </header>
 
-    <main class="container">
+        <main class="container">
 
-        <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <section class="desktop">
+                <img class="whisky" src="image/whisky.png" alt="a whisky glass"/>
+                <img
+                    class="emptyGlass"
+                    src="image/empty_whisky.png"
+                    alt="an empty whisky glass"/>
 
-            <div class="pages">
-                <div class="page leftpage">
-                    Add a bribe
-                    <!-- TODO : Form -->
-                    <div class="form-item">
-                        <div>
-                            <h2>Name</h2>
-                            <input class="input-contact" type="text">
-                        </div>
-                        <div>
-                            <h2>
-                                Payment
-                            </h2>
-                             <input class="input-contact" type="text" >
-                             <select class="input-contact">
-                                    <option selected=""></option>
-                                    <option></option>
-                                    <option></option>
-                                </select>
-                        
+                <div class="pages">
+                    <div class="page leftpage">
+                        Add a bribe
+                        <!-- TODO : Form -->
+                        <div class="form-item">
+                            <div>
+                                <p>
+                                    Name
+                                <p>
+                                   <input class="input-contact" type="text">
                             </div>
-                        
-                        <input class="input-send" type="submit" value="Paid"/>
+                                <div>
+                                    <p>
+                                        Payment
+                                    <p>
+                                        <input class="input-contact" type="text">
+                                        <select class="input-contact">
+                                                <option selected=""></option>
+                                                <option></option>
+                                                <option></option>
+                                        </select>
+                                </div>
+                                    <input class="input-send" type="submit" value="Paid"/>
+                        </div>
                     </div>
-                </div>
+                        <div class="page rightpage">
+                            <!-- TODO : Display bribes and total paiement -->
+                            <p class="book-alphabétique">S</p>
+                            <hr>
+                            <div class="rightpage-price">
+                                <div class="rightpage-price-name">
+                                    <ul>
+                                        <li>Sam Burns</li>
+                                        <li>Samuel Yans</li>
+                                        <li>Simon Pogg</li>
+                                        <li>Sophia Maria</li>
+                                        <li>Stacie Hunberg</li>
+                                        <li>steve Grant</li>
+                                        <li>Steve Porcher</li>
+                                        <li>Sylvester Stallan</li>
+                                        <li>Sven Tren</li>
+                                         <li class="invisible">case vide</li>
+                                        <li>Total</li>
+                                    </ul>
+                                </div>
+                                    <div class="rightpage-price-amount">
+                                        <ul>
+                                            <li>100€</li>
+                                            <li>52563€</li>
+                                            <li>52€</li>
+                                            <li>452€</li>
+                                            <li>468€</li>
+                                            <li>1000€</li>
+                                            <li>7865€</li>
+                                            <li>77897€</li>
+                                            <li>562€</li>
+                                            <li>
+                                                <hr>
+                                            </li>
+                                            <li>141059€</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="inkpen" src="image/inkpen.png" alt="an ink pen"/>
+                     </section>
+                 </main>
+            </body>
 
-                <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
-                </div>
-            </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-        </section>
-    </main>
-</body>
-
-</html>
+        </html>
