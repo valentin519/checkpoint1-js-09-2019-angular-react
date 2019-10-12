@@ -120,7 +120,7 @@ table{
         font-size: 1.5em;
     }
 }
-@media screen and (min-width: 320px) and (max-width: 799px){
+@media screen and (max-width: 799px){
     .pages{
         display: flex;
         flex-direction: column-reverse;
@@ -141,7 +141,6 @@ table{
         font-size: 2.5em;
         height: auto;
     }
-
     .desktop{
         margin-top: 6%;
     }
