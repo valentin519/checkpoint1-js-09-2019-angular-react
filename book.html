@@ -21,31 +21,31 @@
 
     <main class="container">
 
-        <section class="desktop row dsk-12">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky row dsk-2 tab-3" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky row dsk-0 tab-0" />
+        <section class="desktop row dsk-12 tab-12 lg-12 md-12 mob-12">
+            <img src="image/whisky.png" alt="a whisky glass" class="whisky row dsk-2 tab-2 lg-0 md-0 mob-0" />
+            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky row dsk-0 tab-0 lg-2 md-0 mob-0" />
 
-            <div class="pages  dsk-7 tab-9">
-                <div class="page leftpage ">
+            <div class="pages  dsk-8 tab-9 lg-9 md-12 mob-12 row">
+                <div class="page leftpage dsk-6 tab-6 lg-6 md-6 mob-12">
                     <p>Add a bribe</p>
                     <!-- TODO : Form -->
                     <div class="form">
                     <label for="text">Name :</label>
-                    <input type="text" name="name" class="Name-Form dsk-10">
+                    <input type="text" name="name" class="Name-Form dsk-10 tab-10 lg-10 md-10 mob-10">
                     <label for="text">Payment :</label>
-                    <input type="number" class="payment dsk-10" name="payment"
+                    <input type="number" class="payment dsk-10 tab-10 lg-10 md-10 mob-10" name="payment"
                             min="10" max="10000">
                     </div>
                     <div>
-                    <button type="submit" class="dsk-2">Pay !</button>
+                    <button type="submit" class="dsk-2 tab-2 lg-2 md-2 mob-2">Pay !</button>
                     </div>
                 </div>
 
-                <div class="page rightpage row">
+                <div class="page rightpage row dsk-6 tab-6 lg-6 md-6 mob-12">
                     <!-- TODO : Display bribes and total paiement -->
-                    <p class="S dsk-12 tab-12">S</p>
-                    <hr class="hr dsk-11 tab-11">
-                    <table class="dsk-12 tab-12">
+                    <p class="S dsk-12 tab-12 lg-12 md-12 mob-12">S</p>
+                    <hr class="hr dsk-11 tab-11 lg-11  md-11 mob-11">
+                    <table class="dsk-12 tab-12 lg-12 md-12 mob-12">
                         <tr>
                             <td>Sam Burns</td>
                             <td>100€</td>
@@ -82,17 +82,14 @@
                             <td>Szen Tren</td>
                             <td>562€</td>
                         </tr>
-                        </table>
-                        <hr class="dsk-11 tab-11 hr total">
-                        <table class="dsk-12 tab-12">
                         <tr>
-                            <td class="dsk-6 tab-6">Total</td>
-                            <td class="dsk-6 tab-6">141059€</td>
+                            <td>Total</td>
+                            <td class="total">141059€</td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen row dsk-2 tab-0" />
+            <img src="image/inkpen.png" alt="an ink pen" class="inkpen row dsk-2 tab-0 lg-0 md-0 mob-0" />
         </section>
     </main>
 </body>

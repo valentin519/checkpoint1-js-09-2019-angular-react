@@ -25,14 +25,13 @@ main {
 .pages {
     display: flex;
     width: auto;
-    flex-basis : 65%;
+
     margin:0;
 }
 
 .page {
-    height:75vh;
+    height:65vh;
     padding: 3vw;
-    width: 50%;
     background-blend-mode: multiply;
 }
 
@@ -74,10 +73,13 @@ main {
 label{
     font-size: 25px;
 }
+
 .S{
     font-size: 30px;
     display: flex;
     justify-content: center;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 table{
@@ -87,11 +89,12 @@ table{
 td{
    text-align: end; 
 }
+
 .whisky, .empty-whisky, .inkpen {
     object-fit: contain;
 
 }
-.whisky {
+.whisky, .empty-whisky{
     align-self: flex-start;
 }
 
@@ -99,8 +102,12 @@ td{
     align-self: flex-end;
 }
 
+.total{
+    border-top: 1px solid rgba(20, 20, 20, 0.9);
+}
 
-@media screen and (max-width:500px){
+
+@media screen and (max-width:800px){
     .mob-0{display: none;}
     .mob-1{width: 8.33%;}
     .mob-2{width: 16.66%;}
@@ -114,7 +121,48 @@ td{
     .mob-10{width: 83.33%;}
     .mob-11{width: 91.66%;}
     .mob-12{width: 100%;}
-}
+
+    .leftpage{
+        order:2;
+    }
+
+    .rightpage{
+        order:1;
+    }
+    }
+
+    @media screen and (min-width:800px) and (max-width:1000px){
+        .md-0{display: none;}
+        .md-1{width: 8.33%;}
+        .md-2{width: 16.66%;}
+        .md-3{width: 25%;}
+        .md-4{width: 33.33%;}
+        .md-5{width: 41.66%;}
+        .md-6{width: 50%;}
+        .md-7{width: 58.33%;}
+        .md-8{width: 66.66%;}
+        .md-9{width: 75%;}
+        .md-10{width: 83.33%;}
+        .md-11{width: 91.66%;}
+        .md-12{width: 100%;}
+    }
+
+    @media screen and (min-width:1000px) and (max-width:1100px){
+        .lg-0{display: none;}
+        .lg-1{width: 8.33%;}
+        .lg-2{width: 16.66%;}
+        .lg-3{width: 25%;}
+        .lg-4{width: 33.33%;}
+        .lg-5{width: 41.66%;}
+        .lg-6{width: 50%;}
+        .lg-7{width: 58.33%;}
+        .lg-8{width: 66.66%;}
+        .lg-9{width: 75%;}
+        .lg-10{width: 83.33%;}
+        .lg-11{width: 91.66%;}
+        .lg-12{width: 100%;}
+    }
+    
 @media screen and (min-width:1100px) and (max-width:1200px){
     .tab-0{display: none;}
     .tab-1{width: 8.33%;}
@@ -150,7 +198,7 @@ td{
 
 }
 
-.whisky {
+.whisky{
     align-self: flex-start;
 }
 
