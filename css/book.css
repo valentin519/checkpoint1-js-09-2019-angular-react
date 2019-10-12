@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet');
 
 body {
     background-image: url('../image/background.jpeg');
@@ -19,8 +20,9 @@ main {
 .pages {
     display: flex;
     width: auto;
-    flex-basis : 65%; /*65%*/
+    flex-basis : 65%;
     margin:1em;
+    font-size: 0.96em; 
 }
 
 .page {
@@ -39,51 +41,225 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    text-align: center;
+    display: flex;              /*modification by add display*/
+    flex-direction: column;     /*modification by add a flex-direction*/
 }
 
 /* start modifications */
-/* .empty-whisky {
-    display: none;
-}
-.container {
+
+/* general layout*/
+
+.desktop{
     display: flex;
+    margin-top: -85px;
+    align-items: flex-start;
 }
 
-.desktop {
-    display: flex;
-    border: 1px solid red;
-    flex-direction: row;
+.empty-whisky{
+    visibility: hidden;
 }
-.pages {
-    width:150%;
-} */
-@media screen and (min-width: 1200px){
-    .desktop{
-        display: flex;
-        /* margin-top: -90px; */
-        align-items: flex-start;
-    }
-    .empty-whisky{
+
+.whisky {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.inkpen {
+    align-self: center;
+    margin-top: 150px;
+    width: 18%;
+    visibility: visible;
+}
+.page {
+    height: 500px;
+    width: 300px;
+}
+.empty-whisky {
+    visibility: hidden;
+    margin-left: -290px;
+    margin-top: 35px;
+}
+
+/* right page */
+
+hr {
+    margin-top: -30px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: end;
+    font-size: 0.8em;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.totalcell {
+    border-top: 1px solid black;
+}
+
+h4 {
+    font-family: 'Merriweather';
+    font-size: 0.8em;
+    font-weight: lighter;
+    margin-top: 2px;
+    border-bottom: 1px solid grey;
+}
+
+  /* left page */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+label{
+    margin-top: 0.4em;    
+}
+input, select{
+    margin-left: 1em;
+    border-radius: 5px;
+}
+button{
+    margin: 1em;
+    width: 40px;
+    padding: 4px;
+    border-radius: 5px; 
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px){
+
+    .inkpen {
         display: none;
     }
-    .whisky {
-        /* display: flex; */
-        /* width: 300px;
-        height: 253px; */
-        /* margin-top: 20px;
-        margin-left: 20px; */
+
+    .page {
+        font-size: 1.15em;
+        width: 250px;
+        height: 600px;
     }
+}
+@media screen and (min-width: 1000px) and (max-width: 1099px){
+    
     .inkpen {
-        align-self: center;
-        /* display: flex; */
-        /* margin-top: 200px; */
-        /* align-self: auto; */
-        /* width: 271px;
-        height: 491px; */
-        border: 1px solid red;
+        visibility: hidden;
+    }
+
+    .page {
+        width: 300px;
+        height: 700px;
+    }
+
+    .leftpage {
+        font-size: 1.1em;
+    }
+
+    .rightpage {
+        font-size: 1.45em;
+    }
+
+    form {
+        font-size: 1em;
+    }
+
+    .empty-whisky {
+        visibility: visible;
+        margin-left: -290px;
+        margin-top: 35px;
+    }
+    
+    .whisky {
+        visibility: hidden;
+    }   
+    .navbar {
+        width: 200vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px){
+    
+    .inkpen {
+        visibility: hidden;
+    }
+
+    .pages {
+
+        margin-left: -330px;
     }
     .page {
-        height: 600PX;
+        width: 345px;
+        height: 500px;
+    }
 
+    .leftpage {
+        font-size: 1.1em;
+    }
+
+    .rightpage {
+        font-size: 1em;
+    }
+
+    form {
+        font-size: 1em;
+    }
+
+    .empty-whisky {
+        visibility: hidden;
+        margin-left: -290px;
+        margin-top: 35px;
+    }
+    
+    .whisky {
+        visibility: hidden;
+    }
+
+    .navbar {
+        width: 200vw;
+    }  
+}
+
+@media screen and (max-width: 799px){
+
+    .rightpage {
+        margin-bottom: 15px;
+    }
+    .inkpen {
+        visibility: hidden;
+    }
+
+    .pages {
+        flex-direction: column-reverse;
+
+        margin-left: -330px;
+    }
+    .page {
+        width: 345px;
+        height: 500px;
+    }
+
+    .leftpage {
+        font-size: 1.1em;
+    }
+
+    .rightpage {
+        font-size: 1em;
+    }
+
+    form {
+        font-size: 1em;
+    }
+
+    .empty-whisky {
+        visibility: hidden;
+        margin-left: -290px;
+        margin-top: 35px;
+    }
+
+    .whisky {
+        visibility: hidden;
+    }  
+    .navbar {
+        width: 200vw;
     }
 }
