@@ -30,31 +30,26 @@
                     Add a bribe
                     <!-- TODO : Form -->
                     <form>
-                        <label for='name'>Name</label><br>
-                        <input type="text" name="name"><br>
+                        <label for='name'>Name</label>
+                        <input type="text" name="name">
                         <label for='number'>Payment</label>
-                       <input type="number" name="number" placeholder=""><br>
-                        <input type="submit" name="Pay!" value="Pay!">
+                        <input type="number" name="number" placeholder="">
+                        <input style="width:60px;"type="submit" name="Pay!" value="Pay!">
                     </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
-                    <h3>S</h3>
+                    <h4>S</h4>
                     <hr>
+                    <div id="left-content">
                     <div id="names">
-                    <p>Sam Burns</p>
-                     <p>Samuel Yans</p>
-                      <p>Simon Pogg</p>
-                       <p>Sofia Maria</p>
-                        <p>Stacie Hunberg</p>
-                        <p>Steve Grant</p>
-                        <p>Steve Porcher</p>
-                        <p>Sylvester Stallan</p>
-                        <p>Szen Tren</p>
-                    </div>
-                    <div id="prices">
+                   
                         
+                    </div>
+                    <div id="amount">
+                        
+                    </div>
                     </div>
                 </div>
             </div>
@@ -64,10 +59,70 @@
 </body>
 
 <script type="text/javascript">
-    //change image verre plein --> verre vide
-    //const imageEmptyGlass = "image/empty_whisky.png"
-    //const fullGlass = document.getElementById('whisky-full')
-    //fullGlass.src = imageEmptyGlass
-</script>
+   
+    class Bride {
+        constructor(name, amount){
+            this.name = name
+            this.amount = amount
+            }
 
+        newBride () {
+            const user = document.getElementById('names')
+            const content = document.createElement("p")
+            user.appendChild(content)
+            content.append(this.name)
+            }
+
+        newAmout () {
+            const brideAmount = document.getElementById('amount')
+            const amountContent = document.createElement("p")
+            brideAmount.appendChild (amountContent)
+            amountContent.append(this.amount)
+            }
+        }
+
+    const brideUser1 = new Bride("Sam Burns","100€")
+    const brideUser2 = new Bride("Samuel Yans","52563€")
+    const brideUser3 = new Bride("Simon Pogg","52€")
+    const brideUser4 = new Bride("Sofia Maria","452€")
+    const brideUser5 = new Bride("Stacie Hunberg","568€")
+    const brideUser6 = new Bride("Steve Grant","1000€")
+    const brideUser7 = new Bride("Steve Porcher","7865€")
+    const brideUser8 = new Bride("Sylvester Stallan","77897€")
+    const brideUser9 = new Bride("Szen Tren","562€")
+    const brideUser10 = new Bride("Total","141069€")
+
+
+
+
+
+   // Met les objets bride dans un tableau
+    let arrayBride = []
+    arrayBride.push(brideUser1)
+    arrayBride.push(brideUser2)
+    arrayBride.push(brideUser3)
+    arrayBride.push(brideUser4)
+    arrayBride.push(brideUser5)
+    arrayBride.push(brideUser6)
+    arrayBride.push(brideUser7)
+    arrayBride.push(brideUser8)
+    arrayBride.push(brideUser9)
+    arrayBride.push(brideUser10)
+
+    //console.log(arrayBride[5])
+
+   
+    
+
+
+
+    for (let i = 0; i < arrayBride.length; i++ ) {
+       arrayBride[i].newBride()
+       arrayBride[i].newAmout()
+        //console.log(arrayBride[i])
+
+   }
+    
+</script
+>
 </html>

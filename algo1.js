@@ -20,9 +20,12 @@ Au final la liste devra ressembler à :
 function numberPlace() {
 const row = 27
 const col = 101
+let result = new Array(row)
 	for (let i = 1; i < row; i++) {
-    for (let j =1; j < col; j++) {
-			console.log( i+'-'+j)
+    result[i] = new Array(col)
+    	for (let j =1; j < col; j++) {
+			result[i][j] = (i+'-'+j)
 		}
 	}
+  return (result)
 }
