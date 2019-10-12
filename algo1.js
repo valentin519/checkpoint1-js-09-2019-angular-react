@@ -31,5 +31,5 @@ const displayRoom = () => {
     room.push(col);
   }
 
-  console.log(room);
+  return room
 }
