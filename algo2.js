@@ -17,27 +17,22 @@
 * Résultat : [7, 85]
 */
 
-array = [4, 6, 35, -65, -9, 0, 67]
-let max= []
-
-let minMax = () => {
-  for (let i = 0; i < array.length; i++) {
-    let newArray = array[i]
-    for (let j = 0; j < array.length; j++) {
-      let valMax= array[j]
-    }
-    if (newArray < valMax) {
-      
-    }
-    if () {
-      max = i;
-    }
-    newArray.push(max);
-    return newArray;  
+let minMax = (array) => {
+    let min = array[0];
+    let max = array[0];
+    let finalArray = []
+    for (let i = 1; i <= array.length - 1; i++) {
+      if (array[i] < min) {
+        min = array[i];
+      }
+      if (array[i] > max) {
+        max = array[i];
+      }
+      finalArray.push(min, max);
+    } 
+    return finalArray;
   }
-  
-}
-
+ 
 
 
 
