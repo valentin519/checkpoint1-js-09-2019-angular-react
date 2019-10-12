@@ -1,35 +1,78 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/book.css">
-   <title>Checkpoint Javascript 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/book.css">
+    <title>Checkpoint Javascript 1</title>
 </head>
+
 <body>
-   <header>
-       <nav class="navbar">
-           <img src="image/logo.png" class="logo" alt="logo-wcs" />
-           <a href="index.html">Instructions</a>
-           <a href="book.html">Secret book</a>
-       </nav>
-   </header>
-   <main class="container">
-       <section class="desktop">
-           <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-           <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-           <div class="pages">
-               <div class="page leftpage">
-                   Add a bribe
-                   <!-- TODO : Form -->
-               </div>
-               <div class="page rightpage">
-                   <!-- TODO : Display bribes and total paiement -->
-               </div>
-           </div>
-           <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-       </section>
-   </main>
+    <header>
+        <nav class="navbar">
+            <img src="image/logo.png" class="logo" alt="logo-wcs" />
+            <a href="index.html">Instructions</a>
+            <a href="book.html">Secret book</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="desktop">
+            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            <div class="pages">
+                <div class="page leftpage">
+                    Add a bribe
+                    <div class="form">
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Name">
+
+                            <label for="payment">Payment</label>
+                            <select id="payment" name="payment">
+                      <option value="card">Card</option>
+                      <option value="cash">Cash</option>
+                    </select>
+                            <input id="button" type="submit" value="Pay !">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="page rightpage">
+                    <div id="S">S</div>
+                    <div class="note">
+                        <div class="paiement">
+                            <p>Sam Burns </p>
+                            <p>Samuel Yans</p>
+                            <p>Simon Pogg</p>
+                            <p>Sophia Maria</p>
+                            <p>Stacie Hunberg</p>
+                            <p>Steve Grant</p>
+                            <p>Steve Porcher</p>
+                            <p>Sylvester Stallan</p>
+                            <p>Szen Tren</p>
+                            <p>Total</p>
+                        </div>
+                        <div class="total">
+                            <div class="paiement">
+                                <p>100€</p>
+                                <p>52563€</p>
+                                <p>52€</p>
+                                <p>452€</p>
+                                <p>568€</p>
+                                <p>1000€</p>
+                                <p>7865€</p>
+                                <p>77897€</p>
+                                <p>562€</p>
+                                <p id="border">141059€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+        </section>
+    </main>
 </body>
-</html>
+
+</html>s
