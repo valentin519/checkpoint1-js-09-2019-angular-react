@@ -4,7 +4,6 @@ body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 main {
@@ -19,18 +18,9 @@ main {
 
 .pages {
     display: flex;
-    flex-basis : 65%;
+    width: auto;
+    flex-basis : 85%;
     margin:1em;
-    justify-content: space-around;
-}
-
-.twoGlasses{
-    display: flex:
-}
-
-.pencil{
-    display: flex;
-    align-items: flex-end;
 }
 
 .page {
@@ -43,84 +33,140 @@ main {
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
+
 }
 
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
-    overflow: auto;
-    text-align: center;
-
+    overflow: auto;  
 }
 
-/* underlined title*/
-.title{
-    border-bottom: solid;
-}
-p{
-    margin-bottom: 0;
-}
-
-/*BOOKS*/
-table{
-    display: flex;
-   justify-content: right; 
-}
-.price{
-    border-top: solid;
-}
-
-  
-
-/*delete empty glass*/
-#emptyGlass{
+/*wisky glasses*/
+.empty-whisky{
     display: none;
 }
 
-/*FORM*/
-input,select{
+.whisky{
+    height: 30%;
+}
+.desktop{
+    display: flex;
+    flex-direction: row;
+}
+
+/*pencil*/
+.pencil{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/*Form*/
+select{
     width: 100%;
 }
 
+input{
+    width: 97%;
+}
 
+/*Bribes*/
+
+.title{
+    border-bottom: 0.1rem solid;
+    font-family: math; 
+    margin-top: 0;  
+    padding-top: 0;
+}
+p{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+table{
+    display: flex;
+    justify-content: flex-end;
+}
+td{
+    text-align: end;
+    width: 250px;
+    
+}
+.price{
+    border-top:0.1rem solid;
+
+}
+
+
+
+
+#total{
+    border-top:solid;
+}
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .pencil{  
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .whisky{
+        display: none;
+    }
+
+    .empty-whisky{
+        display: block;
+        height: 30%;
+    }
+
 .pencil{
-    display: flex;
+        
     display: none;
 }
+main { 
+    font-size: 21pt;  
+}
 }
 
-@media screen and (min-width: 1100px) and (max-width: 1100px) {
-
-
-}
-
+    
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-.whiskyGlass{
-    display: flex;
-    display: none;
-}
-.pencil{
-    display: flex;
-    display: none;
-}
-.twoPages{
-    display: flex;
-}
-
-}
-
-@media screen and (min-width: 320px) and (max-width: 800px) {
-    .whiskyGlass{
-        display: flex;
+    .empty-whisky{ 
         display: none;
     }
     .pencil{
-        display: flex;
+        
         display: none;
     }
-.rightpage{
-    width:100%;
+    .whisky{
+        display: none;
+    }
+    main {
+        font-size: 22pt;
+    }
 }
+     
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .whiskyGlass{
+            display: none;
+        }
+    .pencil{
+            display: none;
+        }
+
+    .whisky{
+        display: none;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+      }
+
+      .page {
+        width: 100%;
+    }
+    }

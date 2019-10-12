@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/book.css">
-    <link rel="stylesheet" href="instructions.css">
     <title>Checkpoint Javascript 1</title>
 </head>
 
@@ -23,25 +22,14 @@
     <main class="container">
 
         <section class="desktop">
-            <div>
-
-            
-             
+            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
             <div class="pages">
-                <div>
-                    <div class="twoGlasses" >
-                        <img id="emptyGlass" src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-                    </div>  
-                    <div class="whiskyGlass">
-                        <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-                    </div>
-                </div>
-                
                 <div class="page leftpage">
                     Add a bribe
-                     <!-- TODO : Form -->
-                    <div class = "nameInput">
+                    <!--Form Name-->
+                    <div class="nameInput">
                         <div>
                             <label for="name">Name </label>
                         </div>
@@ -50,91 +38,84 @@
                         </div>
                     </div>
 
-
-                    <div class = "payment">
+                    <!--Form payment-->
+                    <div class="payment">
                         <div>
-                            <label for="name">Payment </label>
+                            <label for="cash">Payment </label>
                         </div>
-                            <div>
-                                 <select name="pets" id="pet-select">
-                                    <option value=""></option>
-                                    <option value="creditCard">Credit Card</option>
-                                    <option value="cash">Cash</option>
-                                    <option value="flowers">Flowers</option>
-                                </select>
-                            </div>
+                        <div>
+                            <select name="pets" id="pet-select">
+                                <option value=""></option>
+                                <option value="creditCard">Credit Card</option>
+                                <option value="cash">Cash</option>
+                                <option value="flowers">Flowers</option>
+                            </select>
                         </div>
-
-                    <button class="payButton"
-                        type="button">
+                    </div>
+                    <button class="payButton" type="submit">
                         Pay !
                     </button>
-                    
                 </div>
 
                 <div class="page rightpage">
-                    <!-- TODO : Display bribes and total paiement -->
-                
-                    <div class ="title">
-                        <p>S</p>
-                    </div>
+                    <!-- Bribes -->
 
-                    <!--BOOKS-->
-                    <table>
-                            <thead>
-                                <br>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Sam Burns</td>
-                                    <td >100€</td>
-                                </tr>
-                                <tr>
-                                    <td>Samuel Yans </td>
-                                    <td >25263€</td>
-                                </tr>
-                                <tr>
-                                    <td>Simon POgg</td>
-                                    <td >452€</td>
-                                </tr>
-                                <tr>
-                                    <td>Sophia Maria</td>
-                                    <td >452€</td>
-                                </tr>
-                                <tr>
-                                    <td>Stacie Hunberg</td>
-                                    <td >568€</td>
-                                </tr>
-                                <tr>
-                                    <td>Steve Grant</td>
-                                    <td>1000€</td>
-                                </tr>
-                                <tr>
-                                    <td>Steve Porcker</td>
-                                    <td>7865€</td>
-                                </tr>
-                                <tr>
-                                    <td>Sylvester Stallan</td>
-                                    <td>77897€</td>
-                                </tr>
-                                <tr>
-                                    <td>Szen Tren</td>
-                                    <td>562€</td>
-                                </tr>
-                                <tr>
-                                    <td>Total</td>
-                                    <td class="price">141059€</td>
-                                </tr>
-                            </tbody>
+                    
+                        <p class="title">S</p>
+                    
+                    <div class="Bribes">
+                        <table>
+                            <br>
+                            <tr>
+                                <td>Sam Burns</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Samuel Yans </td>
+                                <td>25263€</td>
+                            </tr>
+                            <tr>
+                                <td>Simon POgg</td>
+                                <td>452€</td>
+                            </tr>
+                            <tr>
+                                <td>Sophia Maria</td>
+                                <td>452€</td>
+                            </tr>
+                            <tr>
+                                <td>Stacie Hunberg</td>
+                                <td>568€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Grant</td>
+                                <td>1000€</td>
+                            </tr>
+                            <tr>
+                                <td>Steve Porcker</td>
+                                <td>7865€</td>
+                            </tr>
+                            <tr>
+                                <td>Sylvester Stallan</td>
+                                <td>77897€</td>
+                            </tr>
+                            <tr>
+                                <td>Szen Tren</td>
+                                <td>562€</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td class="price">141059€</td>
+                            </tr>
+
                         </table>
-
-                </div>
-            
-                <div class="pencil">
-                    <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+                    </div>
                 </div>
             </div>
-            
+
+            <div class="pencil">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
+
         </section>
     </main>
 </body>
