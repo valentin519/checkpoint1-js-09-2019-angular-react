@@ -15,7 +15,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-.letters{
+#letters{
     background-color: cornsilk;
     display: flex;
     justify-content: space-between;
@@ -106,6 +106,29 @@ td{
     background-color: black;
     height: 1px;
 }
+#pay{
+    font-family : 'Courier New', Courier, monospace;
+    box-shadow: 3px 2px 2px rgb(148, 148, 148);
+    font-size: 0.7em;
+    background-color: cornsilk;
+    width : 20%;
+    margin: 10px 0;
+    padding:5px;
+    border-radius: 6px;
+}
+.pointer{
+    cursor: pointer;
+}
+.delete{
+    font-family : 'Courier New', Courier, monospace;
+    font-size: 0.5em;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    box-shadow: 2px 1px 1px rgb(148, 148, 148);
+    border-radius: 10%;
+    
+}
 /*Media Queries ---------------------------*/
 @media screen and (max-width:1200px){
     .inkpen{
@@ -148,7 +171,7 @@ td{
     .desktop{
         width: 95%;
     }
-    .letters{
+    #letters{
         flex-direction: column;
         text-align: center;
     }
