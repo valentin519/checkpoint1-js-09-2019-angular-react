@@ -2,45 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
-    <title>Checkpoint Javascript 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/book.css">
+  <title>Checkpoint Javascript 1</title>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar">
-            <img src="image/logo.png" class="logo" alt="logo-wcs" />
-            <a href="index.html">Instructions</a>
-            <a href="book.html">Secret book</a>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <img src="image/logo.png" class="logo" alt="logo-wcs" />
+      <a href="index.html">Instructions</a>
+      <a href="book.html">Secret book</a>
+    </nav>
+  </header>
 
-    <main class="container">
+  <main class="container">
 
-            <section class="desktop">
-                    <div class="whisky-wrapper">
-                        <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-                        <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-                    </div>
-        
-                    <div class="pages">
-                        <div class="page leftpage">
-                            Add a bribe
-                            <!-- TODO : Form -->
-                        </div>
-        
-                        <div class="page rightpage">
-                            <!-- TODO : Display bribes and total paiement -->
-                        </div>
-                    </div>
-                    <div>
-                        <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
-                    </div>
-                </section>
-            </main>
-        </body>           
+    <section class="desktop">
+      <div class="whisky-wrapper">
+        <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+        <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+      </div>
+
+      <div class="pages">
+        <div class="page leftpage">
+          Add a bribe
+          <p>
+            <label for="email">Name</label></br> <input type="text" name="Name" id="Name" size="42" />
+          </p>
+          <p>
+            <label for="object">Payment</label></br>
+            <input type="number" min="0" step="10" name="Payment" id="pay" />
+          </p>
+          <p>
+            <input id="button" type="Submit" value="Pay!">
+          </p>
+        </div>
+
+        <div class="page rightpage">
+          <h4 id="titleright">S</h4>
+          <div id="count">
+            <table>
+              <tr>
+                <th>Sam Burns</th>
+                <td>100€</td>
+              </tr>
+              <tr>
+                <th>Samuel Yans</th>
+                <td>52563€</td>
+              </tr>
+              <tr>
+                <th>Simon Pogg</th>
+                <td>52€</td>
+              </tr>
+              <tr>
+                <th>Sophia Maria</th>
+                <td>452€</td>
+              </tr>
+              <tr>
+                <th>Stacie Hunberg</th>
+                <td>568€</td>
+              </tr>
+              <tr>
+                <th>Steve Grant</th>
+                <td>1000€</td>
+              </tr>
+              <tr>
+                <th>Steve Porcher</th>
+                <td>7865€</td>
+              </tr>
+              <tr>
+                <th>Sylvester Stallan</th>
+                <td>77897€</td>
+              </tr>
+              <tr>
+                <th>Szen Tren</th>
+                <td>562€</td>
+                <th>Total</th>
+                <td>141059€</td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
