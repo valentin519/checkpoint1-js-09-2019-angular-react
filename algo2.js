@@ -29,7 +29,7 @@ const minMax = (array) => {
       else if (array[i] > max) {
         max = array[i];
       }
-      result.push(min, max);
-      return result;
     }
+    result.push(min, max);
+    return result;
   }
