@@ -1,42 +1,257 @@
 @import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap');
-
+html {
+    background-color: black;
+}
 body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-size:12pt;
+    margin-top:10px;
+    padding-bottom:90px;
+    overflow:hidden;
 }
-
+.navbar .logo {
+    width: 35px;
+    margin-left:0px;
+}
+.navbar a {
+    color:rgb(180, 174, 174);
+}
+.navbar {
+    height: 30px;
+}
 main {
-    padding-top: 4em;
+    padding-top: 1.9em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
-
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
-
+.whisky {
+    height: 180px;
+    margin-left:80px;
+}
+.empty-whisky {
+    display: none;
+}
+.desktop {
+    margin-right: 40px ;
+    margin-top:1px;
+    display: flex;
+    justify-content: center;
+}
 .pages {
     display: flex;
-    width: auto;
-    flex-basis : 65%;
-    margin:1em;
+    width: 820px;
 }
-
+.inkpen {
+    height: 350px;
+    margin-top:100px;
+    margin-right:9px;
+}
 .page {
-    height:65vh;
+    height:60vh;
     padding: 3vw;
-    width: 50%;
+    width: 480px;
     background-blend-mode: multiply;
 }
-
 .leftpage {
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
-
 .rightpage {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
-    overflow: auto;
+    overflow: hidden;
 }
+.s {
+    display: flex;
+    justify-content: center;
+    font-size:25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 10px;
+    margin-top:-10px;
+    margin-bottom:-15px;
+}
+.line {
+    border-width: 1px;
+    border-color: rgb(224, 224, 221);
+    border-color:  rgb(107, 105, 105);
+}
+.line2 {
+   border-width: 1px;
+   border-color: rgb(97, 94, 94);
+   width: 155px;
+   text-align: right;
+   margin-right:10px;
+   margin-top:-20px;
+}
+.bill .list{
+    display: inline-block;
+}
+.entername {
+    scrollbar-arrow-color: black;
+}
+.cardtypes {
+    color:rgb(14, 13, 13);
+    height: 15px;
+    width: 300px;
+    border-color: transparent;
+    border-radius: 2px;
+}
+button {
+    margin-top:-20px;
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+    border-radius: 5px;
+}
+select {
+    background-color: white;
+    border-radius: 2px;
+    border-color: transparent;
+    display: inline-block;
+    font: inherit;
+    line-height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select.cardtypes {
+    background-image:    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA3klEQVRIS+3VMU9CMRTF8d8zBL+aizoQFhx0kUk33RzdYMNFXUFnYeGrYYyaJiUxJHDLSxodbNKpfeffc9/pbaPyaCrr+3OA++z4rtT5Pg5GuMnCY9yWQEoBE1xhlUUP8YDrCBIB0vojLvGO0yz4hm4JJAKcYYoPHGOZAUdYoIMBXrc5iQAHeMlzviFygj7O8dkWEJU4XI8chALRhn9AVKHf70VRTHu4wFfbmKZLNKt50dLBnna0imcMd/2I0phWa3Y/D1e1Xa9BCZJG0VuQNpaWKMx72xS1Fl5/WN3BN+AgJhnZQlq4AAAAAElFTkSuQmCC');
+    background-position: calc(100% - .1rem), 100% 0;
+    background-size:  0.5em 0.5em;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    scrollbar-arrow-color: grey;
+    margin-top:0px;
+    width:287px;
+    height: 22px;
+}
+.payment {
+    margin-top:-60px;
+    font-size: 18px;
+    margin-left:-10px;
+}
+.labname {
+    font-size:18px;
+    margin-left:-10px;
+}
+.list{
+    list-style-type: none;
+    display: inline-block;
+    margin-top:0px;
+}
+.list2 {
+    list-style-type: none;
+    margin-top:-10px;
+}
+.diff {
+    margin-left:75px;
+}
+form {
+    display: flex;
+    flex-direction:column;
+}
+label {
+    font-size: 25px;
+}
+li {
+    font-size: 25px;
+}
+input {
+    height: 15px;
+    border-color: transparent;
+    border-radius: 2px;
+    width:280px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    font-size: 20px;
+}
+.menu2 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: right;
+}
+@media screen and (min-width: 1200px) {
+
+ .empty-whisky {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+
+ .empty-whisky, .inkpen {
+        display: none;
+    }
+ .whisky {
+    display: block;
+    height: 180px;
+    margin-left:80px;
+    margin-top:40px;
+ }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+
+ .whisky, .inkpen {
+        display: none;
+    }
+ .empty-whisky {
+     display: block;
+     height: 180px;
+     margin-left:80px;
+     margin-top:40px;
+ }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+ .empty-whisky, .whisky, .inkpen {
+        display: none;
+    }
+ .pages {
+     margin-right:10px;
+     margin-left:75px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+.empty-whisky, .whisky, .inkpen {
+        display: none;
+    }
+ .pages {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 10px;
+    }
+ .page {
+        width: 300px;
+        margin-top: 13px;
+    }
+ .pages {
+     display: flex;
+
+ }
+ .leftpage {
+        align-self: flex-start;
+        height: 350px;
+    }
+ .rightpage {
+        align-self: flex-start;
+        height: 350px;
+    }
+ .navbar {
+     font-size: 16px;
+     height: 70px;
+ }
+ 
+}
+
