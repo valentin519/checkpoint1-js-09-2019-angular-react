@@ -18,11 +18,13 @@ Au final la liste devra ressembler à :
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
 
-var col = 0;
-
-for (var i = 1; i < 26; i++) {
-  col = + i;
-  console.log(col)
-  
+function cinema(){
+  let places = []
+  for(let i = 1; i <= 26; i++){
+    for(let j = 1; j <= 100; j++){
+      places.push(`${i}-${j}`)
+    }
+  }
+  return places;
 }
-
+cinema()

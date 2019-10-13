@@ -30,5 +30,5 @@ var minMax = () => (array) => {
       }
       return array;
     }
-    array.push(min, max);
+    array.push({min, max});
   }
