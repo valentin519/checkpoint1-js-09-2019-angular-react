@@ -23,12 +23,14 @@ function displaySeat() {
   const seatColumns = 26;
   const seatRows = 100;
 
-  for (let c = 1; c <= seatColumns; c++) {
-    for (let r = 1; r <= seatRows; r++) {
-      seatsTab[c] = c + '-' + r;
-      seatsTab.push(seatsTab[c]);
+  for (let c = 0; c < seatColumns; c++) {
+    seatsTab[c] = [];
+    for (let r = 0; r < seatRows; r++) {
+      let seatRow = (c + 1) + '-' + (r + 1);
+      seatsTab[c].push(seatRow);
     }
   }
 
   return seatsTab;
 }
+console.log(displaySeat());
