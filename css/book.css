@@ -10,7 +10,7 @@ background-repeat: no-repeat;
 main {
     display: flex;
     flex-direction: column;
-    padding-top: 4em;
+    padding-top: 1em;
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
@@ -30,6 +30,7 @@ main {
     color: var(--light);
     font-family: 'Monoton', cursive;
     display: flex;
+    margin-top: -4.5%;
     align-items: center;
     position: fixed;
     z-index: 2;
@@ -90,6 +91,8 @@ main {
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
+    line-height: 0;
+    font-size: 48px;;
    
 }
 
@@ -114,6 +117,31 @@ hr {
 
 .S {
     text-align: center;
+}
+
+.styleLetter {
+    color: white;
+    text-decoration: none;
+}
+
+#firstLetterName {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    margin-top: 4.5%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+.payment {
+    font-size: 33px;
+    background-color: white;
+    border-radius: 25%;
+    width: 20%;
+    margin-top: 2%;
+    padding: 1%;
 }
 
 @media (max-width: 1200px) {
@@ -176,5 +204,20 @@ hr {
         height: 155vh;
         width: 100%;
         margin-bottom: 5%;
+    }
+
+    #firstLetterName {
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        color: white;
+        font-size: 44px;
+        margin-left: 96%;
+        justify-content: space-around;
+        margin-top: 4.5%;
+        padding: 1%;
+        height: 138%;
+        align-items: flex-end;
+        background-color: gray;
     }
 }

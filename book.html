@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-
+<!--J'ai ajouter le javascript supplémentaire dans algo1.js -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,10 +17,9 @@
             <a href="index.html">Instructions</a>
             <a href="book.html">Secret book</a>
         </nav>
+        <nav id="firstLetterName"></nav>
     </header>
-
     <main class="container">
-
         <section class="desktop">
             <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
             <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
@@ -31,33 +30,25 @@
                     <form>
                         <label for="name">Name :</label>
                         <br>
-                        <input type="text" name="name"/>
+                        <input type="text" id="name" name="name"/>
                         <br><br>
                         <label for="payment">Payment :</label>
                         <br>
-                        <input type="number" name="name"/>
+                        <input type="number" id="payment" name="payment"/>
                         <br>
-                        <button type="submit">Pay !</button>
+                        <button  class="payment" type="submit">Pay !</button>
                     </form>
                 </div>
 
-                <div class="page rightpage">
-                    <p class="S">S</p>
-                    <hr>
-                    <div class="containerNamePrice">
-                    <div class="containerName"><p>Sam Burns</p><p>Samuel Yans</p><p>Simon Pogg</p><p>Sophia Maria</p><p>Stacie Hunberg</p><p>Steve Grunt</p><p>Steve Porcher</p><p>Stylvester Stallan</p><p>Szen Tren</p></div>
-                    <div class="containerPrice"><p>100 &#8364</p><p>52563 &#8364</p><p>52 &#8364</p><p>452 &#8364</p><p>568 &#8364</p><p>1000 &#8364</p><p>7865 &#8364</p><p>77897 &#8364</p><p>562 &#8364</p></div>
-                    </div>
-                    <hr>
-                    <div class="containerNamePrice">
-                        <p>Total</p>
-                        <p>141059 &#8364</p>
-                    </div>
+                <div id="namePrice" class="page rightpage" >
+                    
                 </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
     </main>
+    <script type="text/javascript" src="algo1.js"></script> 
+    <script type="text/javascript" src="algo2.js"></script>
 </body>
 
 </html>
