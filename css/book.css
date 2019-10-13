@@ -174,9 +174,20 @@ hr {
 
     .pages {
         position: relative;
-        left: 200px;
+
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 0;
+    }
+    .leftpage {
+        width: 450px;
+    }
+    .rightpage {
+        width: 450px;
     }
 }
 @media all and (max-width: 800px) {
-    
+    .pages {
+        flex-direction: column-reverse;
+    }
 }
