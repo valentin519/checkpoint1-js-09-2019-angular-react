@@ -19,12 +19,13 @@ Au final la liste devra ressembler à :
 */
 
 const tab = () => {
+  const room =[];
   for(let i = 1; i <= 26 ; i++){
       for(let j = 1; j <=100 ;j++){
-        console.log(`${i} - ${j}`)
+        room.push(`${i} - ${j}`)
       }
     }
-  }
-
-tab();
+    return room
+  };
+console.log(tab())
 
