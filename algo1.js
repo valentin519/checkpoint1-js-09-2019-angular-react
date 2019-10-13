@@ -18,18 +18,18 @@ Au final la liste devra ressembler à :
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
 
-
-
-
 const siege = 100;
 const colonne = 26;
 const list = [];
 
 function ListSiege() {
-  for (let a = 1; i <= colonne; a++) {
+  for (let j = 1; j <= colonne; j++) {
     for (let i = 1; i <= siege; i++) {
-      list.push(`${a} - ${i}`);
+      list.push(`${j} - ${i}`);
     }
   }
+  return list
 }
-return (ListSiege())
+return ListSiege()
+
+
