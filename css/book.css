@@ -3,7 +3,7 @@
 body {
     background-image: url('../image/background.jpeg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 main {
@@ -11,21 +11,31 @@ main {
     font-size: 26pt;
     font-family: 'Bilbo Swash Caps', cursive;
 }
-
-.container {
+.desktop {
     display: flex;
     flex-direction: row;
 }
 
-.whisky, .inkpen, .page {
-    filter: drop-shadow(15px 15px 5px var(--shadow));
+.whisky, .empty-whisky, .inkpen, .page {
+    filter: drop-shadow(15px 15px 5px var (--shadow));
+}
+
+.whisky {
+    align-items: flex-start;
+    height: 30%;
+}
+
+.empty-whisky {
+    display: none;
+    height: 30%;
 }
 
 .pages {
     display: flex;
-    width: auto;
+    /*width: auto;*/
     flex-basis : 65%;
     margin:1em;
+    justify-content: space-around;
 }
 
 .page {
@@ -35,78 +45,113 @@ main {
     background-blend-mode: multiply;
 }
 
+.line {
+    border-bottom: 1px solid #000;   
+}
+
 .leftpage {
+    display: flex;
+    flex-direction: column;
     background: url('../image/paper.png'), linear-gradient(270deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius: 24px 40% 40% 24px/8px 8px 8px 8px;
 }
+.label {
+    font-size: 30px;
+}
+
+.input_name, .choice {
+    margin-right: 10px;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#button{
+    align-items: center;
+    padding: 5px 6px;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 15%;
+    border-radius: 5px;
+    background-color: #fff;
+}
 
 .rightpage {
+    display: flex;
+    justify-content: flex-end; /* OU END */
     background: url('../image/paper.png'), linear-gradient(90deg, rgba(157,158,137,1) 0%, rgba(233,226,187,1) 5%, rgba(255,251,203,1) 18%);
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+#bribe {
+    text-align: end;
+    margin-left: 0px;
+}
+#letter {
+    font-family: 'Roboto Mono';
+    display: flex;
+    justify-content: flex-end;
+}
+.name {
+    padding: 5px;
+}
+.price {
+    padding-left: 20px;
+}
+#total {
+    border-top: 1px solid #000;
+}
+.inkpen {
+    display: flex;
+    align-items: flex-end;
+    height: 20%;
+    margin-top: 300px;
+}
 
-@media screen and (min-width: 1200px) {
-    .desktop {
-      display:flex;
-      align-items: flex-start;
-    }
+@media screen and (max-width: 1200px) {
     .inkpen {
-      align-self: center;
+        display: none;
     }
+}
+@media screen and (max-width: 1100px) {
     .empty-whisky {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 1100px) and (max-width: 1200px) {
-    .desktop {
-      display:flex;
-      align-items: flex-start;
-    }
-    .inkpen {
-      display: none;
-    }
-    .empty-whisky {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 1000px) and (max-width: 1100px) {
-    .desktop {
-      display:flex;
-      align-items: flex-start;
-    }
-    .inkpen {
-      display: none;
+        display: flex;
+        align-items: flex-start;
     }
     .whisky {
-      display: none;
+        display: none;
     }
-  }
-  @media screen and (min-width: 800px) and (max-width: 1000px) {
-    .inkpen {
-      display: none;
-    }
-    .whisky {
-      display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .desktop {
+        display: flex;
+        flex-direction: column;
     }
     .empty-whisky {
-      display: none;
+        display: none;
     }
-  }
-  @media screen and (max-width: 800px) {
+    #bribe {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+    main {
+        padding-top: 2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
     .pages {
-      flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;    
     }
-    .page {
-      width: 100%
+    #bribe {
+        font-size: 78%;
+        margin-right: 5px;
+        scroll-margin-left: 0px;
     }
-    .inkpen {
-      display: none;
-    }
-    .whisky {
-      display: none;
-    }
-    .empty-whisky {
-      display: none;
-    }
-  }
+}

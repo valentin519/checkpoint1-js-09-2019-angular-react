@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,51 +23,75 @@
 
         <section class="desktop">
             <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-
+            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
 
             <div class="pages">
                 <div class="page leftpage">
                     Add a bribe
                     <!-- TODO : Form -->
-                    <form class=form>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
-                        <label for="payment">Payment</label>
-                        <button id="pay">Pay</button>
-                    </form>
-                </div>
+                            <label for="name" class="label">Name</label>
+                            <input class="input_name" type="name">
+                            <label for="payment" class="label">Payment</label>
+                            <select class="choice" name="payment">
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <input id="button" type="button" value="Pay !">
+                        </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
-                    <p class="title">S</p>
-                    <hr>
-                    <div class="list">
-                      <div class="listName">
-                        <p>Sam Burns</p>
-                        <p>Samuel Yans</p>
-                        <p>Simon Pogg</p>
-                        <p>Sophia Maria</p>
-                        <p>Stacie Hunberg</p>
-                        <p>Steve Grant</p>
-                        <p>Steve Porcher</p>
-                        <p>Sylvester Stallan</p>
-                        <p>Szen Tren</p>
-                        <hr>
-                        <p>Total</p>
-                      </div>
-                      <div class="listPay">
-                        <p>100€</p>
-                        <p>52563€</p>
-                        <p>52€</p>
-                        <p>452€</p>
-                        <p>568€</p>
-                        <p>1000€</p>
-                        <p>7865€</p>
-                        <p>77897€</p>
-                        <p>562€</p>
-                        <hr>
-                        <p>141059€</p>
-                </div>
+                    <table id="bribe">
+                        <tr>
+                            <td id="letter" > S</td>
+                        </tr>
+                        <tr>
+                            <td class="line"></td>
+                            <td class="line"></td>
+                        </tr>
+                        <tr>
+                            <td class="name">Sam Burns</td>
+                            <td class="price">100€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Samuel Yans</td>
+                            <td class="price">52563€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Simon Pogg</td>
+                            <td class="price">52€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Sophia Maria</td>
+                            <td class="price">452€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Stacie Humberg</td>
+                            <td class="price">568€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Steve Grant</td>
+                            <td class="price">1000€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Steve Porcher</td>
+                            <td class="price">7865€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Sylvester Stallan</td>
+                            <td class="price">77897€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Szen Tren</td>
+                            <td class="price">562€</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Total</td>
+                            <td id="total">141059€</td>
+                        </tr>
+                        </table>
+                        
+                    </div>
             </div>
             <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
         </section>
