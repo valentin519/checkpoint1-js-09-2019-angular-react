@@ -30,11 +30,11 @@
                     Add a bribe
                     <form action="">
                         <label for="name">Name : </label>
-                        <input type="text" name="name" placeholder="" class="input">
-                        <label for="select">Payment :</label>
-                        <select type="select" name="select" placeholder="" class="select">
-                        </select>
-                        <button class="button">Pay !</button>
+                        <input type="text" name="name" placeholder="" class="input" id="pers" value="">
+                        <label for="somme">Payment :</label>
+                        <input type="text" name="somme" placeholder="" class="input" id="money" value="">
+                        <label for="pay"></label>
+                        <input type="button" name="pay" class="button" onclick="addPayer()" value="Pay !">
                     </form>
                 </div>
 
@@ -44,11 +44,14 @@
                     </div>  
                     <hr>
                     <div class="payment">
-                        <div class="names">
-                            <p>Sam Burns</p><p>Samuel Yans</p><p>Simon Pogg</p><p>Sophia Maria</p><p>Stacie Hunberg</p><p>Steve Grant</p><p>Steve Porcher</p><p>Sylvester Stallan</p><p>Szen Tren</p>
+                        <div class="names" id="forName" onclick="lineUp()">
+                            
                         </div>  
-                        <div class="price">
-                            <p>100 €</p><p>52563 €</p><p>52 €</p><p>452 €</p><p>568 €</p><p>1000 €</p><p>7865 €</p><p>77897 €</p><p>562 €</p>
+                        <div class="price" id="forPrice">
+                            
+                        </div>
+                        <div class="buttons" id="erase" onclick="erasePers()">
+                            
                         </div>
                     </div> 
                     <div class="line"> 
@@ -59,7 +62,7 @@
                             <p>Total</p>
                         </div>
                         <div class="price">
-                            <p>141059 €</p>
+                            <p id="price"></p>
                         </div>
                     </div>
                 </div>
@@ -69,6 +72,7 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>

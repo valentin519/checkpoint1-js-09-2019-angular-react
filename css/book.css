@@ -16,6 +16,10 @@ main {
     display: flex;
 }
 
+.namePay{
+    text-decoration: none;
+}
+
 .whisky, .empty-whisky, .inkpen, .page {
     filter: drop-shadow(15px 15px 5px var(--shadow));
 }
@@ -55,12 +59,8 @@ main {
     text-align: right;
 }
 
-.input{
+.input, .select{
     width: 85%;
-}
-
-.select{
-    width: 88%;
 }
 
 .payment{
@@ -69,16 +69,33 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.buttons{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2%;
+}
+
+.erasing{
+    border: 0 solid black;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    top: -1%;
+}
+
 .names, .price{
     display: flex;
     flex-direction: column;
 }
 .names{
-    width: 55%;
+    width: 49%;
 }
 
 .price{
-    width: 45%;
+    width: 39%;
 }
 
 .lineDown{
