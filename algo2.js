@@ -1,4 +1,4 @@
-/* 
+/*
 * Corriger la fonction minMax()
 * La fonction récupère un tableau de nombres positifs, négatifs ou nuls
 * Et retourne un tableau à 2 entrées contenant la valeur minimale
@@ -17,7 +17,7 @@
 * Résultat : [7, 85]
 */
 
-var minMax = () => (array) => {
+/* var minMax = () => (array) => {
     const min = 0;
     const max = array[0];
   
@@ -31,4 +31,27 @@ var minMax = () => (array) => {
       return array;
     }
     array.push(min, max);
+  } */
+
+
+const array = [4, 6, 35, -65, -9, 0, 67];
+
+const minMax = () => array => {
+  let min = array[0];
+  let max = array[0];
+  const minMaxArr = [min, max]
+
+  for (let i = 0; i = array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
+    }
+    if (array[i] > max) {
+      max = array[i];
+    }
   }
+  minMaxArr[0] = min;
+  minMaxArr[1] = max
+  return (minMaxArr)
+}
+
+console.log(minMax(array))
