@@ -42,7 +42,7 @@ main {
 }
 
 
-/* screen */
+/*@media*/
 
 
     
@@ -56,7 +56,6 @@ main {
         margin-top: 150px;
     }
 
-
 @media only screen and (min-width: 1100px) and (max-width: 1200px) {
      .empty-whisky, .inkpen {
         display: none;
@@ -64,23 +63,43 @@ main {
     .pages {
         display: flex;
         width: auto;
-        flex-basis: 100%;
-        margin: 1em;
     }    
 }
 
-@media only screen and (max-width: 800px){
-    .whisky, .empty-whisky, .inkpen {
-        display: none;
-    }
-    .pages {
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+   
+    .empty-whisky{
         display: flex;
-        flex-basis: 100%;
-        flex-wrap: nowrap;
-        margin: 1em;
     }
-    .leftpage, .rightpage  {
-        width: 100%;
+    .whisky, .inkpen{
+        display: none;
     }
 }
 
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+   
+    .whisky, .inkpen, .empty-whisky{
+        display: none;
+    }
+    .desktop{
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+   
+    .whisky, .inkpen, .empty-whisky{
+        display: none;
+    }
+    .desktop, .pages{
+        justify-content: center;
+    }
+    .pages{
+        display: flex;
+        flex-direction: column;
+    }
+    .page{
+        width: 100%;    
+    }
+}
