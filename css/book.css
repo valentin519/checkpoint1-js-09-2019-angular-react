@@ -55,9 +55,34 @@ main {
 
 h2{
     text-align:center;
-    font-size:1rem
+    font-size:1.5rem;
+}
+#titreS{
+    display:flex;
+    text-align:center;
+    justify-content: space-around;
+    border-bottom: solid 1px; 
 }
 
+#Tableau{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width:100%;
+}
+
+#tot{
+    border-top:solid 1px;
+}
+
+td, th{
+    text-align:right;
+    width:40%;
+}
+th{
+    width:500px;
+    font-weight: 100;
+}
 
 @media only screen and (min-width: 1100px) and (max-width:1200px){
     .empty-whisky {
@@ -111,6 +136,7 @@ h2{
     .pages {
         display:flex;
         flex-wrap:wrap ;
+        flex-direction: column-reverse;
         width:100%;
     }  
 }
