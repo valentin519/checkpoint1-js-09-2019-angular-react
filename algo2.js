@@ -21,6 +21,7 @@ const minMax = (array) => {
   let max = infinity;
   let result = [];
 
+<<<<<<< HEAD
   for (let i = 0; i <= array.length; i++) {
     if (array[i] < min) {
       min = array[i];
@@ -32,6 +33,30 @@ const minMax = (array) => {
   result.push(min, max);
   return result;
 }
+=======
+const minMax = () => (array) => {
+    let min = array[0];
+    let max = array[0];
+    const result = [];
+  
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] < min) {
+        min = array[i];
+      }
+      else if (array[i] > max) {
+        max = array[i];
+      }
+      
+    }
+    result.push(min);
+    result.push(max);
+    return result;
+    
+  };
+   
+  
+  
+>>>>>>> Bonus
   
 
 
