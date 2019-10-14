@@ -29,3 +29,5 @@ const cineSiege = () => {
   }
   return tab
 }
+
+console.log(cineSiege())
