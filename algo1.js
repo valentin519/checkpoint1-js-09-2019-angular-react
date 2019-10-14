@@ -21,15 +21,16 @@ Au final la liste devra ressembler à :
 const siege = () => {
   const _siege = [];
 
-  for (let rowIndex = 0; rowIndex < 27; rowIndex++) {
+  for (let rowIndex = 0; rowIndex < 26; rowIndex++) {
       const row = [];
 
       for (let colIndex = 0; colIndex < 100; colIndex++) {
-          row.push(`${row}-${colIndex + 1}`);
+          row.push(`${rowIndex + 1}-${colIndex + 1}`);
       }
   
       _siege.push(row);
   }
   return _siege;
 };
-module.exports = siege;
+console.log(siege())
+module.exports = siege();
