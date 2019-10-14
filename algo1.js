@@ -18,22 +18,28 @@ Au final la liste devra ressembler à :
 Écrire une fonction qui retourne un tableau comprenant tous les numéros des sièges.
 */
 
-
-
+const cols = []
+const sit = []
 let salle = []
 
-function Calcul () {
-  for (let i=1 ; i < 26 ; i++){
-    salle.push()
-    console.log(salle)
-    let final = i
-  }
+for (let i=1 ; i < 26 ; i++){
+  cols.push(i)
+}
 
-  for (let j=1 ; j < 101 ;j++){
-    final.push(j)
-    console.log(final)
+for (let j=1 ; j < 101 ;j++){
+  sit.push(j)
+}
+function calculSit () {
+  for (let i=0; i<cols.length; i++){
+    for (let j=0; j<sit.length; j++){
+      salle.push(`${cols[i]} - ${sit[j]}`)
+    }
   }
 }
+calculSit()
+console.log(salle)
+
+
 
 // L'idée est de faire deux boucles imbriquées l'un dans l'autre et de push les valeurs dans un tableau.
 // En gros :
@@ -45,3 +51,17 @@ function Calcul () {
 //      push sièges dans tableau
 
 //console.log(tableau)
+// let salle = []
+
+// function Calcul () {
+//   for (let i=1 ; i < 26 ; i++){
+//     salle.push()
+//     console.log(salle)
+//     let final = i
+//   }
+
+//   for (let j=1 ; j < 101 ;j++){
+//     final.push(j)
+//     console.log(final)
+//   }
+// }
