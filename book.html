@@ -1,16 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/book.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/book.css" />
     <title>Checkpoint Javascript 1</title>
 </head>
 
 <body>
-
     <header>
         <nav class="navbar">
             <img src="image/logo.png" class="logo" alt="logo-wcs" />
@@ -20,36 +19,76 @@
     </header>
 
     <main class="container">
-
         <section class="desktop">
-            <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
-            <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
-
+            <div class="glasses">
+                <img src="image/whisky.png" alt="a whisky glass" class="whisky" />
+                <img src="image/empty_whisky.png" alt="an empty whisky glass" class="empty-whisky" />
+            </div>
             <div class="pages">
                 <div class="page leftpage">
-                    Add a bribe
+                    <h3>Add a bribe</h3>
                     <!-- TODO : Form -->
-                    <form payment="" method="get" class="">
-                        <div class="form-name">
-                            <label for="name"></label>
-                            <input type="text" name="name" id="name" required>
-                        </div>
-                        <div class="form-payment">
-                            <label for="payment"></label>
-                            <input type="number" name="number" id="number" required>
-                        </div>
-                        <div class="form-valid">
-                            <input type="submit" value="Pay!">
-                        </div>
+                    <form>
+                        <label for="name">Name<br />
+                            <input id="name" type="text" /> </label><br />
+                        <label for="payment">Payment<br />
+                            <input id="payment" type="number" />
+                        </label>
+                        <button class="button">Pay !</button>
                     </form>
                 </div>
 
                 <div class="page rightpage">
                     <!-- TODO : Display bribes and total paiement -->
-                    
+                    <h2>S</h2>
+                    <hr />
+                    <table>
+                        <tr>
+                            <td>Sam Burns</td>
+                            <td>100€</td>
+                        </tr>
+                        <tr>
+                            <td>Samuel Yans</td>
+                            <td>52563€</td>
+                        </tr>
+                        <tr>
+                            <td>Simon Pogg</td>
+                            <td>52€</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia Maria</td>
+                            <td>452€</td>
+                        </tr>
+                        <tr>
+                            <td>Stacie Hunberg</td>
+                            <td>568€</td>
+                        </tr>
+                        <tr>
+                            <td>Steve Grant</td>
+                            <td>1000€</td>
+                        </tr>
+                        <tr>
+                            <td>Steve Procher</td>
+                            <td>7865€</td>
+                        </tr>
+                        <tr>
+                            <td>Sylvester Stallan</td>
+                            <td>77897€</td>
+                        </tr>
+                        <tr>
+                            <td>Szen Tren</td>
+                            <td>562€</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td class="total">141059€</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            <div class="inkpen">
+                <img src="image/inkpen.png" alt="an ink pen" class="inkpen" />
+            </div>
         </section>
     </main>
 </body>
