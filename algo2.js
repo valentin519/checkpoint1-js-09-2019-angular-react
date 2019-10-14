@@ -36,8 +36,8 @@
     */
 
 var minMax = (array) => {
-  let min = 9999;
-  let max = 0;
+  let min = array[0];
+  let max = array[0];
   let newArray = [];
 
   for (let i = 0; i < array.length; i++) {
